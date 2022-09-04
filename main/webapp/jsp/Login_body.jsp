@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,22 +31,22 @@ function myFunction() {
 	
 </script>
 	<div id="content">
-    <form action="/action_page.php" method="post">
-  
+    <form>
+  		<input type="hidden" name="action" value="LoginTest"/>
 
- <div class="container">
- <label for="uname"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email Address" name="email" required>
+ 		<div class="container">
+ 			<label for="uname"><b>Email</b></label>
+    		<input type="text" placeholder="Enter Email Address" name="EmailAddress" required>
 	
 	
-	<div class="val">
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" value="FakePSW" id="myInput" required>
-    <input type="checkbox" checked="checked" name="remember"> Remember me
-    </div>
-    <div id="show">
-    <input type="checkbox" onclick="myFunction()">Show Password
-    </div>    
+			<div class="val">
+    			<label for="psw"><b>Password</b></label>
+    			<input type="password" placeholder="Enter Password" value="FakePSW" id="myInput" name="password" required>
+    			<input type="checkbox" checked="checked" name="remember"> Remember me
+    		</div>
+    		<div id="show">
+    			<input type="checkbox" onclick="myFunction()">Show Password
+    		</div>    
     </div>
      
      
@@ -77,6 +78,12 @@ function myFunction() {
   	<span>Don't have an account? <a href="#">Create your account now</a></span>
   	<br/>
   </div>
+  
+  <%--If the log in values are valid set the user session attribute and go back to the homepage. --%>
+	<%if (dataManager.isValidLogin(request.getParameter("EmailAddress"), request.getParameter("password"))) { 
+		session.setAttribute("user",request.getParameter("EmailAddress"));%>
+	<jsp:forward page="/jsp/index.jsp"></jsp:forward>
+	<%}%>  
   
 </body>
 </html>
