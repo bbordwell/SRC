@@ -53,7 +53,7 @@
   					<li><button id="gatheringsbtn" onClick="eventConference()">Special Gatherings</button></li>
 				</ul>
 				</div>
-				<p id="event-paragraph">Wedding text goes here</p>
+				<p id="event-paragraph">----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.</p>
 			</div>
 			<div class='events-right'>
 				<img class='event-picture' id='event-picture' alt='event picture' src="${pageContext.request.contextPath}/img/wedding.jpeg">
@@ -61,15 +61,15 @@
 		</div>
 		<script>
 			document.getElementById('weddingbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'Wedding text goes here';
+				document.getElementById('event-paragraph').innerHTML = '----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/wedding.jpeg";
 			}
 			document.getElementById('confbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'Conference text goes here';
+				document.getElementById('event-paragraph').innerHTML = '----Conference text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/conference.jpeg";
 			}
 			document.getElementById('gatheringsbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'Special Gatherings text goes here';
+				document.getElementById('event-paragraph').innerHTML = '----Special gathering text goes here--- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/special_gathering.jpeg";
 			}
 			
