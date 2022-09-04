@@ -1,0 +1,303 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Glacial;
+    src: url(font/glacial-indifference.regular.otf);
+}
+
+@font-face {
+    font-family: GlacialBold;
+    src: url(font/glacial-indifference.bold.otf);
+}
+
+body {
+	margin: 0;
+	background-color: #fbfbfb;
+}
+
+.container {
+    width:100%;
+    min-width:500px;
+    box-sizing:border-box;
+}
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ first section (top) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.top {
+    width:100vw;
+    height: 100vh; 
+    background-image: url('${pageContext.request.contextPath}/img/main.jpeg');
+    background-size: 100% 100%;
+ }
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+}
+
+#title {
+	padding-top: 250px;
+	padding-bottom: 150px;
+	color: white;
+	font-size: 100px;
+}
+
+h1 {
+	margin: 0;
+}
+
+.book-now #book-now-button {
+  padding-top: 125px;
+  background: rgba(0,0,0,0.5);
+  border: 2px solid #0000;
+  border-radius: 12px;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.book-now #book-now-button:hover {
+	background: #252525;
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ first section (top) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ second section (description) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.description {
+    height: 35vh; 
+    background-size: cover;
+    margin-top: 55px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 55px;
+}
+
+.description p{
+	padding-bottom: 30px;
+}
+
+.description h2{
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.description #see-locations-button {
+  border: solid 1px;
+  border-radius: 4px;
+  padding: 10px 25px 10px 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.description #see-locations-button:hover {
+  background: #f6f6f6
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ second section (description) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ third section (photos) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.photos {
+	width:100vw;
+    height: 70vh; 
+    background-image: url('${pageContext.request.contextPath}/img/a.jpeg');
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ photo box ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.photos_box {
+	width:30vw;
+	height: 37vh; 
+	margin-left: 60%;
+	padding-top: 45px;
+	background-color: #fbfbfb;
+	display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.photo-nav {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+}
+
+.photo_left {
+	width: 5vw;
+	margin-top: 22%;
+	margin-left: 10px;
+}
+
+.photo_middle {
+	width: 20vw;
+	margin-top: 15px;
+}
+.photo_middle p{
+	margin: 0;
+}
+
+.photo_right {
+	margin-right: 10px;
+	width: 5vw;
+	margin-top: 22%;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 9px;
+  background-color: #fbfbfb;
+}
+
+.arrow:hover {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 10px;
+  background-color: #fbfbfb;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ photo box ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ third section (photos) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ fourth section (events) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.events {
+    height: 72vh; 
+    background-size: cover;
+    display: flex;                  /* establish flex container */
+  	flex-direction: row;            /* default value; can be omitted */
+ 	flex-wrap: nowrap;              /* default value; can be omitted */
+  	justify-content: space-between;
+  	margin-left: 5%;
+  	margin-right: 5%;
+}
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events left flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.events-left {
+	padding-top: 60px;
+	width: 60vw;
+}
+
+
+
+.events h1{
+	padding-top: 45px;
+	padding-left: 30px;
+}
+
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events navbar ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.events-nav {
+	margin-left: 5%;
+	padding-top: 20px;
+  	display: flex;                  /* establish flex container */
+  	flex-direction: row;            /* default value; can be omitted */
+ 	flex-wrap: nowrap;              /* default value; can be omitted */
+  	justify-content: space-between;
+}
+
+.events ul {
+  list-style-type: none;
+
+  overflow: hidden;
+  padding: 0;
+}
+
+.events li {
+  float: left;
+}
+
+.events li #weddingbtn {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-right: none;
+  display: block;
+  background-color: #fbfbfb;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.events li #confbtn {
+  display: block;
+  background-color: #fbfbfb;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.events li #gatheringsbtn {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-left: none;
+  display: block;
+  background-color: #fbfbfb;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.events li #weddingbtn:hover {
+  background-color: #efefef;
+}
+.events li #confbtn:hover {
+  background-color: #efefef;
+}
+.events li #gatheringsbtn:hover {
+  background-color: #efefef;
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ events navbar ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+.events p{
+	padding-left: 5%;
+	padding-right: 10%;
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ events left flexbox ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
+/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events right flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
+
+.events-right {
+	width: 40vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
+.event-picture{
+	max-width:90%;
+	height: auto;
+	
+}
+
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ events right flexbox ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ fourth section (events) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
+
