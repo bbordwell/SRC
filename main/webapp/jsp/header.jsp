@@ -36,7 +36,7 @@
 					<ul>
 						<c:choose>
 						<c:when test="${empty user}">
-	  						<li><a href="/Proviso/ProvisoServlet?action=LoginTest" id="left">Sign In</a></li>
+	  						<li id="li-left"><a href="/Proviso/ProvisoServlet?action=LoginTest" id="left">Sign In</a></li>
 							<li><a href="/Proviso/ProvisoServlet?action=Register" id="right">Register</a></li>
 						</c:when>
 						<c:otherwise>

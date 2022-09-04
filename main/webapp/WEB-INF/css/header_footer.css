@@ -100,19 +100,13 @@ header a {
 
 .sign-in-nav ul {
   list-style-type: none;
-  border: solid 1px;
-  border-radius: 12px;
   overflow: hidden;
   background-color: #fbfbfb;
   padding: 0;
 }
 
-.sign-in-nav li {
-  float: left;
-}
-
-.sign-in-nav #left {
-	border-right: 1px solid;
+.sign-in-nav #li-left {
+	border-bottom: 1px solid;
 }
 
 .sign-in-nav li a {
@@ -124,7 +118,7 @@ header a {
 }
 
 .sign-in-nav li a:hover {
-  background-color: rgb(246, 246, 246);
+	color: #6c0001
 }
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ header navbars ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ header ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
@@ -155,11 +149,11 @@ header a {
 
 .footer-nav #left {
 	border-right: 1px solid black;
-	padding-right: 7%;
+	padding-right: 4%;
 }
 
 .footer-nav #right {
-	padding-left: 7%;
+	padding-left: 4%;
 }
 
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ footer ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
