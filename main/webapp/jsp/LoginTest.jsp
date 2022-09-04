@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Proviso Login</title>
-<c:import url="header_loggedout.jsp" />
+<c:import url="header.jsp" />
 </head>
 <body>
 <%@include file="Login_body.jsp"%>

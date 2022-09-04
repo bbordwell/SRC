@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,8 +34,15 @@
 			<div class="header-right">
 				<div class='sign-in-nav'>
 					<ul>
-	  					<li><a href="/Proviso/ProvisoServlet?action=LoginTest" id="left">Sign In</a></li>
-						<li><a href="/Proviso/ProvisoServlet?action=Register" id="right">Register</a></li>
+						<c:choose>
+						<c:when test="${empty user}">
+	  						<li><a href="/Proviso/ProvisoServlet?action=LoginTest" id="left">Sign In</a></li>
+							<li><a href="/Proviso/ProvisoServlet?action=Register" id="right">Register</a></li>
+						</c:when>
+						<c:otherwise>
+							<li><a href="/Proviso/ProvisoServlet?action=logout" id="right">Sign Out</a></li>
+						</c:otherwise>
+						</c:choose>
 					</ul>
 				</div>
 			</div>
