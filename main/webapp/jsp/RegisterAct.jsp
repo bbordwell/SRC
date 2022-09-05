@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="register.css"/>
+ <style><%@include file="../WEB-INF/css/register.css"%></style>
 <meta charset="UTF-8">
 <title>Registration</title>
 </head>
