@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style><%@include file="../WEB-INF/css/register.css"%></style>
+<link rel="stylesheet" type="text/css" href="register.css"/>
 <meta charset="UTF-8">
 <title>Registration</title>
 </head>
@@ -12,7 +12,7 @@
 
 
 
-<h3> Helpful hints<br> Password must be at least 8<br> characters long<br> and must include one uppercase<br>and one lowercase letter.</h3>
+<h3> Helpful hints<br> Password must be atleast 8<br> characters long<br> and must include one uppercase<br>and one lowercase letter.</h3>
 
 <hr>
 
