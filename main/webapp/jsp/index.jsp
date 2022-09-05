@@ -40,5 +40,9 @@
 	<%--Link to landing page --%>
 	<a href="/Proviso/ProvisoServlet?action=LandingPage">Landing Page</a>
 	
+	<br>	
+	<%--Link to Registration page --%>
+	<a href="/Proviso/ProvisoServlet?action=Register">Register</a>
+	
 </body>
 </html>
