@@ -125,6 +125,10 @@ header a {
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ footer ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
+footer {
+	background-color: #fbfbfb;
+}
+
 .footer-nav{
 	border-top: 1px solid;
 	padding: 15px 0 15px 0;

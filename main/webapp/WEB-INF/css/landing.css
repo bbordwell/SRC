@@ -71,6 +71,10 @@ h1 {
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ second section (description) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
+.container {
+	background-color: #33C8CC;
+}
+
 .description {
     height: 35vh; 
     background-size: cover;
@@ -90,15 +94,17 @@ h1 {
 }
 
 .description #see-locations-button {
-  border: solid 1px;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 10px 25px 10px 25px;
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: #CC3733;
 }
 
 .description #see-locations-button:hover {
-  background: #f6f6f6
+  background: #f6f6f6;
+  color: black;
 }
 
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ second section (description) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
@@ -120,7 +126,8 @@ h1 {
 	height: 37vh; 
 	margin-left: 60%;
 	padding-top: 45px;
-	background-color: #fbfbfb;
+	background-color: #CC3733;
+	color: white;
 	display: flex;
     align-items: center; 
     flex-direction: column;
@@ -158,7 +165,7 @@ h1 {
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 9px;
-  background-color: #fbfbfb;
+  background-color: #CC3733;
 }
 
 .arrow:hover {
@@ -166,7 +173,7 @@ h1 {
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 10px;
-  background-color: #fbfbfb;
+  background-color: #CC3733;
 }
 
 .right {
@@ -238,16 +245,16 @@ h1 {
   border-bottom-left-radius: 12px;
   border-right: none;
   display: block;
-  background-color: #fbfbfb;
-  color: black;
+  background-color: #CC3733;
+  color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
 }
 .events li #confbtn {
   display: block;
-  background-color: #fbfbfb;
-  color: black;
+  background-color: #CC3733;
+  color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
@@ -257,21 +264,24 @@ h1 {
   border-bottom-right-radius: 12px;
   border-left: none;
   display: block;
-  background-color: #fbfbfb;
-  color: black;
+  background-color: #CC3733;
+  color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
 }
 
 .events li #weddingbtn:hover {
-  background-color: #efefef;
+  background-color: #fbfbfb;
+  color: black;
 }
 .events li #confbtn:hover {
-  background-color: #efefef;
+  background-color: #fbfbfb;
+  color: black;
 }
 .events li #gatheringsbtn:hover {
-  background-color: #efefef;
+  background-color: #fbfbfb;
+  color: black;
 }
 
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ events navbar ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
