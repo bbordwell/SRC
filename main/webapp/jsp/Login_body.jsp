@@ -76,7 +76,6 @@ function myFunction() {
   <div class="register">
   	<br/>
   	<span>Don't have an account? <a href="#">Create your account now</a></span>
-  	<br/>
   </div>
   
   <%--If the log in values are valid set the user session attribute and go back to the homepage. --%>
