@@ -45,9 +45,9 @@
     
     <div class="group" >
     <label for="email"><b>Email</b></label>
-    <input type="password" placeholder="Email" name="email" id="email" required>
+    <input type="text" placeholder="Email" name="email" id="email" required>
     <label for="email"><b>Confirm Email</b></label>
-    <input type="password" placeholder="Reenter Email" name="email" id="email" required>
+    <input type="text" placeholder="Reenter Email" name="email" id="email" required>
     </div>
     
     <div class="group" >
