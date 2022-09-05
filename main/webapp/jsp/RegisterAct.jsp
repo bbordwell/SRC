@@ -18,7 +18,8 @@
 
 
  
-<form class="form-inline" action="action_page.php">
+<form class="form-inline">
+	<input type="hidden" name="action" value="registerAction"/>
 
   <div class="container">
     <h1>Create a Free Account </h1>

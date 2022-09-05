@@ -31,18 +31,20 @@
 			<input type="hidden" name="action" value="logout"/>
 			<input id="submit" type="submit" value="logout"/>
 		</form>
+		
 		<%}
 		else {%>
 		<a href="/Proviso/ProvisoServlet?action=LoginTest">Log In</a>
+		<br>
+		<%--Link to Registration page --%>
+		<a href="/Proviso/ProvisoServlet?action=Register">Register</a>
 		<%} %>
 	
 	<br>	
 	<%--Link to landing page --%>
 	<a href="/Proviso/ProvisoServlet?action=LandingPage">Landing Page</a>
 	
-	<br>	
-	<%--Link to Registration page --%>
-	<a href="/Proviso/ProvisoServlet?action=Register">Register</a>
+	
 	
 </body>
 </html>

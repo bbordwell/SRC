@@ -84,6 +84,9 @@ public class ProvisoServlet extends HttpServlet {
     	        case "RewardsProgram":
     	    		url = base + "RewardsProgram.jsp";
     	    		break;
+    	        case "registerAction":
+    	    		url = base + "registerAction.jsp";
+    	    		break;
     	        }
     	        
     	      }

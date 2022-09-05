@@ -88,5 +88,24 @@ public class DataManager {
 		  }
 		  return false;
 	  }
+	  
+	  public boolean insertCustomer(String firstName, String lastName, String email, String pword, String phoneNumber) {
+		  try {
+			  PreparedStatement stmt;
+			  stmt = this.conn.prepareStatement("INSERT INTO customers (first_name, last_name, email, pword, phone_number) VALUES (?,?,?,?,?)");
+			  stmt.setString(1, firstName);
+			  stmt.setString(2, lastName);
+			  stmt.setString(3, email);
+			  stmt.setString(4, pword);
+			  stmt.setString(5, phoneNumber);
+			  System.out.println(stmt);
+			  stmt.executeUpdate();
+			  return true;
+		  }
+		  catch (SQLException e) {
+			  System.out.println("insert failed");
+			  return false;
+		  }
+	  }
 	
 }
