@@ -12,7 +12,7 @@
 
 
 
-<h3> Helpful hints<br> Password must be atleast 8<br> characters long<br> and must include one uppercase<br>and one lowercase letter.</h3>
+<h3> Helpful hints<br> Password must be at least 8<br>characters long<br>and must include one uppercase<br>and one lowercase letter.</h3>
 
 <hr>
 
@@ -22,7 +22,7 @@
 
   <div class="container">
     <h1>Create a Free Account </h1>
-    <p>Come join our community! Ste up your account. Already have one?<span style ="color:blue">sign in</span></p>
+    <p>Come join our community! Set up your account. Already have one? <span style ="color:blue">Sign in</span></p>
     </div>
 		
 	<div class="group" >
@@ -39,14 +39,14 @@
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
     <label for="psw"><b>Confirm Password</b></label>
-    <input type="password" placeholder="Renter Password" name="pswre" id="repsw" required>
+    <input type="password" placeholder="Reenter Password" name="pswre" id="repsw" required>
     </div>
     
     <div class="group" >
     <label for="email"><b>Email</b></label>
     <input type="password" placeholder="Email" name="email" id="email" required>
     <label for="email"><b>Confirm Email</b></label>
-    <input type="password" placeholder="Email" name="email" id="email" required>
+    <input type="password" placeholder="Reenter Email" name="email" id="email" required>
     </div>
     
     <div class="group" >
