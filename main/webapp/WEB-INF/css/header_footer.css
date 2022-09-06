@@ -125,13 +125,17 @@ header a {
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ footer ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
-footer {
-	background-color: #fbfbfb;
-}
-
 .footer-nav{
 	border-top: 1px solid;
 	padding: 15px 0 15px 0;
+	background-color: #fbfbfb;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 8vh;
 }
 
 .footer-nav a{
@@ -146,6 +150,8 @@ footer {
   	list-style-type: none;
   	padding: 0;
   	height: 25px;
+  	margin: 0;
+  	width: 100%;
 }
 .footer-nav a:hover {
 	border-bottom: 1px solid #6c0001;
