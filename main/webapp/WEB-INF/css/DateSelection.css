@@ -1,0 +1,9 @@
+html {
+	height: 100vh;
+}
+
+.container {
+	margin-top: 125px;
+	min-height: 70vh;
+	overflow-y: auto;
+}
