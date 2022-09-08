@@ -10,6 +10,10 @@
     src: url(font/glacial-indifference.bold.otf);
 }
 
+html {
+	width: 100vw;
+}
+
 body {
 	margin: 0;
 	background-color: #fbfbfb;
@@ -21,11 +25,16 @@ body {
     box-sizing:border-box;
 }
 
+h1 {
+	margin: 0;
+	font-size: 40px;
+}
+
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ first section (top) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .top {
     width:100vw;
-    height: 83vh; 
+    height: 87vh; 
     background-image: url('${pageContext.request.contextPath}/img/main.jpeg');
     background-size: 100% 100%;
     margin-top: 125px;
@@ -34,7 +43,7 @@ body {
 .overlay{
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 83vh;
+  height: 87vh;
   display: flex;
   align-items: center; 
   flex-direction: column;
@@ -45,10 +54,6 @@ body {
 	padding-bottom: 150px;
 	color: white;
 	font-size: 100px;
-}
-
-h1 {
-	margin: 0;
 }
 
 .book-now #book-now-button {
@@ -123,9 +128,8 @@ h1 {
 
 .photos_box {
 	width:30vw;
-	height: 37vh; 
+	height: 30vh; 
 	margin-left: 60%;
-	padding-top: 10px;
 	background-color: #CC3733;
 	color: white;
 	display: flex;
@@ -133,6 +137,16 @@ h1 {
     flex-direction: column;
     padding-bottom: 10px;
     justify-content: center;
+}
+
+.photos-box-top {
+	display: flex;
+	height: 25%;
+	align-items: center;
+}
+
+.photos-box-bottom {
+	overflow-y: auto;
 }
 
 .photo-nav {
@@ -215,15 +229,40 @@ h1 {
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events left flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .events-left {
-	padding-top: 25px;
-	width: 60vw;
+	width: 85vw;
 	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	
 }
 
 
 
 .events h1{
 	padding-left: 30px;
+}
+
+.events-top {
+	height: 12vh;
+	padding-left: 12%;
+	padding-top: 10vh;
+	display: flex;
+	align-items: center;
+}
+
+.events-middle {
+	height: 30vh;
+	padding-left: 12%;
+	display: flex;
+	align-items: center;
+}
+
+.events-bottom {
+	height: 60vh;
+	padding-left: 12%;
+	padding-right: 12%;
+	display: flex;
+	margin-top: 3%;
 }
 
 

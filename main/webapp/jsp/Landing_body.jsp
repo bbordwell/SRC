@@ -24,36 +24,47 @@
 		<div class='description'>
 				<h1>Discover The Beauty Within Nebraska</h1>
 					<h2>From Chimney Rock to the downtown streets of Omaha.</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.</p>
+				<p>We have a few Hotel Proviso buildings in downtown Omaha for an amazing view of downtowns attractions along with activities that are a short distance away such as the Durham Museum, The Heartland Park of America with a massive water fountain that bursts with different colors when the sun sets, a view of the Missouri River and Bob Kerrey Pedestrian Bridge, or the Henry Doorley Zoo with the largest indoor desert in a glass dome. We also have some of our hotels in the western
+				part of Nebraska for amazing views of Chimney Rock in Bayard, sand dunes, or visiting Fort Robinson State Park and Toadstool Geologic Park.</p>
 				<a href="/Proviso/ProvisoServlet?action=locations" id="see-locations-button">See Locations</a>
 		</div>
 		<div class='photos' id='photo-background'>
 			<div class='photos_box'>
-				<h1>Photos</h1>
-				<div class='photo-nav'>
-					<div class='photo_left'>
-						<button class="arrow left" onclick="prev()"></button>
-					</div>
-					<div class='photo_middle'>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra.  </p>
-					</div>
-					<div class='photo_right'>
-						<button class="arrow right" onclick="next()"></button>
-					</div>
+				<div class='photos-box-top'>
+					<h1>Photos</h1>
+				</div>
+				<div class='photos-box-bottom'>
+					<div class='photo-nav'>
+						<div class='photo_left'>
+							<button class="arrow left" onclick="prev()"></button>
+						</div>
+						<div class='photo_middle'>
+							<p>Here are some photos showcasing the beauty that Proviso Hotel has to offer.  </p>
+						</div>
+						<div class='photo_right'>
+							<button class="arrow right" onclick="next()"></button>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
 		<div class='events'>
 			<div class='events-left'>
-				<h1>Events</h1>
-				<div class='events-nav'>
-					<ul>
-  					<li><button id="weddingbtn" onClick="eventConference()">Weddings</button></li>
-  					<li id='li-middle'><button id="confbtn" onClick="eventConference()">Conferences</button></li>
-  					<li><button id="gatheringsbtn" onClick="eventConference()">Special Gatherings</button></li>
-				</ul>
+				<div class='events-top'>
+					<h1>Events</h1>
 				</div>
-				<p id="event-paragraph">----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.</p>
+				<div class='events-middle'>
+					<div class='events-nav'>
+						<ul>
+		  					<li><button id="weddingbtn" onClick="eventConference()">Weddings</button></li>
+		  					<li id='li-middle'><button id="confbtn" onClick="eventConference()">Conferences</button></li>
+		  					<li><button id="gatheringsbtn" onClick="eventConference()">Special Gatherings</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class='events-bottom'>
+					<p id="event-paragraph">----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.</p>
+				</div>
 			</div>
 			<div class='events-right'>
 				<img class='event-picture' id='event-picture' alt='event picture' src="${pageContext.request.contextPath}/img/wedding.jpeg">
