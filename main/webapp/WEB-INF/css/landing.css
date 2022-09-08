@@ -25,22 +25,23 @@ body {
 
 .top {
     width:100vw;
-    height: 100vh; 
+    height: 83vh; 
     background-image: url('${pageContext.request.contextPath}/img/main.jpeg');
     background-size: 100% 100%;
+    margin-top: 125px;
  }
 
 .overlay{
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100vh;
+  height: 83vh;
   display: flex;
   align-items: center; 
   flex-direction: column;
 }
 
 #title {
-	padding-top: 250px;
+	padding-top: 125px;
 	padding-bottom: 150px;
 	color: white;
 	font-size: 100px;
@@ -76,7 +77,6 @@ h1 {
 }
 
 .description {
-    height: 35vh; 
     background-size: cover;
     margin-top: 55px;
     margin-left: 5%;
@@ -125,12 +125,14 @@ h1 {
 	width:30vw;
 	height: 37vh; 
 	margin-left: 60%;
-	padding-top: 45px;
+	padding-top: 10px;
 	background-color: #CC3733;
 	color: white;
 	display: flex;
     align-items: center; 
     flex-direction: column;
+    padding-bottom: 10px;
+    justify-content: center;
 }
 
 .photo-nav {
@@ -138,12 +140,16 @@ h1 {
   flex-direction: row;            /* default value; can be omitted */
   flex-wrap: nowrap;              /* default value; can be omitted */
   justify-content: space-between;
+  overflow-y: auto;
+  width: 100%;
 }
 
 .photo_left {
 	width: 5vw;
-	margin-top: 22%;
 	margin-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .photo_middle {
@@ -157,7 +163,9 @@ h1 {
 .photo_right {
 	margin-right: 10px;
 	width: 5vw;
-	margin-top: 22%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .arrow {
@@ -192,8 +200,7 @@ h1 {
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ fourth section (events) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
-.events {
-    height: 72vh; 
+.events { 
     background-size: cover;
     display: flex;                  /* establish flex container */
   	flex-direction: row;            /* default value; can be omitted */
@@ -201,19 +208,20 @@ h1 {
   	justify-content: space-between;
   	margin-left: 5%;
   	margin-right: 5%;
+  	padding-top: 3%;
+  	padding-bottom: 3%;
 }
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events left flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .events-left {
-	padding-top: 60px;
+	padding-top: 25px;
 	width: 60vw;
 }
 
 
 
 .events h1{
-	padding-top: 45px;
 	padding-left: 30px;
 }
 
@@ -227,6 +235,7 @@ h1 {
   	flex-direction: row;            /* default value; can be omitted */
  	flex-wrap: nowrap;              /* default value; can be omitted */
   	justify-content: space-between;
+  	margin-right: 5%;
 }
 
 .events ul {
@@ -303,7 +312,7 @@ h1 {
 }
 	
 .event-picture{
-	max-width:90%;
+	width:100%;
 	height: auto;
 	
 }
