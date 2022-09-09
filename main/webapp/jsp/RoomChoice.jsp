@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,11 +12,14 @@
           	  font-family: Glacial;
        		}
     	</style>
-<title>Reservation</title>
-<c:import url="header.jsp" />
+<title>Insert title here</title>
+
 </head>
+
 <body>
-	<div class='container'>
+<c:import url="header.jsp" />
+<main>
+	<div class="main-container">
 		<div class='boxes'>
 			<div class='Standard-King'>
 				<div class='left'>
@@ -82,8 +86,10 @@
 			</div>
 		</div>
 	</div>
-</body>
+</main>
 <footer>
 <jsp:include page="footer.jsp" />
 </footer>
+</body>
+
 </html>

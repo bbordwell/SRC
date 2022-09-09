@@ -46,6 +46,9 @@
 	<br>	
 	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=RoomChoice">Room Choice Page</a>
+	<br>	
+	<%--Link to Room Choice page --%>
+	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
 	
 	
 	

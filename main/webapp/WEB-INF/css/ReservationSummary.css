@@ -14,16 +14,14 @@ body {
 main {
     flex: auto;
     margin-top: 125px;
-   
+    padding: 3%;
 }
 
 .main-container {
 	display: flex;
 	flex-direction: column;
-	/*align-items: center; -- Uncomment for vertical alignment*/ 
-	/*justify-content: center; -- Uncomment for horizontal alignment*/
-	padding-bottom: 30px;
+	align-items: center;
 	height: 100%;
-
+	justify-content: center;
 }
 

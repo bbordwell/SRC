@@ -90,8 +90,13 @@ public class ProvisoServlet extends HttpServlet {
     	        case "RoomChoice":
     	        	url = base + "RoomChoice.jsp";
     	        	break;
+    	        case "ReservationSummary":
+    	        	url = base + "ReservationSummary.jsp";
+    	        	break;
+    	        case "test":
+    	        	url = base + "test.jsp";
+    	        	break;
     	        }
-    	        
     	      }
     	    
     	    //Use the url we built above to forward to the correct page

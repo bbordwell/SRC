@@ -63,7 +63,7 @@
 					</div>
 				</div>
 				<div class='events-bottom'>
-					<p id="event-paragraph">----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.</p>
+					<p id="event-paragraph">For a price, you and your loved one can have a wedding at any one of our Hotel Proviso locations of your choice.</p>
 				</div>
 			</div>
 			<div class='events-right'>
@@ -72,15 +72,15 @@
 		</div>
 		<script>
 			document.getElementById('weddingbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = '----Wedding text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
+				document.getElementById('event-paragraph').innerHTML = 'For a price, you and your loved one can have a wedding at any one of our Hotel Proviso locations of your choice.';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/wedding.jpeg";
 			}
 			document.getElementById('confbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = '----Conference text goes here---- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
+				document.getElementById('event-paragraph').innerHTML = 'All of our Proviso Hotels offer an outstanding environment for your companies next conference. We have everything up to date along with an amazing staff to make sure everything goes as planned. Whether this is a time of celebration or all business, we have you covered.';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/conference.jpeg";
 			}
 			document.getElementById('gatheringsbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = '----Special gathering text goes here--- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac sapien viverra, faucibus justo ut, gravida ipsum. Aenean a imperdiet sapien. Vivamus ac nunc eu nunc lacinia gravida. Vestibulum consequat eget arcu at viverra. Maecenas feugiat, ex vel auctor egestas, ligula eros elementum turpis, et eleifend sem odio non mi. Aenean cursus ac nunc id ullamcorper. Proin ligula nibh, eleifend sed mi vitae, vehicula tincidunt leo. Sed efficitur libero vitae egestas pellentesque.';
+				document.getElementById('event-paragraph').innerHTML = 'We realize that not every event is going to be either a wedding or business related. If you have a group that is looking for a gathering space, whether that is family coming together from across the country or your small businesses next venue, we have multiple rooms among our hotel that can be set to meet your needs. Get in contact with your events cordinator and we can make sure everything is customized to your expecatations. ';
 				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/special_gathering.jpeg";
 			}
 			

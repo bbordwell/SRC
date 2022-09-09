@@ -16,7 +16,7 @@ Proviso site CSS file
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ header ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 125px;
@@ -39,7 +39,6 @@ header {
 	width: 40vw;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .header-right {
@@ -131,7 +130,6 @@ header a {
 	background-color: #fbfbfb;
 	bottom: 0;
 	width: 100%;
-	height: 2.5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
