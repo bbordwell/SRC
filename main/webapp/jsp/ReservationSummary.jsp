@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <style><%@include file="../WEB-INF/css/test.css"%></style>
+    <style><%@include file="../WEB-INF/css/ReservationSummary.css"%></style>
     	<style>
         	* {
           	  font-family: Glacial;
