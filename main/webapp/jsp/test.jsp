@@ -22,7 +22,15 @@
 	
 	<main>
 		<div class="main-container">
-		
+			<div class="top">
+				<h1>test</h1>
+			</div>
+			<div class="middle">
+				<h1>test</h1>
+			</div>
+			<div class="bottom">
+				<h1>test</h1>
+			</div>
 		</div>
 	</main>
 	<footer>

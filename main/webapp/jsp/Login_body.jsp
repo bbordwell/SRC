@@ -34,7 +34,6 @@ function myFunction() {
 			<h1>Sign in To Access Your Account</h1>
 		</div>
 		<div class="main-middle">
-			<div id="content">
 			    <form>
 			  		<input type="hidden" name="action" value="LoginTest"/>
 						<div class="container">
@@ -61,7 +60,6 @@ function myFunction() {
 	  					<span class="psw"><a href="#">Forgot Password</a></span>
 						<br>
 				</form> 
-		</div>
 		</div>
 		<div class="main-bottom">
   			<div class="register">
