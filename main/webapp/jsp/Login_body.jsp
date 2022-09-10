@@ -69,6 +69,11 @@ function myFunction() {
 		</div>
 	</div>
 </main>
+<%--If the log in values are valid set the user session attribute and go back to the homepage. --%>
+	<%if (dataManager.isValidLogin(request.getParameter("EmailAddress"), request.getParameter("password"))) { 
+		session.setAttribute("user",request.getParameter("EmailAddress"));%>
+	<jsp:forward page="/jsp/LandingPage.jsp"></jsp:forward>
+	<%}%>
 </body>
 
 </html>
