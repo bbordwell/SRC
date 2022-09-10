@@ -112,13 +112,21 @@ h1 {
   color: black;
 }
 
+.red-box {
+	height: 10vh;
+	width: 30vw;
+	background-color: #CC3733;
+	margin-left: 60%;
+	margin-top: -5%;
+}
+
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ second section (description) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ third section (photos) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .photos {
 	width:100vw;
-    height: 70vh; 
+    height: 85vh; 
     background-image: url('${pageContext.request.contextPath}/img/a.jpeg');
     background-size: 100% 100%;
     text-align: center;
@@ -345,7 +353,7 @@ h1 {
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events right flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .events-right {
-	width: 40vw;
+	width: 55vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -52,6 +52,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	margin-top: 15px;
+	justify-content: center;
 }
 
 .right-middle {

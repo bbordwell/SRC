@@ -11,7 +11,7 @@
     </style>
     <title>landing body</title>
 </head>
-<body>    
+<body>
 	<div class='container'>
 		<div class='top'>
 			<div class='overlay'>
@@ -28,6 +28,7 @@
 				part of Nebraska for amazing views of Chimney Rock in Bayard, sand dunes, or visiting Fort Robinson State Park and Toadstool Geologic Park.</p>
 				<a href="/Proviso/ProvisoServlet?action=locations" id="see-locations-button">See Locations</a>
 		</div>
+		<div class="red-box"></div>
 		<div class='photos' id='photo-background'>
 			<div class='photos_box'>
 				<div class='photos-box-top'>
