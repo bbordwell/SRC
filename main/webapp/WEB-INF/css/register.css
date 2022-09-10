@@ -1,12 +1,76 @@
 @charset "UTF-8";
 /* Style the form - display items horizontally */
-.form-inline {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
- 
- 
-  
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: auto;
+    margin-top: 125px;
+    margin-left: 3%
+}
+
+.main-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	justify-content: center;
+}
+
+.main-left {
+	height: 84%;
+	width: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-right: 3%;
+	border-right: 1px solid;
+}
+
+.main-right {
+	width: 80vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.right-top {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+}
+
+.right-middle {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-bottom {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 15px;
 }
 
 label {
@@ -14,6 +78,10 @@ label {
 	text-align: right;
 }
 
+.form-inline {
+	margin-right: 57px;
+	width: 100%;
+}
 
 /* Add some margins for each label */
 .form-inline label {
@@ -30,7 +98,7 @@ label {
   padding: 15px;
   background-color: #fff;
   border: 1px solid black;
-
+  width: 20%;
 
  
 
@@ -43,37 +111,18 @@ label {
   background-color: grey;
 }
 
-
-
-  .form-inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
 h1{
 	text-align:center;
 }
 p{
 	text-align:center;
-	margin-bottom:40px;
 }
 button{
-	margin:auto;
+	margin-left:auto;
+	margin-right: auto;
 	width:25;
 	margin-bottom:20px;
 }
-
-body{
-	text-align:center;
-	margin-top:150px;
-	background-color:white;
-	
-	
-	
-	
-}
-
-
-
 	
 
 h3{
@@ -87,8 +136,3 @@ hr{
             position: absolute;
             left:20%;
 }
-
-
-
-
-
