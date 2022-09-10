@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <style><%@include file="../WEB-INF/css/about.css"%></style>
+    <style><%@include file="../WEB-INF/css/About.css"%></style>
     	<style>
         	* {
           	  font-family: Glacial;

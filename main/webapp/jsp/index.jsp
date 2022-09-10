@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
+<%@ page import="model.ReservationSummaryObject" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -50,7 +52,22 @@
 	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
 	
-	
+	<br>
+	<h4>example usage of ReservationSummaryObject</h4>
+	<%
+	//Must use Datamanager bean, and import model.ReservationSummaryObject (see lines 3 and 4).
+	ReservationSummaryObject myReservation = dataManager.getReservationSummary(1);	//Create the object. Input is the reservation ID you are looking for.
+	out.println(myReservation.getCheckIn().getDate()); //See date of check-in
+	out.println(myReservation.getCheckIn().getMonth() + 1); //see month of check-in
+	out.println(myReservation.getCheckIn().getYear() + 1900); // see year of check-in
+	out.println(myReservation.getFirstName()); //See First name
+	out.println(myReservation.getLastName()); //See Last name
+	out.println(myReservation.getReservationID()); //See reservation ID
+	out.println(myReservation.getEarnedPoints()); //see earned points
+	out.println(myReservation.getRoomType()); // see room type
+	out.println(myReservation.getAmount()); //see amount in cents
+	out.println(myReservation.getStayDates()); //Get number of nights
+	%>
 	
 </body>
 </html>
