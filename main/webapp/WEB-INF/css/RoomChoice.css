@@ -68,7 +68,7 @@ main {
 }
 
 .left {
-	width: 25vw;
+	width: 21vw;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
