@@ -66,7 +66,7 @@
 	out.println(myReservation.getEarnedPoints()); //see earned points
 	out.println(myReservation.getRoomType()); // see room type
 	out.println(myReservation.getAmount()); //see amount in cents
-	out.println(myReservation.getStayDates()); //Get number of nights
+	out.println(myReservation.getNumberOfNights()); //Get number of nights
 	%>
 	
 </body>

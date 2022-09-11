@@ -14,7 +14,7 @@ public class ReservationSummaryObject {
 	private boolean canceled;
 	private String roomType;
 	private int amount;
-	private int stayDays;
+	private int numberOfNights;
 	
 	public ReservationSummaryObject(ResultSet data) throws SQLException{
 		data.next();		
@@ -60,11 +60,13 @@ public class ReservationSummaryObject {
 		return this.amount;
 	}
 	
-	public void setStayDays(int days) {
-		this.stayDays = days;
+	public void setNumberOfNights(int nights) {
+		this.numberOfNights = nights;
 	}
 	
-	public int getStayDates() {
-		return this.stayDays;
+	public int getNumberOfNights() {
+		return this.numberOfNights;
 	}
+	
+	
  }

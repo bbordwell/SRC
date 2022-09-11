@@ -102,7 +102,7 @@
 					<h2>Number of Nights</h2>
 					<p>
 					<%
-					out.println(myReservation.getStayDates());
+					out.println(myReservation.getNumberOfNights());
 					%>
 					</p>
 				</div>
@@ -118,16 +118,16 @@
 			
 			<div class="box-7">
 				<div class="inner-1">
-					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary"></h3>
+					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary">Parking</a></h3>
 				</div>
 				<div class="inner-2">
-					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary"></h3>
+					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary">Dining</a></h3>
 				</div>
 				<div class="inner-3">
-					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary"></h3>
+					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary">Hotel Policies</a></h3>
 				</div>
 				<div class="inner-4">
-					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary"></h3>
+					<h3><a href="/Proviso/ProvisoServlet?action=ReservationSummary">Things to Do</a></h3>
 				</div>
 			</div>
 		</div>
