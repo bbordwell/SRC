@@ -12,72 +12,124 @@
           	  font-family: Glacial;
        		}
     	</style>
-<title>Insert title here</title>
-
+<title>Room Choice</title>
 </head>
 
 <body>
 <c:import url="header.jsp" />
 <main>
+
 	<div class="main-container">
+	
+		<div class="Location">
+			<h2>Location:</h2>
+			<div class="select">
+				<select name="slct" id="slct">
+					<option>Select Location</option>
+					<option value="1">Omaha</option>
+					<option value="1">Lincoln</option>
+					<option value="1">Scottsbluff</option>
+					<option value="1">O'Niell</option>
+					<option value="1">Kearney</option>
+					<option value="1">North Platte</option>
+					<option value="1">South Sioux City</option>
+					<option value="1">Bellevue</option>
+				</select>
+			</div>
+		</div>
+		<div class="Guests">
+			<h2>Number of Guests:</h2>
+			<div class="select">
+				<select name="slct" id="slct">
+					<option>1</option>
+					<option value="1">1</option>
+					<option value="1">2</option>
+					<option value="1">3</option>
+					<option value="1">4</option>
+					<option value="1">5</option>
+				</select>
+			</div>
+		</div>
+		
 		<div class='boxes'>
-			<div class='Standard-King'>
+			<div class='Double'>
 				<div class='left'>
-					<img class='event-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/king.jpg">
+					<div class='top-left'>
+						<h1>Double</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Standard King</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>Our modern Standard King room starts with it's big cozy bed. We've made sure to get the softed linens we could get our hands on and doubled down on the fluffiness of the pillows. When your evening winds down, sit back and relax with bubbles and salts in the spa bath. When the morning comes, open our blinds to and smell the coffee while you enjoy the natural light and views of the country.</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/Double.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$99</p>
+						<p>$110.00</p>
 					</div>
 					<div class='bottom-right'>
 						<a href="" >Book Room</a>
 					</div>
 				</div>
 			</div>
-			<div class='Standard-Double-Queen'>
+			
+			<div class='Queen'>
 				<div class='left'>
-					<img class='event-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/double_queen.jpg">
+					<div class='top-left'>
+						<h1>Queen</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Standard-Double-Queen</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>You and your guests can rest easy in our spacious Double Queen room. With plenty of closet space, room to work, and a ful bathroom, you won't have to worry about stepping over each others feet when you stay with Proviso. When night comes, you won't have to worry about each others sleep habits with complimentary sleep masks and ear plugs.</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/Queen.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$109</p>
+						<p>$125.00</p>
 					</div>
 					<div class='bottom-right'>
 						<a href="" >Book Room</a>
 					</div>
-				</div>			
+				</div>
 			</div>
-			<div class='Superior-King'>
+			
+			<div class='Double-Queen'>
 				<div class='left'>
-					<img class='event-picture' id='event-picture-sk' alt='event picture' src="${pageContext.request.contextPath}/img/superior_king.jpg">
+					<div class='top-left'>
+						<h1>Double Queen</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Superior King</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>Walk in and drop your bags, not your jaw, your bags. Our Superior King room is freshly styled and ready for any occasion. With a full kitchen, living room, and California King, you may just never want to leave, and that's just fine with us - we can bring Nebraska's charm to you!</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/double_queen.jpg">
+				
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$119</p>
+						<p>$150.00</p>
+					</div>
+					<div class='bottom-right'>
+						<a href="" >Book Room</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class='King'>
+				<div class='left'>
+					<div class='top-left'>
+						<h1>King</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
+				</div>
+				<div class='middle'>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/King.jpg">
+				</div>
+				<div class='right'>
+					<div class='top-right'>
+						<p>$165.00</p>
 					</div>
 					<div class='bottom-right'>
 						<a href="" >Book Room</a>
@@ -85,6 +137,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </main>
 <footer>
