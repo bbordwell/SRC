@@ -15,11 +15,15 @@
 <c:import url="header.jsp" />
 </head>
 <body>
-	<div class='container'>
-		<h1>Locations</h1>
-	</div>
+
+	<c:import url="header.jsp" />
+	
+	<main>
+		<div class="main-container">
+		</div>
+	</main>
+	
+	<jsp:include page="footer.jsp" />
+	
 </body>
-<footer>
-<jsp:include page="footer.jsp" />
-</footer>
 </html>

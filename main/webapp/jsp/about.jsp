@@ -12,6 +12,7 @@
 	}
 </style>
 <title>About Proviso</title>
+
 <c:import url="header.jsp" />
 </head>
 <body>

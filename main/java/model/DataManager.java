@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import model.ReservationSummaryObject;
 import java.sql.PreparedStatement;
 
 public class DataManager {
@@ -106,6 +107,22 @@ public class DataManager {
 			  System.out.println("insert failed");
 			  return false;
 		  }
+	  }
+	  
+	  public ReservationSummaryObject getReservationSummary(int reservationID) throws SQLException {
+			  PreparedStatement stmt;
+			  stmt = this.conn.prepareStatement("select first_name, last_name, reservation_id, check_in, check_out, earned_points, room_type, amount FROM reservations inner join payments on reservations.reservation_id=payments.payment_id inner join customers on reservations.customer_id=customers.customer_id where reservation_id = ?");
+			  stmt.setInt(1, reservationID);
+			  System.out.println(stmt);
+			  ReservationSummaryObject myReservation =  new ReservationSummaryObject(stmt.executeQuery());
+			  stmt = this.conn.prepareStatement("SELECT DATEDIFF(?, ?) AS DateDiff");
+			  stmt.setDate(2,myReservation.getCheckIn());
+			  stmt.setDate(1,myReservation.getCheckOut());
+			  ResultSet rs = stmt.executeQuery();
+			  rs.next();
+			  myReservation.setStayDays(rs.getInt(1));
+			  return myReservation;
+		 
 	  }
 	
 }

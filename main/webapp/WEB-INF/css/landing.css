@@ -34,7 +34,7 @@ h1 {
 
 .top {
     width:100vw;
-    height: 87vh; 
+    height: 88vh; 
     background-image: url('${pageContext.request.contextPath}/img/main.jpeg');
     background-size: 100% 100%;
     margin-top: 125px;
@@ -43,7 +43,7 @@ h1 {
 .overlay{
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 87vh;
+  height: 88vh;
   display: flex;
   align-items: center; 
   flex-direction: column;
@@ -112,13 +112,21 @@ h1 {
   color: black;
 }
 
+.red-box {
+	height: 10vh;
+	width: 30vw;
+	background-color: #CC3733;
+	margin-left: 60%;
+	margin-top: -5%;
+}
+
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ second section (description) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ third section (photos) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .photos {
 	width:100vw;
-    height: 70vh; 
+    height: 85vh; 
     background-image: url('${pageContext.request.contextPath}/img/a.jpeg');
     background-size: 100% 100%;
     text-align: center;
@@ -345,7 +353,7 @@ h1 {
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ events right flexbox ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
 .events-right {
-	width: 40vw;
+	width: 55vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;

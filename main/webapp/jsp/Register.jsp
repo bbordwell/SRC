@@ -6,14 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Proviso register</title>
-<c:import url="header.jsp" />
 </head>
 <body>
+<c:import url="header.jsp" />
 <%@include file="RegisterAct.jsp"%>
-</body>
 <footer>
 <jsp:include page="footer.jsp" />
 </footer>
+</body>
 </html>
 
 <!-- source for how to format header and footer: https://codebun.com/include-header-and-footer-in-jsp-using-jstl/ -->
