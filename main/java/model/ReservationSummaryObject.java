@@ -68,5 +68,86 @@ public class ReservationSummaryObject {
 		return this.numberOfNights;
 	}
 	
+	public String getStayDatesString() {
+		String result = getCheckInDayString();
+		result += ", ";
+		result += this.getCheckInMonthString() + " ";
+		result += this.check_in.getDate() + ", ";
+		result += (this.check_in.getYear() + 1900) + " - ";
+		result += getCheckOutDayString() + ", ";
+		result += this.getCheckOutMonthString() + " ";
+		result += this.check_out.getDate() + ", ";
+		result += (this.check_out.getYear() + 1900);
+		return result;
+	}
+	
+	private String getCheckInDayString() {
+		switch (this.check_in.getDay()) {
+		case 0:return "Sunday";
+		case 1:	return "Monday";
+		case 2:return "Tuesday";
+		case 3: return "Wednesday";
+		case 4: return "Thursday";
+		case 5: return "Friday";
+		case 6: return "Saturday";
+		default: return "Error";
+		}
+	}
+	
+	private String getCheckInMonthString() {
+		switch (this.check_in.getMonth()) {
+		case 0:return "January";
+		case 1:	return "February";
+		case 2:return "March";
+		case 3: return "April";
+		case 4: return "May";
+		case 5: return "June";
+		case 6: return "July";
+		case 7: return "August";
+		case 8: return "September";
+		case 9: return "October";
+		case 10: return "November";
+		case 11: return "December";
+		default: return "Error";
+		}
+	}
+	
+	private String getCheckOutDayString() {
+		switch (this.check_out.getDay()) {
+		case 0:return "Sunday";
+		case 1:	return "Monday";
+		case 2:return "Tuesday";
+		case 3: return "Wednesday";
+		case 4: return "Thursday";
+		case 5: return "Friday";
+		case 6: return "Saturday";
+		default: return "Error";
+		}
+	}
+	
+	private String getCheckOutMonthString() {
+		switch (this.check_out.getMonth()) {
+		case 0:return "January";
+		case 1:	return "February";
+		case 2:return "March";
+		case 3: return "April";
+		case 4: return "May";
+		case 5: return "June";
+		case 6: return "July";
+		case 7: return "August";
+		case 8: return "September";
+		case 9: return "October";
+		case 10: return "November";
+		case 11: return "December";
+		default: return "Error";
+		}
+	}
+	
+	public String getAmountString() {
+		int dollars = this.getAmount() / 100;
+		String cents = String.valueOf(this.getAmount() % 100);
+		if (cents.length() == 1) { cents += "0";} //Always show two digits eg .10 rather than .1
+		return "$" + dollars + "." + cents; 
+	}
 	
  }

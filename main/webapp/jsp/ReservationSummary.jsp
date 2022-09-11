@@ -62,12 +62,8 @@
 				<h2>Stay Dates</h2>
 				<p>
 				<% 
-				out.println(myReservation.getCheckIn().getDate());
+				out.println(myReservation.getStayDatesString());
 				%> 
-				- 
-				<%
-				out.println(myReservation.getCheckOut().getDate());
-				%>
 				</p>
 			</div>
 			
@@ -110,7 +106,7 @@
 					<h2>Estimated Total</h2>
 					<p>
 					<%
-					out.println(myReservation.getAmount()); //see amount in cents
+					out.println(myReservation.getAmountString());
 					%>
 					</p>
 				</div>
