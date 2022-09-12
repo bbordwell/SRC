@@ -124,5 +124,14 @@ public class DataManager {
 			  return myReservation;
 		 
 	  }
+	  
+	  public Customer getCustomer(String email) throws SQLException{
+		  PreparedStatement stmt;
+		  stmt = this.conn.prepareStatement("SELECT * FROM customers WHERE email = ?");
+		  stmt.setString(1, email);
+		  System.out.println(stmt);
+		  Customer customer = new Customer(stmt.executeQuery());
+		  return customer;
+	  }
 	
 }

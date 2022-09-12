@@ -1,18 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
+<%@ page import="model.Customer" %>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>reservation confirmation</title>
     <style><%@include file="../WEB-INF/css/ReservationConfirmation.css"%></style>
+    <%
+    	String user = (String)session.getAttribute("user");
+    	Customer customer = dataManager.getCustomer(user);
+    %>
 </head>
 <body>
 	<c:import url="header.jsp" />
 	
 	<div id="container">
-        <div id="hello">Hello logged in user</div>
+        <div id="hello">Hello <%out.print(customer.getFirstName());%>  <%out.print(customer.getLastName());%></div>
         <form action="">
         <input type="hidden" name="action" value="ReservationSummary"/>
         <div id="additionalAmenitiesContainer">
