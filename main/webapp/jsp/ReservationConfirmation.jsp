@@ -76,12 +76,12 @@
             <div id="guestInformation">Guest Information</div>
             <table id="guestInformationTable">
                 <tr>
-                    <td><div id="firstName">First name</div></td>
-                    <td><div id="email">Email</div></td>
+                    <td><div id="firstName"><%out.print(customer.getFirstName());%></div></td>
+                    <td><div id="email"><%out.print(customer.getEmail());%></div></td>
                 </tr>
                 <tr>
-                    <td><div id="lastName">Last Name</div></td>
-                    <td><div id="phoneNumber">Phone Number</div></td>
+                    <td><div id="lastName"><%out.print(customer.getLastName());%></div></td>
+                    <td><div id="phoneNumber"><%out.print(customer.getPhoneNumber());%></div></td>
                 </tr>
             </table>
        </div>
