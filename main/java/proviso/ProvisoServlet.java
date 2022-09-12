@@ -84,7 +84,7 @@ public class ProvisoServlet extends HttpServlet {
     	    			String dateOne = request.getParameter("checkin");
     	    			String dateTwo = request.getParameter("checkout");
     	    			
-    	    			url = base + "RoomChoice.jsp";
+    	    			//url = base + "RoomChoice.jsp";
     	    			request.setAttribute("checkin", dateOne);
     	    			request.setAttribute("checkout", dateTwo);
     	    		}
