@@ -24,13 +24,16 @@
     String wifi = (String) request.getParameter("wifi");
     reservation.setWifi(wifi);
     String breakfast = (String) request.getParameter("breakfast");
-    reservation.setWifi(breakfast);
+    reservation.setBreakfast(breakfast);
     String parking = (String) request.getParameter("parking");
-    reservation.setWifi(parking);
+    reservation.setParking(parking);
     String cardNumber = (String) request.getParameter("CardNumber");
     reservation.setCardNumber(cardNumber);
     String exp = (String) request.getParameter("exp");
     reservation.setExp(exp);
+    
+    
+    dataManager.setReservation(reservation);
     
 	
 	// Read back reservation information

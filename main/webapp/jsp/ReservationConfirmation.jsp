@@ -22,6 +22,7 @@
     	reservation.setRoomType(roomType);
     	int guests = Integer.valueOf(request.getParameter("guests"));
     	reservation.setGuests(guests);
+    	reservation.setCustomerId(customer.getCustomerID());
     %>
 </head>
 <body>

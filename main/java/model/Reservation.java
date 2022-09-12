@@ -14,6 +14,7 @@ public class Reservation {
 	private boolean parking;
 	private long cardNumber;
 	private String exp;
+	private int customerId;
 	
 	
 	public void setCheckIn(String checkIn) {
@@ -127,4 +128,14 @@ public class Reservation {
 	public String getExp() {
 		return this.exp;
 	}
+	
+	public void setCustomerId(int customerID) {
+		this.customerId = customerID;
+	}
+	
+	public int getCustomerId() {
+		return this.customerId;
+	}
+	
+	
 }

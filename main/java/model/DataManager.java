@@ -7,6 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import model.ReservationSummaryObject;
 import java.sql.PreparedStatement;
+import java.sql.Date;
+import model.Reservation;
 
 public class DataManager {
 	private String dbURL = "";
@@ -133,5 +135,103 @@ public class DataManager {
 		  Customer customer = new Customer(stmt.executeQuery());
 		  return customer;
 	  }
+	  
+	  public void setReservation(Reservation res) throws SQLException {
+		  //Calculate points
+		  PreparedStatement stmt;
+		  stmt = this.conn.prepareStatement("SELECT DATEDIFF(?, ?) AS DateDiff");
+		  stmt.setDate(2,res.getCheckIn());
+		  stmt.setDate(1,res.getCheckOut());
+		  System.out.println(stmt);
+		  ResultSet rs = stmt.executeQuery();
+		  rs.next();
+		  int nights = rs.getInt(1);
+		  int points = nights * 150;
+		  
+		  //determine hotelID
+		  int hotelID;
+		  
+		  if (res.getLocation().equals("Omaha")) {hotelID = 6;}
+		  else if (res.getLocation().equals("Lincoln")) {hotelID = 3;}
+		  else if (res.getLocation().equals("Scottsbluff")) {hotelID = 7;}
+		  else if (res.getLocation().equals("O'Niell")) {hotelID = 5;}
+		  else if (res.getLocation().equals("Kearny")) {hotelID = 2;}
+		  else if (res.getLocation().equals("North Platte")) {hotelID = 4;}
+		  else if (res.getLocation().equals("South Sioux City")) {hotelID = 8;}
+		  else if (res.getLocation().equals("Bellevue")) {hotelID = 1;}
+		  else {hotelID = 0;}
+		  
+		  
+		  //Insert reservation
+		  stmt = this.conn.prepareStatement("INSERT INTO reservations (customer_id, hotel_id, number_of_guests, check_in, check_out, earned_points, room_type) VALUES (?,?,?,?,?,?,?)",Statement.RETURN_GENERATED_KEYS);
+		  stmt.setInt(1, res.getCustomerId());
+		  stmt.setInt(2, hotelID);
+		  stmt.setInt(3, res.getGuests());
+		  stmt.setDate(4, res.getCheckIn());
+		  stmt.setDate(5, res.getCheckOut());
+		  stmt.setInt(6, points);
+		  stmt.setString(7, res.getRoomType());
+		  System.out.println(stmt);
+		  stmt.executeUpdate();
+		  rs = stmt.getGeneratedKeys();
+		  rs.next();
+		  int reservationID = rs.getInt(1);
+		  
+		  //Calculate amount
+		  int nightlyRate;
+		  switch (res.getRoomType()) {
+		  case "Double": nightlyRate = 11000; break;
+		  case "Queen":	nightlyRate = 12500; break;
+		  case "Double Queen": nightlyRate = 15000; break;
+		  case "King": nightlyRate = 16500; break;
+		  default: 
+			  System.out.println("Error getting room type nightly rate. Input was " + res.getRoomType());
+			  nightlyRate = 0;
+		  }
+		  if (res.getBreakfast()) {
+			  nightlyRate += 899;
+		  }
+		  if (res.getParking()) {
+			  nightlyRate += 1299;
+		  }
+		  int amount = nightlyRate * nights;
+		  if (res.getWifi()) {
+			  amount += 1299;
+		  }
+		  
+		  //Insert Payment
+		  stmt = this.conn.prepareStatement("INSERT INTO payments (name_on_card, expiration, card_number, transaction_time, amount) VALUES (?,?,?,CURRENT_DATE,?)");
+		  stmt.setString(1, res.getNameOnCard());
+		  stmt.setString(2,res.getExp());
+		  stmt.setLong(3, res.getCardNumber());
+		  stmt.setInt(4,amount);
+		  System.out.println(stmt);
+		  stmt.executeUpdate();
+		  
+		  //Insert possessed features
+		  if (res.getBreakfast()) {
+			  stmt = this.conn.prepareStatement("INSERT INTO possessed_features (reservation_id, feature_id) VALUES (?,?)");
+			  stmt.setInt(1, reservationID);
+			  stmt.setInt(2, 2);
+			  System.out.println(stmt);
+			  stmt.executeUpdate();
+		  }
+		  if (res.getWifi()) {
+			  stmt = this.conn.prepareStatement("INSERT INTO possessed_features (reservation_id, feature_id) VALUES (?,?)");
+			  stmt.setInt(1, reservationID);
+			  stmt.setInt(2, 1);
+			  System.out.println(stmt);
+			  stmt.executeUpdate();
+		  }
+		  if (res.getParking()) {
+			  stmt = this.conn.prepareStatement("INSERT INTO possessed_features (reservation_id, feature_id) VALUES (?,?)");
+			  stmt.setInt(1, reservationID);
+			  stmt.setInt(2, 3);
+			  System.out.println(stmt);
+			  stmt.executeUpdate();
+		  }
+	  }
+	  
+	  
 	
 }
