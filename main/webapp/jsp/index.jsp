@@ -47,6 +47,9 @@
 	<a href="/Proviso/ProvisoServlet?action=LandingPage">Landing Page</a>
 	<br>	
 	<%--Link to Room Choice page --%>
+	<a href="/Proviso/ProvisoServlet?action=DateSelection">Date Selection Page</a>
+	<br>	
+	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=RoomChoice">Room Choice Page</a>
 	<br>	
 	<%--Link to Room Choice page --%>

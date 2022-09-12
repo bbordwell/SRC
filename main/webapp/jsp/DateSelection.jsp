@@ -11,15 +11,13 @@
           	  font-family: Glacial;
        		}
     	</style>
-<title>Insert title here</title>
+<title>Select Date</title>
 <c:import url="header.jsp" />
 </head>
 <body>
-	<div class='container'>
-		<h1>Date Selection</h1>
-	</div>
+	<%@include file="DateSelection_body.jsp"%>
 </body>
 <footer>
-<jsp:include page="footer.jsp" />
+	<jsp:include page="footer.jsp" />
 </footer>
 </html>
