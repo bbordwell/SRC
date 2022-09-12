@@ -74,6 +74,21 @@ public class ProvisoServlet extends HttpServlet {
     	    		break;
     	        case "DateSelection":
     	    		url = base + "DateSelection.jsp";
+    	    		
+    	    		/*if(request.getSession().getAttribute("dateSelectionManager") == null) {
+    	    			
+    	    		}*/
+    	    		
+    	    		String dateSelect = request.getParameter("dateSelect");
+    	    		if(dateSelect != null && dateSelect.equals("true")) {
+    	    			String dateOne = request.getParameter("checkin");
+    	    			String dateTwo = request.getParameter("checkout");
+    	    			
+    	    			//url = base + "RoomChoice.jsp";
+    	    			request.setAttribute("checkin", dateOne);
+    	    			request.setAttribute("checkout", dateTwo);
+    	    		}
+    	    		
     	    		break;
     	        case "ReservationLookup":
     	    		url = base + "ReservationLookup.jsp";
