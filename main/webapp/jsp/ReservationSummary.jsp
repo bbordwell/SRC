@@ -37,7 +37,7 @@
     
 	
 	// Read back reservation information
-	ReservationSummaryObject myReservation = dataManager.getReservationSummary(1);
+	ReservationSummaryObject myReservation = dataManager.getReservationSummary(reservation.getReservationID());
 	%>
 <body>
 

@@ -54,16 +54,16 @@
         <p>Your Reservation</p>
         <table>
             <tr>
-                <td>Room Type</td>
+                <td><%out.print(reservation.getRoomType());%></td>
                 <td>1 Room</td>
-                <td>Number of guests</td>
-                <td>Number of nights</td>
+                <td><%out.print(reservation.getGuests() + " Guests"); %></td>
+                <td><%out.print(dataManager.getNumberOfNights(reservation) + " Nights"); %></td>
             </tr>
             <tr>
                 <td>
-                    <td>check In</td>
+                    <td><%out.print(reservation.getCheckIn()); %></td>
                     <td></td>
-                    <td>checkout</td>
+                    <td><%out.print(reservation.getCheckOut()); %></td>
                 </td>
             </tr>
             <tr>

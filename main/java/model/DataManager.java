@@ -136,6 +136,18 @@ public class DataManager {
 		  return customer;
 	  }
 	  
+	  public int getNumberOfNights(Reservation res) throws SQLException {
+		  PreparedStatement stmt;
+		  stmt = this.conn.prepareStatement("SELECT DATEDIFF(?, ?) AS DateDiff");
+		  stmt.setDate(2,res.getCheckIn());
+		  stmt.setDate(1,res.getCheckOut());
+		  System.out.println(stmt);
+		  ResultSet rs = stmt.executeQuery();
+		  rs.next();
+		  int nights = rs.getInt(1);
+		  return nights;
+	  }
+	  
 	  public void setReservation(Reservation res) throws SQLException {
 		  //Calculate points
 		  PreparedStatement stmt;
@@ -176,6 +188,7 @@ public class DataManager {
 		  rs = stmt.getGeneratedKeys();
 		  rs.next();
 		  int reservationID = rs.getInt(1);
+		  res.setReservationID(reservationID);
 		  
 		  //Calculate amount
 		  int nightlyRate;

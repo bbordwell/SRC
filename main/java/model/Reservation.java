@@ -15,7 +15,15 @@ public class Reservation {
 	private long cardNumber;
 	private String exp;
 	private int customerId;
+	private int reservationID;
 	
+	public void setReservationID(int n) {
+		this.reservationID = n;
+	}
+	
+	public int getReservationID() {
+		return this.reservationID;
+	}
 	
 	public void setCheckIn(String checkIn) {
 		this.checkIn = Date.valueOf(checkIn);
