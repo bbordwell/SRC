@@ -1,0 +1,114 @@
+@charset "UTF-8";
+#container {
+    width: 80%;
+    border-style: solid;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:125px;
+    margin-left: 10%
+}
+
+#additionalAmenitiesContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#additionalAmenities {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#reservationContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#guestInformationContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#guestInformation {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#firstName {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#email {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#lastName {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#phoneNumber {
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#PaymentContainer {
+    width: 80%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#payment {
+    border-style: solid;
+    border-radius: 10px;
+    margin: 0 50%;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#submit {
+    margin-left: 50%;
+}

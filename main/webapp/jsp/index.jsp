@@ -52,8 +52,11 @@
 	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=RoomChoice">Room Choice Page</a>
 	<br>	
-	<%--Link to Room Choice page --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
+	<%--Link to Reservation Summary --%>
+	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a><br>
+	
+	<%--Link to Reservation Confirmation --%>
+	<a href="/Proviso/ProvisoServlet?action=ReservationConfirmation">Reservation confirmation Page</a>
 	
 	<br>
 	<h4>example usage of ReservationSummaryObject</h4>

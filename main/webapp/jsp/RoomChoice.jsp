@@ -21,7 +21,7 @@
 	<input type='hidden' name='location' id='location'>
 	<input type='hidden' name='guests' id='guests'>
 	<input type='hidden' name='roomType' id='roomType'>
-	<input type="hidden" name="action" value="ReservationSummary"/>
+	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
 <main>
 
