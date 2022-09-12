@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
 <%@ page import="model.Customer" %>
+<jsp:useBean id="reservation" scope="session" class="model.Reservation"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +11,17 @@
 	<title>reservation confirmation</title>
     <style><%@include file="../WEB-INF/css/ReservationConfirmation.css"%></style>
     <%
+    	//get customer information
     	String user = (String)session.getAttribute("user");
     	Customer customer = dataManager.getCustomer(user);
+    	
+    	//store room selection data
+    	String location = (String) request.getParameter("location");
+    	reservation.setLocation(location);
+    	String roomType = (String) request.getParameter("roomType");
+    	reservation.setRoomType(roomType);
+    	int guests = Integer.valueOf(request.getParameter("guests"));
+    	reservation.setGuests(guests);
     %>
 </head>
 <body>
@@ -90,8 +100,8 @@
             <div id="PaymentInformation">
                 <label for="NameOnCard">Name on Card:</label>
                 <input type="text" name="NameOnCard" id="">
-                <label for="Expiration">Expiration:</label>
-                <input type="text"><br>
+                <label for="exp">Expiration:</label>
+                <input type="text" name="exp"><br>
                 <label for="CardNumber">Card Number:</label>
                 <input type="text" name="CardNumber" id="">
                 <label for="CVV">CVV:</label>

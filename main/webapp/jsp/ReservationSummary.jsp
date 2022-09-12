@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
 <%@ page import="model.ReservationSummaryObject" %>
+<jsp:useBean id="reservation" scope="session" class="model.Reservation"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,15 +18,23 @@
 
 </head>
 	<%
-	// NEED CHECKOUT DATE
-	// NEED NUMBER OF GUESTS
-	//Must use Datamanager bean, and import model.ReservationSummaryObject (see lines 3 and 4).
-	ReservationSummaryObject myReservation = dataManager.getReservationSummary(1);	//Create the object. Input is the reservation ID you are looking for.
-	//out.println(myReservation.getCheckIn().getDate()); //See date of check-in
-	//out.println(myReservation.getCheckIn().getMonth() + 1); //see month of check-in
-	//out.println(myReservation.getCheckIn().getYear() + 1900); // see year of check-in
-	//out.println(myReservation.getEarnedPoints()); //see earned points
-	//out.println(myReservation.getStayDates()); //Get number of nights
+	//Save data from confirmation
+	String nameOnCard = (String) request.getParameter("NameOnCard");
+    reservation.setNameOnCard(nameOnCard);
+    String wifi = (String) request.getParameter("wifi");
+    reservation.setWifi(wifi);
+    String breakfast = (String) request.getParameter("breakfast");
+    reservation.setWifi(breakfast);
+    String parking = (String) request.getParameter("parking");
+    reservation.setWifi(parking);
+    String cardNumber = (String) request.getParameter("CardNumber");
+    reservation.setCardNumber(cardNumber);
+    String exp = (String) request.getParameter("exp");
+    reservation.setExp(exp);
+    
+	
+	// Read back reservation information
+	ReservationSummaryObject myReservation = dataManager.getReservationSummary(1);
 	%>
 <body>
 

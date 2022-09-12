@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
+<jsp:useBean id="reservation" scope="session" class="model.Reservation"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +14,13 @@
        		}
     	</style>
 <title>Room Choice</title>
+<%
+	//Store checkin and checkout dates in reservation bean
+	String checkin = (String) request.getParameter("checkin");
+	reservation.setCheckIn(checkin);
+	String checkout = (String) request.getParameter("checkout");
+	reservation.setCheckOut(checkout);
+%>
 </head>
 
 <body>

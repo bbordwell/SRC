@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.DataManager;
+import model.Reservation;
 
 /**
  * Servlet implementation class ProvisoServlet
@@ -74,21 +75,6 @@ public class ProvisoServlet extends HttpServlet {
     	    		break;
     	        case "DateSelection":
     	    		url = base + "DateSelection.jsp";
-    	    		
-    	    		/*if(request.getSession().getAttribute("dateSelectionManager") == null) {
-    	    			
-    	    		}*/
-    	    		
-    	    		String dateSelect = request.getParameter("dateSelect");
-    	    		if(dateSelect != null && dateSelect.equals("true")) {
-    	    			String dateOne = request.getParameter("checkin");
-    	    			String dateTwo = request.getParameter("checkout");
-    	    			
-    	    			//url = base + "RoomChoice.jsp";
-    	    			request.setAttribute("checkin", dateOne);
-    	    			request.setAttribute("checkout", dateTwo);
-    	    		}
-    	    		
     	    		break;
     	        case "ReservationLookup":
     	    		url = base + "ReservationLookup.jsp";
@@ -104,6 +90,10 @@ public class ProvisoServlet extends HttpServlet {
     	    		break;
     	        case "RoomChoice":
     	        	url = base + "RoomChoice.jsp";
+    	        	if (request.getSession().getAttribute("reservation") == null) {
+    	        		Reservation reservation = new Reservation();
+    	        		request.getSession().setAttribute("reservation", reservation);
+    	        	}
     	        	break;
     	        case "ReservationSummary":
     	        	url = base + "ReservationSummary.jsp";
