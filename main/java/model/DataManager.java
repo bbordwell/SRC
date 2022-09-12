@@ -120,7 +120,7 @@ public class DataManager {
 			  stmt.setDate(1,myReservation.getCheckOut());
 			  ResultSet rs = stmt.executeQuery();
 			  rs.next();
-			  myReservation.setStayDays(rs.getInt(1));
+			  myReservation.setNumberOfNights(rs.getInt(1));
 			  return myReservation;
 		 
 	  }

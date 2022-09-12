@@ -35,7 +35,7 @@ main {
 	overflow-y: auto;
 }
 
-.Standard-King{
+.Double{
 	display: flex;
 	align-items: center;
 	border: 1px solid;
@@ -43,25 +43,36 @@ main {
 	margin-bottom: 20px;
 }
 
-.Standard-Double-Queen {
+.Queen{
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	border: 1px solid;
 	border-radius: 12px;
 	margin-bottom: 20px;
 }
 
-.Superior-King {
+.Double-Queen {
 	display: flex;
 	align-items: center;
 	border: 1px solid;
 	border-radius: 12px;
+	margin-bottom: 20px;
+}
+
+.King{
+	display: flex;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 12px;
+	margin-bottom: 20px;
 }
 
 .left {
-	width: 40vw;
+	width: 21vw;
 	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 100%;
 	justify-content: center;
 }
 
@@ -69,9 +80,9 @@ main {
 	width: 50vw;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	height: 100%;
 	justify-content: center;
+	align-items: center;
 }
 
 .right {
@@ -83,14 +94,14 @@ main {
 	height: 100%
 }
 
-.top-middle {
+.top-left {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 }
 
-.top-middle h1 {
+.top-left h1 {
 	border: 1px solid;
 	border-radius: 20px;
 	margin-left: 9%;
@@ -98,14 +109,14 @@ main {
 	padding: 5px 30px 5px 30px;
 }
 
-.bottom-middle {
+.bottom-left {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
 	display: flex;
 }
 
-.bottom-middle p{
+.bottom-left p{
 	border: 1px solid;
 	border-radius: 20px;
 	padding: 15px;
@@ -153,16 +164,75 @@ main {
 	color: white
 }
 
-
-
-
-.event-picture {
+.room-picture {
 	padding-top: 15px;
 	padding-bottom: 15px
 }
 
 img {
-	width: 84%;
+	width: 70%;
 	height: auto;
-	border-radius: 20%;
+	border-radius: 10%;
 }
+
+.Locations {
+	
+}
+
+.Guests {
+	padding-bottom: 5%;
+}
+
+select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        border: 1px solid black;
+        padding-right: 45px;
+        text-align: center;
+    }
+     
+    .select {
+        position: relative;
+        display: block;
+        width: 20em;
+        height: 3em;
+        line-height: 3;
+        overflow: hidden;
+    }
+     
+    select {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        color: black;
+        cursor: pointer;
+    }
+     
+    select::-ms-expand {
+        display: none;
+    }
+     
+    .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 1em;
+        background: #33C8CC;
+        pointer-events: none;
+    }
+     
+    .select:hover::after {
+        color: #CC3733;
+        
+    }
+     
+    .select::after {
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }

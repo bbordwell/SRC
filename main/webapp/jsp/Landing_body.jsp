@@ -17,7 +17,7 @@
 			<div class='overlay'>
 				<h1 id='title'>PROVISO</h1>
 					<div class="book-now">
-						<a href="/Proviso/ProvisoServlet?action=DateSelection" id="book-now-button">Book Now</a>
+						<a href="/Proviso/ProvisoServlet?action=locations" id="book-now-button">See Locations</a>
 					</div>
 			</div>
 		</div>
@@ -26,7 +26,7 @@
 					<h2>From Chimney Rock to the downtown streets of Omaha.</h2>
 				<p>We have a few Hotel Proviso buildings in downtown Omaha for an amazing view of downtowns attractions along with activities that are a short distance away such as the Durham Museum, The Heartland Park of America with a massive water fountain that bursts with different colors when the sun sets, a view of the Missouri River and Bob Kerrey Pedestrian Bridge, or the Henry Doorley Zoo with the largest indoor desert in a glass dome. We also have some of our hotels in the western
 				part of Nebraska for amazing views of Chimney Rock in Bayard, sand dunes, or visiting Fort Robinson State Park and Toadstool Geologic Park.</p>
-				<a href="/Proviso/ProvisoServlet?action=locations" id="see-locations-button">See Locations</a>
+				<a href="/Proviso/ProvisoServlet?action=DateSelection" id="see-locations-button">Book Now</a>
 		</div>
 		<div class="red-box"></div>
 		<div class='photos' id='photo-background'>

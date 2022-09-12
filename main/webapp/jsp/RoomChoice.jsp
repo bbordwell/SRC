@@ -12,84 +12,169 @@
           	  font-family: Glacial;
        		}
     	</style>
-<title>Insert title here</title>
-
+<title>Room Choice</title>
 </head>
 
 <body>
 <c:import url="header.jsp" />
+<form id="bookNow">
+	<input type='hidden' name='location' id='location'>
+	<input type='hidden' name='guests' id='guests'>
+	<input type='hidden' name='roomType' id='roomType'>
+	<input type="hidden" name="action" value="ReservationSummary"/>
+</form>
 <main>
+
 	<div class="main-container">
+	
+		<div class="Location">
+			<h2>Location:</h2>
+			<div class="select">
+				<select name="slctLocation" id="slctLocation">
+					<option>Select Location</option>
+					<option value="Omaha">Omaha</option>
+					<option value="Lincoln">Lincoln</option>
+					<option value="Scottsbluff">Scottsbluff</option>
+					<option value="O'Niell">O'Niell</option>
+					<option value="Kearny">Kearney</option>
+					<option value="North Platte">North Platte</option>
+					<option value="South Sioux City">South Sioux City</option>
+					<option value="Bellevue">Bellevue</option>
+				</select>
+			</div>
+		</div>
+		<div class="Guests">
+			<h2>Number of Guests:</h2>
+			<div class="select">
+				<select name="slctGuests" id="slctGuests">
+					<option>1</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</div>
+		
 		<div class='boxes'>
-			<div class='Standard-King'>
+			<div class='Double'>
 				<div class='left'>
-					<img class='event-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/king.jpg">
+					<div class='top-left'>
+						<h1>Double</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Standard King</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>Our modern Standard King room starts with it's big cozy bed. We've made sure to get the softed linens we could get our hands on and doubled down on the fluffiness of the pillows. When your evening winds down, sit back and relax with bubbles and salts in the spa bath. When the morning comes, open our blinds to and smell the coffee while you enjoy the natural light and views of the country.</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/Double.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$99</p>
+						<p>$110.00</p>
 					</div>
 					<div class='bottom-right'>
-						<a href="" >Book Room</a>
+						<a id=bookDouble >Book Room</a>
 					</div>
 				</div>
 			</div>
-			<div class='Standard-Double-Queen'>
+			
+			<div class='Queen'>
 				<div class='left'>
-					<img class='event-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/double_queen.jpg">
+					<div class='top-left'>
+						<h1>Queen</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Standard-Double-Queen</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>You and your guests can rest easy in our spacious Double Queen room. With plenty of closet space, room to work, and a ful bathroom, you won't have to worry about stepping over each others feet when you stay with Proviso. When night comes, you won't have to worry about each others sleep habits with complimentary sleep masks and ear plugs.</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/Queen.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$109</p>
+						<p>$125.00</p>
 					</div>
 					<div class='bottom-right'>
-						<a href="" >Book Room</a>
+						<a id="bookQueen" >Book Room</a>
 					</div>
-				</div>			
+				</div>
 			</div>
-			<div class='Superior-King'>
+			
+			<div class='Double-Queen'>
 				<div class='left'>
-					<img class='event-picture' id='event-picture-sk' alt='event picture' src="${pageContext.request.contextPath}/img/superior_king.jpg">
+					<div class='top-left'>
+						<h1>Double Queen</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
 				</div>
 				<div class='middle'>
-					<div class='top-middle'>
-						<h1>Superior King</h1>
-					</div>
-					<div class='bottom-middle'>
-						<p>Walk in and drop your bags, not your jaw, your bags. Our Superior King room is freshly styled and ready for any occasion. With a full kitchen, living room, and California King, you may just never want to leave, and that's just fine with us - we can bring Nebraska's charm to you!</p>
-					</div>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/double_queen.jpg">
+				
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$119</p>
+						<p>$150.00</p>
 					</div>
 					<div class='bottom-right'>
-						<a href="" >Book Room</a>
+						<a id="bookDoubleQueen" >Book Room</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class='King'>
+				<div class='left'>
+					<div class='top-left'>
+						<h1>King</h1>
+					</div>
+					<div class='bottom-left'>
+					</div>
+				</div>
+				<div class='middle'>
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/King.jpg">
+				</div>
+				<div class='right'>
+					<div class='top-right'>
+						<p>$165.00</p>
+					</div>
+					<div class='bottom-right'>
+						<a id="bookKing" >Book Room</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 </main>
 <footer>
 <jsp:include page="footer.jsp" />
 </footer>
+
+<script>
+	document.getElementById('slctLocation').onchange = function() {
+		document.getElementById('location').value = document.getElementById("slctLocation").value;
+	}
+	document.getElementById('slctGuests').onchange = function() {
+		document.getElementById('guests').value = document.getElementById("slctGuests").value;
+		}
+	document.getElementById('bookDouble').onclick = function() {
+		document.getElementById('roomType').value = "Double";
+		document.getElementById("bookNow").submit();
+		}
+	document.getElementById('bookQueen').onclick = function() {
+		document.getElementById('roomType').value = "Queen";
+		document.getElementById("bookNow").submit();
+		}
+	document.getElementById('bookDoubleQueen').onclick = function() {
+		document.getElementById('roomType').value = "Double Queen";
+		document.getElementById("bookNow").submit();
+		}
+	document.getElementById('bookKing').onclick = function() {
+		document.getElementById('roomType').value = "King";
+		document.getElementById("bookNow").submit();
+		}
+</script>
+
 </body>
 
 </html>
