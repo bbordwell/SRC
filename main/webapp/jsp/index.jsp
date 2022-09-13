@@ -46,7 +46,7 @@
 	<%--Link to landing page --%>
 	<a href="/Proviso?action=LandingPage">Landing Page</a>
 	<br>	
-	<%--Link to Room Choice page --%>
+	<%--Link to Date Selection page --%>
 	<a href="/Proviso?action=DateSelection">Date Selection Page</a>
 	<br>	
 	<%--Link to Room Choice page --%>
@@ -69,7 +69,6 @@
 	<br>
 	<%--Link to Reservation Lookup->Display --%>
 	<a href="/Proviso?action=ReservationDisplay">Reservation Lookup->Display Page</a>
-	
 	<br>
 	<h4>example usage of ReservationSummaryObject</h4>
 	<%
