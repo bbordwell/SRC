@@ -20,26 +20,11 @@
 <c:import url="header.jsp" />
 
 <main>
-
 	<div class="main-container">
 	
-		<div class="main-top">
-			<h1>Reservation Lookup</h1>
-		</div>
-		
-		<div class="main-bottom">
-			<div class="form">
-			<input type="hidden" name="action" value="ReservationDisplay.jsp"/>
-				<label for="reservationID"><b>Reservation ID:</b></label>
-				<input type="text" placeholder="Enter ID" name="reservationID" id="reservationID" required>
-				<div class="button-container">
-					<button type="submit" class="registerbtn">Search</button>
-				</div>
-			</div>
-		</div>
+		<h1>BEGIN BODY MATERIAL HERE - INSIDE THE 'main-container' CLASS </h1>
 		
 	</div>
-	
 </main>
 
 <footer>
@@ -48,4 +33,4 @@
 
 </body>
 
-</html>ß
+</html>
