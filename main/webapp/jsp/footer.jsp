@@ -14,8 +14,8 @@
 <body>
 	<footer class='footer-nav'>
 			<ul>
-				<li id="left"><a href="/Proviso/ProvisoServlet?action=about">About Us</a></li>
-				<li id="right"><a href="/Proviso/ProvisoServlet?action=RewardsProgram">Rewards Program</a></li>
+				<li id="left"><a href="/Proviso?action=about">About Us</a></li>
+				<li id="right"><a href="/Proviso?action=RewardsProgram">Rewards Program</a></li>
 			</ul>
 	</footer>
 </body>

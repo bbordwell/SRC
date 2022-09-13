@@ -12,7 +12,7 @@
 	<h1>Home Page</h1>
 	
 	<%--Example link--%>
-	<a href="/Proviso/ProvisoServlet?action=about">About Us</a>
+	<a href="/Proviso?action=about">About Us</a>
 	
 	<%--Example Button --%>
 	<form>
@@ -21,7 +21,7 @@
 	</form>
 	
 	<%--Page to test inserting data to the DB. --%>
-	<a href="/Proviso/ProvisoServlet?action=DataTest">DBTest</a>
+	<a href="/Proviso?action=DataTest">DBTest</a>
 	
 	<br>
 	<%--If the user is logged in show them a welcome message and a logout button, otherwise show a link to the login page --%>
@@ -36,39 +36,39 @@
 		
 		<%}
 		else {%>
-		<a href="/Proviso/ProvisoServlet?action=LoginTest">Log In</a>
+		<a href="/Proviso?action=LoginTest">Log In</a>
 		<br>
 		<%--Link to Registration page --%>
-		<a href="/Proviso/ProvisoServlet?action=Register">Register</a>
+		<a href="/Proviso?action=Register">Register</a>
 		<%} %>
 	
 	<br>	
 	<%--Link to landing page --%>
-	<a href="/Proviso/ProvisoServlet?action=LandingPage">Landing Page</a>
+	<a href="/Proviso?action=LandingPage">Landing Page</a>
 	<br>	
 	<%--Link to Room Choice page --%>
-	<a href="/Proviso/ProvisoServlet?action=DateSelection">Date Selection Page</a>
+	<a href="/Proviso?action=DateSelection">Date Selection Page</a>
 	<br>	
 	<%--Link to Room Choice page --%>
-	<a href="/Proviso/ProvisoServlet?action=RoomChoice">Room Choice Page</a>
+	<a href="/Proviso?action=RoomChoice">Room Choice Page</a>
 	<br>	
 	<%--Link to Reservation Summary --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
+	<a href="/Proviso?action=ReservationSummary">Reservation Summary Page</a>
 	<br>
 	<%--Link to Reservation Confirmation --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationConfirmation">Reservation confirmation Page</a>
+	<a href="/Proviso?action=ReservationConfirmation">Reservation confirmation Page</a>
 	<br>
 	<%--Link to Reservation Summary --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
+	<a href="/Proviso?action=ReservationSummary">Reservation Summary Page</a>
 	<br>
 	<%--Link to Reservation Confirmation --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationConfirmation">Reservation confirmation Page</a>
+	<a href="/Proviso?action=ReservationConfirmation">Reservation confirmation Page</a>
 	<br>
 	<%--Link to Reservation Lookup --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationLookup">Reservation Lookup Page</a>
+	<a href="/Proviso?action=ReservationLookup">Reservation Lookup Page</a>
 	<br>
 	<%--Link to Reservation Lookup->Display --%>
-	<a href="/Proviso/ProvisoServlet?action=ReservationDisplay">Reservation Lookup->Display Page</a>
+	<a href="/Proviso?action=ReservationDisplay">Reservation Lookup->Display Page</a>
 	
 	<br>
 	<h4>example usage of ReservationSummaryObject</h4>

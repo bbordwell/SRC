@@ -17,7 +17,7 @@
     	<div class="header-content">
 	    	<div class="header-left">
 	    		<div class="logo">
-	    			<a href="/Proviso/ProvisoServlet?action=LandingPage">
+	    			<a href="/Proviso?action=LandingPage">
 	    				<img class='logo-picture' alt='logo' src="${pageContext.request.contextPath}/img/proviso_logo.png">
 	    			</a>
 	        	</div>
@@ -25,9 +25,9 @@
 			<div class="header-middle">
 				<div class=header-nav>
 					<ul>
-	  					<li id="left"><a href="/Proviso/ProvisoServlet?action=DateSelection">Book Now</a></li>
-						<li id="middle"><a href="/Proviso/ProvisoServlet?action=locations">Locations</a></li>
-						<li id="right"><a href="/Proviso/ProvisoServlet?action=ReservationLookup">My Reservations</a></li>
+	  					<li id="left"><a href="/Proviso?action=DateSelection">Book Now</a></li>
+						<li id="middle"><a href="/Proviso?action=locations">Locations</a></li>
+						<li id="right"><a href="/Proviso?action=ReservationLookup">My Reservations</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,11 +36,11 @@
 					<ul>
 						<c:choose>
 						<c:when test="${empty user}">
-	  						<li id="li-left"><a href="/Proviso/ProvisoServlet?action=LoginTest" id="left">Sign In</a></li>
-							<li><a href="/Proviso/ProvisoServlet?action=Register" id="right">Register</a></li>
+	  						<li id="li-left"><a href="/Proviso?action=LoginTest" id="left">Sign In</a></li>
+							<li><a href="/Proviso?action=Register" id="right">Register</a></li>
 						</c:when>
 						<c:otherwise>
-							<li><a href="/Proviso/ProvisoServlet?action=logout" id="right">Sign Out</a></li>
+							<li><a href="/Proviso?action=logout" id="right">Sign Out</a></li>
 						</c:otherwise>
 						</c:choose>
 					</ul>

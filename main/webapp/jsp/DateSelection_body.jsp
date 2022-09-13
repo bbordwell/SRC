@@ -17,7 +17,7 @@
 		<div class="main center">
 			<div class="center-child">
 				<!-- Check in/out dates -->
-				<form action="/Proviso/ProvisoServlet" id="dateSelect">
+				<form action="/Proviso" id="dateSelect">
 					<input type="hidden" id="action" name="action" value="RoomChoice">
 					<label for="checkin">Check-In</label> <input type="date"
 						id="checkin" name="checkin"> <label for="checkout">Check-Out</label>
@@ -49,7 +49,7 @@
 							}
 							out.print("</tr>");
 							}*/
-							//<a href=\"/Proviso/ProvisoServlet?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
+							//<a href=\"/Proviso?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
 
 							Calendar date = Calendar.getInstance();
 							date.set(Calendar.DAY_OF_MONTH, 1);
@@ -98,7 +98,7 @@
 							}
 							out.print("</tr>");
 							}*/
-							//<a href=\"/Proviso/ProvisoServlet?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
+							//<a href=\"/Proviso?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
 
 							date.set(Calendar.MONTH, 9);
 							date.set(Calendar.DAY_OF_MONTH, 1);

@@ -21,7 +21,7 @@
 			<div class="main-right">
 			  	<div class="right-top">
 	   				<h1>Create a Free Account </h1>
-	   				<p>Come join our community! Set up your account. Already have one? <a href="/Proviso/ProvisoServlet?action=LoginTest">Sign In</a></p>
+	   				<p>Come join our community! Set up your account. Already have one? <a href="/Proviso?action=LoginTest">Sign In</a></p>
 	   			</div>
 	   			
 				<div class="right-middle">

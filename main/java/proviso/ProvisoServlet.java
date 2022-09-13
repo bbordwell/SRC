@@ -16,7 +16,7 @@ import model.Reservation;
 /**
  * Servlet implementation class ProvisoServlet
  */
-@WebServlet("/ProvisoServlet")
+@WebServlet("")
 public class ProvisoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

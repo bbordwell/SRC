@@ -64,7 +64,7 @@ function myFunction() {
 		<div class="main-bottom">
   			<div class="register">
   				<br/>
-  				<span>Don't have an account? <a href="/Proviso/ProvisoServlet?action=Register">Create your account now</a></span>
+  				<span>Don't have an account? <a href="/Proviso?action=Register">Create your account now</a></span>
   			</div>
 		</div>
 	</div>
