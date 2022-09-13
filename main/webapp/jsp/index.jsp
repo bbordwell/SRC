@@ -47,11 +47,9 @@
 	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=RoomChoice">Room Choice Page</a>
 	<br>	
-<<<<<<< Updated upstream
 	<%--Link to Room Choice page --%>
 	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
-	
-=======
+	<br>
 	<%--Link to Reservation Summary --%>
 	<a href="/Proviso/ProvisoServlet?action=ReservationSummary">Reservation Summary Page</a>
 	<br>
@@ -63,7 +61,6 @@
 	<br>
 	<%--Link to Reservation Lookup->Display --%>
 	<a href="/Proviso/ProvisoServlet?action=ReservationDisplay">Reservation Lookup->Display Page</a>
->>>>>>> Stashed changes
 	
 	
 </body>
