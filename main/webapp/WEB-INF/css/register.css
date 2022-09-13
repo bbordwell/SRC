@@ -74,6 +74,11 @@ main {
 	margin-bottom: 15px;
 }
 
+a{
+	color: blue;
+	text-decoration: none;
+}
+
 label {
 	width: 130px;
 	text-align: right;
@@ -119,12 +124,25 @@ p{
 	text-align:center;
 }
 button{
+  	background: rgba(0,0,0,0.5);
+  	border: 2px solid #0000;
+  	border-radius: 12px;
+  	border-color: white;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 16px;
+  	cursor: pointer;
 	margin-left:auto;
 	margin-right: auto;
 	width:25;
 	margin-bottom:20px;
 }
-	
+
+button:hover {
+	background: #252525;
+}
 
 h3{
 	float:left;

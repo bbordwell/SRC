@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: auto;
+    margin-top: 125px;
+   
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 60px;
+	height: 100%;
+	justify-content: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.main-top {
+	height:25%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-top-left, .main-top-right {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.main-top-left {
+	justify-content: right;
+	padding-right: 10px;
+}
+
+.main-top-right {
+	justify-content: left;
+	padding-left: 10px;
+}
+
+.main-top p {
+	font-size: 30px;
+	margin: 0;
+	padding-top: 9px;
+}
+
+.main-top h1 {
+	font-size: 40px;
+	margin: 0;
+}
+
+.main-bottom {
+	height: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-bottom h2{
+	text-decoration: underline;
+}
+
+.bottom-left {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.bottom-middle {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.bottom-right {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.Hotel, .stay, .room {
+	border: 1px solid;
+	border-radius: 12px;
+	padding: 3% 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+ul {
+	padding: 0px;
+}
+
+.info {
+	display: flex;
+
+}
+
+.info-template {
+	text-align: right;
+	padding-right: 5px;
+}
+
+.info-insert {
+	text-align: left;
+	padding-left: 5px;
+}
+
+li {
+	list-style: none;
+}
