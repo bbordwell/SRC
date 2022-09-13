@@ -1,9 +1,99 @@
-html {
-	height: 100vh;
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-.container {
-	margin-top: 125px;
-	min-height: 70vh;
-	overflow-y: auto;
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: auto;
+    margin-top: 125px;
+   
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 60px;
+	height: 100%;
+	justify-content: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.main-top {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-top h1 {
+	margin-top: 12vh;
+	font-size: 40px;
+}
+
+.main-bottom {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-bottom {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 7vh;
+}
+
+button {
+	margin-bottom: 25vh;
+  	background: rgba(0,0,0,0.5);
+  	border: 2px solid #0000;
+  	border-radius: 12px;
+  	border-color: white;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	font-size: 16px;
+  	cursor: pointer;
+}
+
+button:hover {
+	background: #252525;
+}
+
+.form {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+}
+
+label {
+	padding-bottom: 15px;
+	font-size: 22px;
+}
+
+input {
+	padding: 7px;
 }
