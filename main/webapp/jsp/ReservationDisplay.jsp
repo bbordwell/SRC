@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="dataManager" scope="application" class="model.DataManager"/>
+<%@ page import="model.ReservationLookup" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,6 +18,12 @@
 
 <body>
 <c:import url="header.jsp" />
+<%
+	ReservationLookup reservation = dataManager.getReservationLookup(Integer.valueOf(request.getParameter("reservationID")));
+	if (!reservation.isValid()) { %>
+	<jsp:forward page="ReservationLookup.jsp"/> <%
+	}
+%>
 
 <main>
 
@@ -29,7 +36,7 @@
 			</div>
 			
 			<div class="main-top-right">
-				<p>#12345</p>
+				<p><%out.print(request.getParameter("reservationID")); %></p>
 			</div>
 			
 		</div>
@@ -38,12 +45,12 @@
 		
 			<div class="bottom-left">
 				<div class="Hotel">
-					<h2>Blue Team's Hotel</h2>
+					<h2><%out.print(reservation.getHotel()); %></h2>
 					<ul class="address">
-						<li>410 North Dearborn Street</li>
-						<li>Chicago, Illinois 60654</li>
+						<li><%out.print(reservation.getAddress()); %></li>
+						<li><%out.print(reservation.getCityStateZip()); %></li>
 						<li>USA</li>
-						<li>3124949301</li>
+						<li><%out.print(reservation.getPhoneNumber()); %></li>
 					</ul>
 				</div>
 			</div>
@@ -63,10 +70,10 @@
 						</div>
 						<div class="info-insert">
 							<ul>
-								<li>Andrew Reeson</li>
-								<li>Thursday, July 28, 2022</li>
-								<li>Sunday, July 31, 2022</li>
-								<li>2</li>
+								<li><%out.print(reservation.getName()); %></li>
+								<li><%out.print(reservation.getCheckIn()); %></li>
+								<li><%out.print(reservation.getCheckOut()); %></li>
+								<li><%out.print(reservation.getGuests()); %></li>
 								<li>1</li>
 							</ul>
 						</div>
@@ -88,10 +95,10 @@
 						</div>
 						<div class="info-insert">
 							<ul>
-								<li>King</li>
-								<li>YES</li>
-								<li>YES</li>
-								<li>YES</li>
+								<li><%out.print(reservation.getRoom()); %></li>
+								<li><%out.print(reservation.getWifi()); %></li>
+								<li><%out.print(reservation.getBreakfast()); %></li>
+								<li><%out.print(reservation.getParking()); %></li>
 							</ul>
 						</div>
 					</div>

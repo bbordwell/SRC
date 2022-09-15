@@ -9,6 +9,7 @@ import model.ReservationSummaryObject;
 import java.sql.PreparedStatement;
 import java.sql.Date;
 import model.Reservation;
+import model.ReservationLookup;
 
 public class DataManager {
 	private String dbURL = "";
@@ -125,6 +126,26 @@ public class DataManager {
 			  myReservation.setNumberOfNights(rs.getInt(1));
 			  return myReservation;
 		 
+	  }
+	  
+	  public ReservationLookup getReservationLookup(int reservationID) {
+		  try {
+			  PreparedStatement stmt;
+			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
+			  stmt.setInt(1, reservationID);
+			  System.out.println(stmt);
+			  ResultSet data = stmt.executeQuery();
+			  stmt = this.conn.prepareStatement("SELECT feature_id FROM possessed_features WHERE reservation_id = ?");
+			  stmt.setInt(1, reservationID);
+			  System.out.println(stmt);
+			  ResultSet features = stmt.executeQuery();
+			  ReservationLookup myReservation = new ReservationLookup(data,features);
+		  return myReservation;
+		  }
+		  catch (SQLException e){
+			 ReservationLookup myReservation = new ReservationLookup();
+			 return myReservation;
+		  }
 	  }
 	  
 	  public Customer getCustomer(String email) throws SQLException{
