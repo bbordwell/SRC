@@ -78,7 +78,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$110.00</p>
+						<p>$115.50</p>
 					</div>
 					<div class='bottom-right'>
 						<a id=bookDouble >Book Room</a>
@@ -99,7 +99,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$125.00</p>
+						<p>$131.25</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookQueen" >Book Room</a>
@@ -121,7 +121,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$150.00</p>
+						<p>$157.50</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookDoubleQueen" >Book Room</a>
@@ -142,7 +142,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$165.00</p>
+						<p>$173.25.00</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookKing" >Book Room</a>

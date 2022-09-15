@@ -214,10 +214,10 @@ public class DataManager {
 		  //Calculate amount
 		  int nightlyRate;
 		  switch (res.getRoomType()) {
-		  case "Double": nightlyRate = 11000; break;
-		  case "Queen":	nightlyRate = 12500; break;
-		  case "Double Queen": nightlyRate = 15000; break;
-		  case "King": nightlyRate = 16500; break;
+		  case "Double": nightlyRate = 11550; break;
+		  case "Queen":	nightlyRate = 13125; break;
+		  case "Double Queen": nightlyRate = 15750; break;
+		  case "King": nightlyRate = 17325; break;
 		  default: 
 			  System.out.println("Error getting room type nightly rate. Input was " + res.getRoomType());
 			  nightlyRate = 0;
