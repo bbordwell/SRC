@@ -27,7 +27,7 @@
 <c:import url="header.jsp" />
 <form id="bookNow">
 	<input type='hidden' name='location' id='location'>
-	<input type='hidden' name='guests' id='guests'>
+	<input type='hidden' name='guests' id='guests' value='1'> <%--Set default value so it is not blank if onChange is never triggered --%>
 	<input type='hidden' name='roomType' id='roomType'>
 	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
