@@ -4,6 +4,7 @@
 <html>
 <head>
     <style><%@include file="../WEB-INF/css/landing.css"%></style>
+    <style><%@include file="../WEB-INF/css/Main.css"%></style>
     <style>
         * {
             font-family: Glacial;
