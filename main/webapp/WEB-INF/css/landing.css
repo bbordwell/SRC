@@ -1,32 +1,9 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: Glacial;
-    src: url(font/glacial-indifference.regular.otf);
-}
-
-@font-face {
-    font-family: GlacialBold;
-    src: url(font/glacial-indifference.bold.otf);
-}
-
-html {
-}
-
-body {
-	margin: 0;
-	background-color: #fbfbfb;
-}
-
 .container {
     width:100%;
     min-width:500px;
     box-sizing:border-box;
-}
-
-h1 {
-	margin: 0;
-	font-size: 40px;
 }
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ first section (top) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
@@ -47,7 +24,6 @@ h1 {
 }
 
 #title {
-	padding-top: 125px;
 	padding-bottom: 150px;
 	color: white;
 	font-size: 100px;
