@@ -226,7 +226,7 @@ public class DataManager {
 			  nightlyRate += 899;
 		  }
 		  if (res.getParking()) {
-			  nightlyRate += 1299;
+			  nightlyRate += 1999;
 		  }
 		  int amount = nightlyRate * nights;
 		  if (res.getWifi()) {

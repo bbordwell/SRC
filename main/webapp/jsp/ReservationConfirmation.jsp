@@ -23,6 +23,12 @@
     	int guests = Integer.valueOf(request.getParameter("guests"));
     	reservation.setGuests(guests);
     	reservation.setCustomerId(customer.getCustomerID());
+    	String wifi = (String) request.getParameter("wifi");
+        reservation.setWifi(wifi);
+        String breakfast = (String) request.getParameter("breakfast");
+        reservation.setBreakfast(breakfast);
+        String parking = (String) request.getParameter("parking");
+        reservation.setParking(parking);
     %>
 </head>
 <body>

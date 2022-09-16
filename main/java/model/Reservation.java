@@ -16,6 +16,7 @@ public class Reservation {
 	private String exp;
 	private int customerId;
 	private int reservationID;
+	private int holidays;
 	
 	public void setReservationID(int n) {
 		this.reservationID = n;

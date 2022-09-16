@@ -29,6 +29,9 @@
 	<input type='hidden' name='location' id='location'>
 	<input type='hidden' name='guests' id='guests' value='1'> <%--Set default value so it is not blank if onChange is never triggered --%>
 	<input type='hidden' name='roomType' id='roomType'>
+	<input type='hidden' name='wifi' id='wifi'>
+	<input type='hidden' name='breakfast' id='breakfast'>
+	<input type='hidden' name='parking' id='parking'>
 	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
 	<div class="top-options">
@@ -67,20 +70,20 @@
 			<div id="additionalAmenitiesContainer">
 				<table>
 					<tr>
-						<td id="table-left"><label for="wifi">WiFi</label></td>
-		                <td id="table-center"><input type="checkbox" name="wifi" id="wifi"></td>
+						<td id="table-left"><label for="selectWifi">WiFi</label></td>
+		                <td id="table-center"><input type="checkbox" name="selectWifi" id="selectWifi"></td>
 		                <td id="table-right"><a>$12.99</a></td>
 		                <td>flat fee</td>
 					</tr>
 					<tr>
-						<td id="table-left"><label for="breakfast">Breakfast</label></td>
-		                <td id="table-center"><input type="checkbox" name="breakfast" id="breakfast"></td>
+						<td id="table-left"><label for="selectBreakfast">Breakfast</label></td>
+		                <td id="table-center"><input type="checkbox" name="selectBreakfast" id="selectBreakfast"></td>
 		                <td id="table-right"><a>$&nbsp;8.99</a></td>
 		                <td>per night</td>
 					</tr>
 					<tr>
-						<td id="table-left"><label for="parking">Parking</label></td>
-		                <td id="table-center"><input type="checkbox" name="parking" id="parking"></td>
+						<td id="table-left"><label for="selectParking">Parking</label></td>
+		                <td id="table-center"><input type="checkbox" name="selectParking" id="selectParking"></td>
 		                <td id="table-right"><a>$19.99</a></td>
 		                <td>per night</td>
 					</tr>
@@ -187,12 +190,26 @@
 </footer>
 
 <script>
+	document.getElementById('selectBreakfast').onchange = function() {
+		document.getElementById('breakfast').value = document.getElementById("selectBreakfast").value;
+	}
+	
+	document.getElementById('selectParking').onchange = function() {
+		document.getElementById('parking').value = document.getElementById("selectParking").value;
+	}
+	
+	document.getElementById('selectWifi').onchange = function() {
+		document.getElementById('wifi').value = document.getElementById("selectWifi").value;
+	}
+	
 	document.getElementById('slctLocation').onchange = function() {
 		document.getElementById('location').value = document.getElementById("slctLocation").value;
 	}
+	
 	document.getElementById('slctGuests').onchange = function() {
 		document.getElementById('guests').value = document.getElementById("slctGuests").value;
 		}
+	
 	document.getElementById('bookDouble').onclick = function() {
 		if (slctLocation.value == "#") {
 			 document.getElementById("hidden1").style.display = 'inline';
@@ -201,6 +218,7 @@
 			document.getElementById("bookNow").submit();
 		}
 	}
+	
 	document.getElementById('bookQueen').onclick = function() {
 		if (slctLocation.value == "#") {
 			document.getElementById("hidden2").style.display = 'inline';
@@ -209,6 +227,7 @@
 			document.getElementById("bookNow").submit();
 		}
 	}
+	
 	document.getElementById('bookDoubleQueen').onclick = function() {
 		if (slctLocation.value == "#") {
 			document.getElementById("hidden3").style.display = 'inline';
@@ -217,6 +236,7 @@
 			document.getElementById("bookNow").submit();
 		}
 	}
+	
 	document.getElementById('bookKing').onclick = function() {
 		if (slctLocation.value == "#") {
 			document.getElementById("hidden4").style.display = 'inline';
