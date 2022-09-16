@@ -100,13 +100,13 @@
             <div id="payment">Payment</div><br>
             <div id="PaymentInformation">
                 <label for="NameOnCard">Name on Card:</label>
-                <input type="text" name="NameOnCard" id="">
+                <input type="text" name="NameOnCard" id="" required>
                 <label for="exp">Expiration:</label>
-                <input type="text" name="exp"><br>
+                <input type="text" name="exp" minlength='4' maxlength='4' required><br>
                 <label for="CardNumber">Card Number:</label>
-                <input type="text" name="CardNumber" id="">
+                <input type="text" name="CardNumber" id="" required>
                 <label for="CVV">CVV:</label>
-                <input type="text">
+                <input type="text" required>
                 <button type="submit" id="submit">Complete Reservation</button>
             </div>
        </div>

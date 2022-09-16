@@ -27,7 +27,7 @@
 <c:import url="header.jsp" />
 <form id="bookNow">
 	<input type='hidden' name='location' id='location'>
-	<input type='hidden' name='guests' id='guests'>
+	<input type='hidden' name='guests' id='guests' value='1'> <%--Set default value so it is not blank if onChange is never triggered --%>
 	<input type='hidden' name='roomType' id='roomType'>
 	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
@@ -78,7 +78,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$110.00</p>
+						<p>$115.50</p>
 					</div>
 					<div class='bottom-right'>
 						<a id=bookDouble >Book Room</a>
@@ -99,7 +99,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$125.00</p>
+						<p>$131.25</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookQueen" >Book Room</a>
@@ -121,7 +121,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$150.00</p>
+						<p>$157.50</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookDoubleQueen" >Book Room</a>
@@ -142,7 +142,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$165.00</p>
+						<p>$173.25</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookKing" >Book Room</a>

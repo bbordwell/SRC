@@ -9,6 +9,7 @@ import model.ReservationSummaryObject;
 import java.sql.PreparedStatement;
 import java.sql.Date;
 import model.Reservation;
+import model.ReservationLookup;
 
 public class DataManager {
 	private String dbURL = "";
@@ -127,6 +128,26 @@ public class DataManager {
 		 
 	  }
 	  
+	  public ReservationLookup getReservationLookup(int reservationID) {
+		  try {
+			  PreparedStatement stmt;
+			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
+			  stmt.setInt(1, reservationID);
+			  System.out.println(stmt);
+			  ResultSet data = stmt.executeQuery();
+			  stmt = this.conn.prepareStatement("SELECT feature_id FROM possessed_features WHERE reservation_id = ?");
+			  stmt.setInt(1, reservationID);
+			  System.out.println(stmt);
+			  ResultSet features = stmt.executeQuery();
+			  ReservationLookup myReservation = new ReservationLookup(data,features);
+		  return myReservation;
+		  }
+		  catch (SQLException e){
+			 ReservationLookup myReservation = new ReservationLookup();
+			 return myReservation;
+		  }
+	  }
+	  
 	  public Customer getCustomer(String email) throws SQLException{
 		  PreparedStatement stmt;
 		  stmt = this.conn.prepareStatement("SELECT * FROM customers WHERE email = ?");
@@ -193,10 +214,10 @@ public class DataManager {
 		  //Calculate amount
 		  int nightlyRate;
 		  switch (res.getRoomType()) {
-		  case "Double": nightlyRate = 11000; break;
-		  case "Queen":	nightlyRate = 12500; break;
-		  case "Double Queen": nightlyRate = 15000; break;
-		  case "King": nightlyRate = 16500; break;
+		  case "Double": nightlyRate = 11550; break;
+		  case "Queen":	nightlyRate = 13125; break;
+		  case "Double Queen": nightlyRate = 15750; break;
+		  case "King": nightlyRate = 17325; break;
 		  default: 
 			  System.out.println("Error getting room type nightly rate. Input was " + res.getRoomType());
 			  nightlyRate = 0;

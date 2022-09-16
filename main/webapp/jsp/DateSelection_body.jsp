@@ -20,8 +20,8 @@
 				<form action="/Proviso" id="dateSelect">
 					<input type="hidden" id="action" name="action" value="RoomChoice">
 					<label for="checkin">Check-In</label> <input type="date"
-						id="checkin" name="checkin"> <label for="checkout">Check-Out</label>
-					<input type="date" id="checkout" name="checkout">
+						id="checkin" name="checkin" required> <label for="checkout">Check-Out</label>
+					<input type="date" id="checkout" name="checkout" required>
 				</form>
 			</div>
 			<div>

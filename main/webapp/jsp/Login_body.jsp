@@ -42,7 +42,7 @@ function myFunction() {
 			    			
 							<div class="val">
 					    		<label for="psw"><b>Password</b></label>
-					    		<input type="password" placeholder="Enter Password" value="FakePSW" id="myInput" name="password" required>
+					    		<input type="password" placeholder="Enter Password" id="myInput" name="password" required>
 					    		<input type="checkbox" checked="checked" name="remember"> Remember me
 			    			</div>
 			    				
