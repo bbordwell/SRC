@@ -5,6 +5,7 @@
 <html>
 <head>
 <title>Insert title here</title>
+<style><%@include file="../WEB-INF/css/Main.css"%></style>
 <style><%@include file="../WEB-INF/css/DateSelection.css"%></style>
 <style>
 * {
@@ -14,6 +15,7 @@
 </head>
 <body>
 	<div class="container">
+		<br/>
 		<div class="main center">
 			<div class="center-child">
 				<!-- Check in/out dates -->
@@ -27,7 +29,7 @@
 			<div>
 				<div class="center">
 					
-					<div>
+					<div id="month1">
 						<div>September</div>
 						<table>
 							<tr>
@@ -116,7 +118,7 @@
 									out.print("</tr>");
 
 									if (day <= max) {
-								out.print("<tr>");
+										out.print("<tr>");
 									}
 								}
 								column++;
@@ -129,7 +131,36 @@
 			</div>
 			<input type="submit" id="submit" type="submit" form="dateSelect">
 		</div>
-
+		<br/>
 	</div>
+	
+	<script>
+		function createCalendar(month) {
+			var calendar = "<table>";
+			var column = 1;
+			
+			calendar += "<tr>";
+			for (var space = 1; space < column; space++) {
+				calendar += "<td class=\"td-invisable\"></td>";
+			}
+			var max = 31;
+			for(var day = 1; day <= max; day++) {
+				calendar += ("<td>" + day + "</td>");
+				
+				if(column % 7 == 0) {
+					calendar += "</tr>";
+					
+					if(day <= max) {
+						calendar += "<tr>";
+					}
+				}
+			}
+			calendar += "</table>";
+			
+			return calendar;
+		}
+		document.getElementById("month1").innerHTML = "<div>September</div>" + createCalendar(0);
+	</script>
+	
 </body>
 </html>
