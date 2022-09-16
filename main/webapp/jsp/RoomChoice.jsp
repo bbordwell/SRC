@@ -31,39 +31,65 @@
 	<input type='hidden' name='roomType' id='roomType'>
 	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
+	<div class="top-options">
+		<div id="left-column">
+			<div class="Location">
+				<h2>Location:</h2>
+				<div class="select">
+					<select name="slctLocation" id="slctLocation">
+						<option disabled hidden selected value="#">Select Location</option>
+						<option value="Omaha">Omaha</option>
+						<option value="Lincoln">Lincoln</option>
+						<option value="Scottsbluff">Scottsbluff</option>
+						<option value="O'Niell">O'Niell</option>
+						<option value="Kearny">Kearney</option>
+						<option value="North Platte">North Platte</option>
+						<option value="South Sioux City">South Sioux City</option>
+						<option value="Bellevue">Bellevue</option>
+					</select>
+				</div>
+			</div>
+			<div class="Guests">
+				<h2>Number of Guests:</h2>
+				<div class="select">
+					<select name="slctGuests" id="slctGuests">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div>
+			<h2>Additional Amenities:</h2>
+			<div id="additionalAmenitiesContainer">
+				<table>
+					<tr>
+						<td id="table-left"><label for="wifi">WiFi</label></td>
+		                <td id="table-center"><input type="checkbox" name="wifi" id="wifi"></td>
+		                <td id="table-right"><a>$12.99</a></td>
+		                <td>flat fee</td>
+					</tr>
+					<tr>
+						<td id="table-left"><label for="breakfast">Breakfast</label></td>
+		                <td id="table-center"><input type="checkbox" name="breakfast" id="breakfast"></td>
+		                <td id="table-right"><a>$&nbsp;8.99</a></td>
+		                <td>per night</td>
+					</tr>
+					<tr>
+						<td id="table-left"><label for="parking">Parking</label></td>
+		                <td id="table-center"><input type="checkbox" name="parking" id="parking"></td>
+		                <td id="table-right"><a>$19.99</a></td>
+		                <td>per night</td>
+					</tr>
+				</table>
+	       </div>
+       </div>
+	</div>
 <main>
-
 	<div class="main-container">
-	
-		<div class="Location">
-			<h2>Location:</h2>
-			<div class="select">
-				<select name="slctLocation" id="slctLocation">
-					<option disabled hidden selected value="#">Select Location</option>
-					<option value="Omaha">Omaha</option>
-					<option value="Lincoln">Lincoln</option>
-					<option value="Scottsbluff">Scottsbluff</option>
-					<option value="O'Niell">O'Niell</option>
-					<option value="Kearny">Kearney</option>
-					<option value="North Platte">North Platte</option>
-					<option value="South Sioux City">South Sioux City</option>
-					<option value="Bellevue">Bellevue</option>
-				</select>
-			</div>
-		</div>
-		<div class="Guests">
-			<h2>Number of Guests:</h2>
-			<div class="select">
-				<select name="slctGuests" id="slctGuests">
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-				</select>
-			</div>
-		</div>
-		
 		<div class='boxes'>
 			<div class='Double'>
 				<div class='left'>
@@ -83,6 +109,7 @@
 					<div class='bottom-right'>
 						<a id=bookDouble>Book Room</a>
 					</div>
+					<div id="hidden1">Please select a valid location</div>
 				</div>
 			</div>
 			
@@ -104,6 +131,7 @@
 					<div class='bottom-right'>
 						<a id="bookQueen" >Book Room</a>
 					</div>
+					<div id="hidden2">Please select a valid location</div>
 				</div>
 			</div>
 			
@@ -117,7 +145,6 @@
 				</div>
 				<div class='middle'>
 					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/double_queen.jpg">
-				
 				</div>
 				<div class='right'>
 					<div class='top-right'>
@@ -126,6 +153,7 @@
 					<div class='bottom-right'>
 						<a id="bookDoubleQueen" >Book Room</a>
 					</div>
+					<div id="hidden3">Please select a valid location</div>
 				</div>
 			</div>
 			
@@ -147,6 +175,7 @@
 					<div class='bottom-right'>
 						<a id="bookKing" >Book Room</a>
 					</div>
+					<div id="hidden4">Please select a valid location</div>
 				</div>
 			</div>
 		</div>
@@ -166,7 +195,7 @@
 		}
 	document.getElementById('bookDouble').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please select a valid location.");
+			 document.getElementById("hidden1").style.display = 'inline';
 		} else {
 			document.getElementById('roomType').value = "Double";
 			document.getElementById("bookNow").submit();
@@ -174,7 +203,7 @@
 	}
 	document.getElementById('bookQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please select a valid location.");
+			document.getElementById("hidden2").style.display = 'inline';
 		} else {
 			document.getElementById('roomType').value = "Queen";
 			document.getElementById("bookNow").submit();
@@ -182,7 +211,7 @@
 	}
 	document.getElementById('bookDoubleQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please select a valid location.");
+			document.getElementById("hidden3").style.display = 'inline';
 		} else {
 			document.getElementById('roomType').value = "Double Queen";
 			document.getElementById("bookNow").submit();
@@ -190,7 +219,7 @@
 	}
 	document.getElementById('bookKing').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please select a valid location.");
+			document.getElementById("hidden4").style.display = 'inline';
 		} else {
 			document.getElementById('roomType').value = "King";
 			document.getElementById("bookNow").submit();
