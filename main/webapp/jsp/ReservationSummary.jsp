@@ -75,6 +75,8 @@
 				<p>
 				<% 
 				out.println(myReservation.getStayDatesString());
+				out.println("<br/><br/>");
+				out.println("Proviso " + reservation.getLocation());
 				%> 
 				</p>
 			</div>
