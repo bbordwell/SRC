@@ -13,8 +13,6 @@ body {
 
 main {
     flex: auto;
-    margin-top: 125px;
-   
 }
 
 .main-container {
@@ -176,10 +174,6 @@ img {
 	border-radius: 10%;
 }
 
-.Locations {
-	
-}
-
 .Guests {
 	padding-bottom: 5%;
 }
@@ -237,3 +231,38 @@ select {
         -o-transition: .25s all ease;
         transition: .25s all ease;
     }
+    
+.top-options {
+	margin-top: 130px;
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#additionalAmenitiesContainer {
+    width: 100%;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+table {
+	width: 80%;
+	margin: 45px 5% 45px 14%;
+}
+
+#table-left {
+	text-align: left;
+}
+
+#table-center, #table-right {
+	text-align: right;
+}
+
+#hidden1, #hidden2, #hidden3, #hidden4 {
+    color: red;
+    display: none;
+    padding-bottom: 20px;
+    margin-top: -39px;
+}
