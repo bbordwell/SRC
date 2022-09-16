@@ -146,5 +146,25 @@ public class Reservation {
 		return this.customerId;
 	}
 	
+	public int getNightlyRate() {
+		int nightlyRate;
+		  switch (this.getRoomType()) {
+		  case "Double": nightlyRate = 11550; break;
+		  case "Queen":	nightlyRate = 13125; break;
+		  case "Double Queen": nightlyRate = 15750; break;
+		  case "King": nightlyRate = 17325; break;
+		  default: 
+			  System.out.println("Error getting room type nightly rate. Input was " + this.getRoomType());
+			  nightlyRate = 0;
+		  }
+		  if (this.getBreakfast()) {
+			  nightlyRate += 899;
+		  }
+		  if (this.getParking()) {
+			  nightlyRate += 1999;
+		  }
+		 return nightlyRate;
+	}
+	
 	
 }

@@ -68,15 +68,24 @@
        <table id="cost">
             <tr>
                 <td id="label">Subtotal</td>
-                <td id="money">$</td>
+                <%
+                	double subtotal = 0.0;
+                	if (reservation.getWifi()) {subtotal = 12.99;}
+                	subtotal += dataManager.getNumberOfNights(reservation) * reservation.getNightlyRate() / 100;
+                %>
+                <td id="money">$<%out.print(String.format("%.02f",subtotal)); %></td>
             </tr>
             <tr>
                 <td id="label">Tax</td>
-                <td id="money">$</td>
+                <%
+                	double tax = 0 * subtotal;
+                %>
+                <td id="money">$<%out.print(String.format("%.02f",tax)); %></td>
             </tr>
             <tr>
                 <td id="label">Total</td>
-                <td id="money">$</td>
+                <%double total = subtotal + tax; %>
+                <td id="money">$<%out.print(String.format("%.02f",total)); %></td>
             </tr>
         </table>
        </div>
