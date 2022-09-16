@@ -39,7 +39,7 @@
 			<h2>Location:</h2>
 			<div class="select">
 				<select name="slctLocation" id="slctLocation">
-					<option>Select Location</option>
+					<option disabled hidden selected value="#">Select Location</option>
 					<option value="Omaha">Omaha</option>
 					<option value="Lincoln">Lincoln</option>
 					<option value="Scottsbluff">Scottsbluff</option>
@@ -81,7 +81,7 @@
 						<p>$115.50</p>
 					</div>
 					<div class='bottom-right'>
-						<a id=bookDouble >Book Room</a>
+						<a id=bookDouble>Book Room</a>
 					</div>
 				</div>
 			</div>
@@ -165,21 +165,37 @@
 		document.getElementById('guests').value = document.getElementById("slctGuests").value;
 		}
 	document.getElementById('bookDouble').onclick = function() {
-		document.getElementById('roomType').value = "Double";
-		document.getElementById("bookNow").submit();
+		if (slctLocation.value == "#") {
+			alert("Please Select a valid location.");
+		} else {
+			document.getElementById('roomType').value = "Double";
+			document.getElementById("bookNow").submit();
 		}
+	}
 	document.getElementById('bookQueen').onclick = function() {
-		document.getElementById('roomType').value = "Queen";
-		document.getElementById("bookNow").submit();
+		if (slctLocation.value == "#") {
+			alert("Please Select a valid location.");
+		} else {
+			document.getElementById('roomType').value = "Queen";
+			document.getElementById("bookNow").submit();
 		}
+	}
 	document.getElementById('bookDoubleQueen').onclick = function() {
-		document.getElementById('roomType').value = "Double Queen";
-		document.getElementById("bookNow").submit();
+		if (slctLocation.value == "#") {
+			alert("Please Select a valid location.");
+		} else {
+			document.getElementById('roomType').value = "Double Queen";
+			document.getElementById("bookNow").submit();
 		}
+	}
 	document.getElementById('bookKing').onclick = function() {
-		document.getElementById('roomType').value = "King";
-		document.getElementById("bookNow").submit();
+		if (slctLocation.value == "#") {
+			alert("Please Select a valid location.");
+		} else {
+			document.getElementById('roomType').value = "King";
+			document.getElementById("bookNow").submit();
 		}
+	}
 </script>
 
 </body>
