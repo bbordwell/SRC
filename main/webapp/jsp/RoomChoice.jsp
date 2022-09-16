@@ -166,7 +166,7 @@
 		}
 	document.getElementById('bookDouble').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please Select a valid location.");
+			alert("Please select a valid location.");
 		} else {
 			document.getElementById('roomType').value = "Double";
 			document.getElementById("bookNow").submit();
@@ -174,7 +174,7 @@
 	}
 	document.getElementById('bookQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please Select a valid location.");
+			alert("Please select a valid location.");
 		} else {
 			document.getElementById('roomType').value = "Queen";
 			document.getElementById("bookNow").submit();
@@ -182,7 +182,7 @@
 	}
 	document.getElementById('bookDoubleQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please Select a valid location.");
+			alert("Please select a valid location.");
 		} else {
 			document.getElementById('roomType').value = "Double Queen";
 			document.getElementById("bookNow").submit();
@@ -190,7 +190,7 @@
 	}
 	document.getElementById('bookKing').onclick = function() {
 		if (slctLocation.value == "#") {
-			alert("Please Select a valid location.");
+			alert("Please select a valid location.");
 		} else {
 			document.getElementById('roomType').value = "King";
 			document.getElementById("bookNow").submit();
