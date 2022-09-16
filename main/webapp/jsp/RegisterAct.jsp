@@ -55,14 +55,14 @@
 							    <label for="phone"><b>Confirm Phone</b></label>
 							    <input type="tel" placeholder="Confirm Phone" name="phone" id="phone" required>
 						    </div>
-				    </form>
+				    
 				</div>
 				
 			    <div class="right-bottom">
 			    	<p>by submitting the form you agree to our <a href="#">Terms of service</a>.</p>
     				<button type="submit" class="registerbtn">Join</button>
    				</div>
-   				
+   				</form>
 			</div>
 		</div>
 	</main>

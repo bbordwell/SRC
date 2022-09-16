@@ -142,7 +142,7 @@
 				</div>
 				<div class='right'>
 					<div class='top-right'>
-						<p>$173.25.00</p>
+						<p>$173.25</p>
 					</div>
 					<div class='bottom-right'>
 						<a id="bookKing" >Book Room</a>
