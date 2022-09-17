@@ -36,65 +36,67 @@
 	<input type='hidden' name='parking' id='parking'>
 	<input type="hidden" name="action" value="ReservationConfirmation"/>
 </form>
-	<div class="top-options">
-		<div id="left-column">
-			<div class="Location">
-				<h2>Location:</h2>
-				<div class="select">
-					<select name="slctLocation" id="slctLocation">
-						<option disabled hidden selected value="#">Select Location</option>
-						<option value="Omaha">Omaha</option>
-						<option value="Lincoln">Lincoln</option>
-						<option value="Scottsbluff">Scottsbluff</option>
-						<option value="O'Niell">O'Niell</option>
-						<option value="Kearny">Kearney</option>
-						<option value="North Platte">North Platte</option>
-						<option value="South Sioux City">South Sioux City</option>
-						<option value="Bellevue">Bellevue</option>
-					</select>
-				</div>
-			</div>
-			<div class="Guests">
-				<h2>Number of Guests:</h2>
-				<div class="select">
-					<select name="slctGuests" id="slctGuests">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<div>
-			<h2>Additional Amenities:</h2>
-			<div id="additionalAmenitiesContainer">
-				<table>
-					<tr>
-						<td id="table-left"><label for="selectWifi">WiFi</label></td>
-		                <td id="table-center"><input type="checkbox" name="selectWifi" id="selectWifi"></td>
-		                <td id="table-right"><a>$12.99</a></td>
-		                <td>flat fee</td>
-					</tr>
-					<tr>
-						<td id="table-left"><label for="selectBreakfast">Breakfast</label></td>
-		                <td id="table-center"><input type="checkbox" name="selectBreakfast" id="selectBreakfast"></td>
-		                <td id="table-right"><a>$&nbsp;8.99</a></td>
-		                <td>per night</td>
-					</tr>
-					<tr>
-						<td id="table-left"><label for="selectParking">Parking</label></td>
-		                <td id="table-center"><input type="checkbox" name="selectParking" id="selectParking"></td>
-		                <td id="table-right"><a>$19.99</a></td>
-		                <td>per night</td>
-					</tr>
-				</table>
-	       </div>
-       </div>
-	</div>
+
 <main>
 	<div class="main-container">
+		<div class="top-options">
+			<div id="left-column">
+				<div class="Location">
+					<h2>Location:</h2>
+					<div class="select">
+						<select name="slctLocation" id="slctLocation">
+							<option disabled hidden selected value="#">Select Location</option>
+							<option value="Omaha">Omaha</option>
+							<option value="Lincoln">Lincoln</option>
+							<option value="Scottsbluff">Scottsbluff</option>
+							<option value="O'Niell">O'Niell</option>
+							<option value="Kearny">Kearney</option>
+							<option value="North Platte">North Platte</option>
+							<option value="South Sioux City">South Sioux City</option>
+							<option value="Bellevue">Bellevue</option>
+						</select>
+					</div>
+				</div>
+				<div class="Guests">
+					<h2>Number of Guests:</h2>
+					<div class="select">
+						<select name="slctGuests" id="slctGuests">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="right-column">
+				<h2>Additional Amenities:</h2>
+				<div id="additionalAmenitiesContainer">
+					<table>
+						<tr>
+							<td id="table-left"><label for="selectWifi">WiFi</label></td>
+			                <td id="table-center"><input type="checkbox" name="selectWifi" id="selectWifi"></td>
+			                <td id="table-right"><a>$12.99</a></td>
+			                <td>flat fee</td>
+						</tr>
+						<tr>
+							<td id="table-left"><label for="selectBreakfast">Breakfast</label></td>
+			                <td id="table-center"><input type="checkbox" name="selectBreakfast" id="selectBreakfast"></td>
+			                <td id="table-right"><a>$&nbsp;8.99</a></td>
+			                <td>per night</td>
+						</tr>
+						<tr>
+							<td id="table-left"><label for="selectParking">Parking</label></td>
+			                <td id="table-center"><input type="checkbox" name="selectParking" id="selectParking"></td>
+			                <td id="table-right"><a>$19.99</a></td>
+			                <td>per night</td>
+						</tr>
+					</table>
+		       </div>
+	       </div>
+		</div>
+		
 		<div class='boxes'>
 			<div class='Double'>
 				<div class='left'>
