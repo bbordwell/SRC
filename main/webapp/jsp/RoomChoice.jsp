@@ -39,7 +39,9 @@
 
 <main>
 	<div class="main-container">
+	
 		<div class="top-options">
+		
 			<div id="left-column">
 				<div class="Location">
 					<h2>Location:</h2>
@@ -70,6 +72,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="right-column">
 				<h2>Additional Amenities:</h2>
 				<div id="additionalAmenitiesContainer">
@@ -173,7 +176,7 @@
 					</div>
 				</div>
 				<div class='middle'>
-					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/King.jpg">
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/king.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
