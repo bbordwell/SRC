@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
     <style><%@include file="../WEB-INF/css/RoomChoice.css"%></style>
+    <style><%@include file="../WEB-INF/css/Main.css"%></style>
     	<style>
         	* {
           	  font-family: Glacial;
@@ -24,6 +25,7 @@
 </head>
 
 <body>
+
 <c:import url="header.jsp" />
 <form id="bookNow">
 	<input type='hidden' name='location' id='location'>

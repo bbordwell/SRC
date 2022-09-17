@@ -1,30 +1,72 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.Location h2{
+	margin-top: 0;
+	margin-bottom:5px;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+.Guests h2 {
+	margin-bottom:5px;
 }
 
-
-main {
-    flex: auto;
+.Guests {
+	padding-bottom: 4%;
 }
 
-.main-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-bottom: 60px;
-	height: 100%;
-	justify-content: center;
-	padding-left: 5%;
-	padding-right: 5%;
-}
+select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding-right: 45px;
+        text-align: center;
+    }
+     
+    .select {
+        position: relative;
+        display: block;
+        width: 20em;
+        height: 2.2em;
+        overflow: hidden;
+    }
+     
+    select {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        color: black;
+        cursor: pointer;
+    }
+     
+    select::-ms-expand {
+        display: none;
+    }
+     
+    .select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0 1em;
+        background: #33C8CC;
+        pointer-events: none;
+        padding-top: 8px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+     
+    .select:hover::after {
+        color: #CC3733;
+        
+    }
+     
+    .select::after {
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
 
 .boxes {
 	display: flex;
@@ -172,79 +214,6 @@ img {
 	width: 70%;
 	height: auto;
 	border-radius: 10%;
-}
-
-.Guests {
-	padding-bottom: 5%;
-}
-
-select {
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        outline: 0;
-        border: 1px solid black;
-        padding-right: 45px;
-        text-align: center;
-    }
-     
-    .select {
-        position: relative;
-        display: block;
-        width: 20em;
-        height: 3em;
-        line-height: 3;
-        overflow: hidden;
-    }
-     
-    select {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        color: black;
-        cursor: pointer;
-    }
-     
-    select::-ms-expand {
-        display: none;
-    }
-     
-    .select::after {
-        content: '\25BC';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0 1em;
-        background: #33C8CC;
-        pointer-events: none;
-    }
-     
-    .select:hover::after {
-        color: #CC3733;
-        
-    }
-     
-    .select::after {
-        -webkit-transition: .25s all ease;
-        -o-transition: .25s all ease;
-        transition: .25s all ease;
-    }
-    
-.top-options {
-	margin-top: 130px;
-	display: grid;
-	grid-template-columns: auto auto;
-	margin-left: 20%;
-	margin-right: 20%;
-}
-
-#additionalAmenitiesContainer {
-    width: 100%;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 5px;
 }
 
 table {

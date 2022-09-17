@@ -1,9 +1,6 @@
-html {
-	height: 100vh;
-}
-
 .container {
-	margin-top: 150px;
+	min-height: 70vh;
+	overflow-y: auto;
 	min-height: 70vh;
 	overflow-y: auto;
 }
@@ -12,7 +9,7 @@ html {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 63% auto;
-    padding: 10px;
+    padding-bottom: 3%;
 }
 
 .left-card {
