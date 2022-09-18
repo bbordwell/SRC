@@ -28,105 +28,11 @@
 			</div>
 			<div>
 				<div class="center">
-					
+				
 					<div id="month1">
-						<div>September</div>
-						<table>
-							<tr>
-								<td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td>
-							</tr>
-
-							<%
-								/*int column = 1;
-							int day = 1;
-							while(true) {
-							out.print("<tr>");
-							while(day <= 31){
-								out.print("<td>"+day+"</td>");
-								if(column % 7 == 0) {
-							break;
-								}
-								day++;
-								column++;
-							}
-							out.print("</tr>");
-							}*/
-							//<a href=\"/Proviso?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
-
-							Calendar date = Calendar.getInstance();
-							date.set(Calendar.DAY_OF_MONTH, 1);
-
-							out.print("<tr>");
-							int column = date.get(Calendar.DAY_OF_WEEK);
-							for (int space = 1; space < column; space++) {
-								out.print("<td class=\"td-invisable\"></td>");
-							}
-							int max = date.getActualMaximum(Calendar.DAY_OF_MONTH);
-							for (int day = 1; day <= max; day++) {
-								out.print("<td>" + day + "</td>");
-
-								if (column % 7 == 0 && day < max) {
-									out.print("</tr>");
-
-									if (day <= max) {
-								out.print("<tr>");
-									}
-								}
-								column++;
-							}
-							%>
-						</table>
 					</div>
 					
-					<div>
-						<div>October</div>
-						<table>
-							<tr>
-								<td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td>
-							</tr>
-
-							<%
-								/*int column = 1;
-							int day = 1;
-							while(true) {
-							out.print("<tr>");
-							while(day <= 31){
-								out.print("<td>"+day+"</td>");
-								if(column % 7 == 0) {
-							break;
-								}
-								day++;
-								column++;
-							}
-							out.print("</tr>");
-							}*/
-							//<a href=\"/Proviso?action=DateSelection&dateSelect=true&day="+day+"&month="+date.get(Calendar.MONTH)+"\">"
-
-							date.set(Calendar.MONTH, 9);
-							date.set(Calendar.DAY_OF_MONTH, 1);
-
-							out.print("<tr>");
-							column = date.get(Calendar.DAY_OF_WEEK);
-							for (int space = 1; space < column; space++) {
-								out.print("<td class=\"td-invisable\"></td>");
-							}
-							max = date.getActualMaximum(Calendar.DAY_OF_MONTH);
-							for (int day = 1; day <= max; day++) {
-								out.print("<td>" + day + "</td>");
-
-								if (column % 7 == 0 && day < max) {
-									out.print("</tr>");
-
-									if (day <= max) {
-										out.print("<tr>");
-									}
-								}
-								column++;
-							}
-							%>
-						</table>
-					</div>
-				</div>
+					
 
 			</div>
 			<input type="submit" id="submit" type="submit" form="dateSelect">
@@ -135,31 +41,83 @@
 	</div>
 	
 	<script>
+		var checkInDate = "";
+		var checkOutDate = "";
+		console.log("test1");
 		function createCalendar(month) {
-			var calendar = "<table>";
-			var column = 1;
+			var calendar = "<table>" +
+						"<tr><td>Sun</td><td>Mon</td><td>Tue</td><td>Wed</td><td>Thu</td><td>Fri</td><td>Sat</td></tr>";
+			var date = new Date();
+			date.setMonth(month);
+			date.setDate(1);
+			var column = date.getDay() + 1;
 			
 			calendar += "<tr>";
 			for (var space = 1; space < column; space++) {
 				calendar += "<td class=\"td-invisable\"></td>";
 			}
-			var max = 31;
+			
+			//Get the date for the last day of the month.
+			var temp = new Date();
+			temp.setMonth(month + 1);
+			temp.setDate(0);
+			
+			var max = temp.getDate();
 			for(var day = 1; day <= max; day++) {
-				calendar += ("<td>" + day + "</td>");
+				calendar += ("<td id=\"" + day + "\" onclick=\"dateSelect("+day+")\">" + day + "</td>");
 				
-				if(column % 7 == 0) {
+				
+				if(column % 7 === 0) {
 					calendar += "</tr>";
 					
 					if(day <= max) {
 						calendar += "<tr>";
 					}
 				}
+				column++;
 			}
 			calendar += "</table>";
 			
 			return calendar;
 		}
-		document.getElementById("month1").innerHTML = "<div>September</div>" + createCalendar(0);
+		function createCalendar2() {
+			var table = document.createElement("table");
+			document.getElementById("month1").appendChild(table);
+		}
+		
+		function dateSelect(day) {
+			//var selectedDay = document.getElementById("month1").getElementById(day);
+			var selectedDay = document.getElementById(day);
+			//console.log(checkInDate);
+			//console.log(checkOutDate);
+			
+			if(checkInDate === "" && checkOutDate === "") {
+				checkInDate = "2022-09-"+ (day < 10 ? "0" + day : day);
+				document.getElementById("checkin").value = checkInDate;
+			} else if(checkInDate !== "" && checkOutDate === "") {
+				checkOutDate = "2022-09-"+ (day < 10 ? "0" + day : day);
+				document.getElementById("checkout").value = checkOutDate;
+			} else if(checkInDate === "" && checkOutDate !== "") {
+				checkInDate = "2022-09-"+ (day < 10 ? "0" + day : day);
+				document.getElementById("checkin").value = checkInDate;
+			} else if(checkInDate !== "" && checkOutDate !== "") {
+				
+			} else {
+				console.log(checkInDate);
+				console.log(checkOutDate);
+			}
+			
+			if(selectedDay.className === "enabled") {
+				selectedDay.className = "";
+			} else {
+				selectedDay.className = "enabled";
+			}
+			//console.log(checkInDate);
+			//console.log(checkOutDate);
+		}
+		
+		document.getElementById("month1").innerHTML = "<div>September</div>" + createCalendar(8);
+		console.log("test2");
 	</script>
 	
 </body>

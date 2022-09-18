@@ -46,3 +46,11 @@ td {
 .td-invisable {
 	border: 1px solid white;
 }
+
+.enabled {
+	background-color: #CC3733;
+}
+
+.passthrough {
+	background-color: #33C8CC
+}
