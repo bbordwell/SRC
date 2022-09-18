@@ -1,29 +1,13 @@
 @charset "UTF-8";
 /* Style the form - display items horizontally */
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
 
 
-main {
-    flex: auto;
-    margin-top: 125px;
-    margin-left: 3%
-}
-
-.main-container {
+.register-main-container {
 	display: flex;
 	align-items: center;
 	height: 100%;
 	justify-content: center;
+	margin-left: 3%
 }
 
 .main-left {
@@ -46,32 +30,18 @@ main {
 	text-align: center;
 }
 
-.right-top {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin-top: 15px;
-	justify-content: center;
+.sign-in {
+	margin: 0;
+	padding-bottom: 3%;
 }
 
-.right-middle {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.terms-of-service {
+	margin: 0 0 2% 0;
+	padding-top: 3%;
 }
 
-.right-bottom {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 15px;
+.group {
+	margin-right: 60px;
 }
 
 a{
@@ -101,7 +71,7 @@ label {
 .form-inline input {
   vertical-align: middle;
   margin: 10px 2px 5px 0;
-  padding: 15px;
+  padding: 1%;
   background-color: #fff;
   border: 1px solid black;
   width: 20%;
@@ -109,9 +79,6 @@ label {
  
 
 }
-
-
-
 
 .form-inline button:hover {
   background-color: grey;

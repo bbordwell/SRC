@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
     <style><%@include file="../WEB-INF/css/password.css"%></style>
+    <style><%@include file="../WEB-INF/css/Main.css"%></style>
     	<style>
         	* {
           	  font-family: Glacial;
@@ -42,7 +43,7 @@ function myFunction() {
 			    			
 							<div class="val">
 					    		<label for="psw"><b>Password</b></label>
-					    		<input type="password" placeholder="Enter Password" value="FakePSW" id="myInput" name="password" required>
+					    		<input type="password" placeholder="Enter Password" id="myInput" name="password" required>
 					    		<input type="checkbox" checked="checked" name="remember"> Remember me
 			    			</div>
 			    				

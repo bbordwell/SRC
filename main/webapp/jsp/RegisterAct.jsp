@@ -4,13 +4,14 @@
 <html>
 <head>
  <style><%@include file="../WEB-INF/css/register.css"%></style>
+ <style><%@include file="../WEB-INF/css/Main.css"%></style>
 <meta charset="UTF-8">
 <title>Registration</title>
 </head>
 
 <body>	
 	<main>
-		<div class="main-container">
+		<div class="register-main-container">
 		
 			<div class="main-left">
 				<h2>Helpful Hints</h2>
@@ -19,12 +20,9 @@
 			
 			
 			<div class="main-right">
-			  	<div class="right-top">
 	   				<h1>Create a Free Account </h1>
-	   				<p>Come join our community! Set up your account. Already have one? <a href="/Proviso?action=LoginTest">Sign In</a></p>
-	   			</div>
+	   				<p class="sign-in">Come join our community! Set up your account. Already have one? <a href="/Proviso?action=LoginTest">Sign In</a></p>
 	   			
-				<div class="right-middle">
 					<form class="form-inline">
 						<input type="hidden" name="action" value="registerAction"/>
 						
@@ -55,15 +53,10 @@
 							    <label for="phone"><b>Confirm Phone</b></label>
 							    <input type="tel" placeholder="Confirm Phone" name="phone" id="phone" required>
 						    </div>
-				    </form>
+				    	<p class="terms-of-service">by submitting the form you agree to our <a href="#">Terms of service</a>.</p>
+    					<button type="submit" class="registerbtn">Join</button>
+   					</form>
 				</div>
-				
-			    <div class="right-bottom">
-			    	<p>by submitting the form you agree to our <a href="#">Terms of service</a>.</p>
-    				<button type="submit" class="registerbtn">Join</button>
-   				</div>
-   				
-			</div>
 		</div>
 	</main>
 </body>

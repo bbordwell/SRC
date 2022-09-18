@@ -29,12 +29,14 @@
 		
 		<div class="main-bottom">
 			<div class="form">
-			<input type="hidden" name="action" value="ReservationDisplay.jsp"/>
+			<form>
+			<input type="hidden" name="action" value="ReservationDisplay"/>
 				<label for="reservationID"><b>Reservation ID:</b></label>
 				<input type="text" placeholder="Enter ID" name="reservationID" id="reservationID" required>
 				<div class="button-container">
 					<button type="submit" class="registerbtn">Search</button>
 				</div>
+			</form>
 			</div>
 		</div>
 		
