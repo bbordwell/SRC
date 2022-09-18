@@ -48,9 +48,9 @@ td {
 }
 
 .enabled {
-	background-color: #CC3733;
+	background-color: #CC373380;
 }
 
 .passthrough {
-	background-color: #33C8CC
+	background-color: #33C8CC80
 }
