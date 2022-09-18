@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Reservation {
 	private Date checkIn;
@@ -16,7 +17,6 @@ public class Reservation {
 	private String exp;
 	private int customerId;
 	private int reservationID;
-	private int holidays;
 	
 	public void setReservationID(int n) {
 		this.reservationID = n;
@@ -166,5 +166,29 @@ public class Reservation {
 		 return nightlyRate;
 	}
 	
-	
+	public long getHolidaySurcharge() {
+		int holidays = 0;
+		LocalDate checkIn = this.checkIn.toLocalDate();
+		LocalDate checkOut = this.checkOut.toLocalDate();
+		while (checkIn.isBefore(checkOut)) {
+			if ((checkIn.getDayOfMonth() == 4) && (checkIn.getMonthValue() == 7)) { //Fourth of July
+				holidays += 1;
+			}
+			if ((checkIn.getDayOfMonth() == 24) && (checkIn.getMonthValue() == 12)) { //Christmas Eve
+				holidays += 1;
+			}
+			if ((checkIn.getDayOfMonth() == 31) && (checkIn.getMonthValue() == 12)) { //New Years Eve
+				holidays += 1;
+			}
+			checkIn = checkIn.plusDays(1);
+		}
+		int baseRate = 0;
+		switch (this.getRoomType()) {
+		  case "Double": baseRate = 11550; break;
+		  case "Queen":	baseRate = 13125; break;
+		  case "Double Queen": baseRate = 15750; break;
+		  case "King": baseRate = 17325; break;
+	}
+		return Math.round(holidays * baseRate * .05);
+	}
 }

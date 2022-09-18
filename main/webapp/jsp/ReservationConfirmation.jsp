@@ -71,7 +71,8 @@
                 <%
                 	double subtotal = 0.0;
                 	if (reservation.getWifi()) {subtotal = 12.99;}
-                	subtotal += dataManager.getNumberOfNights(reservation) * reservation.getNightlyRate() / 100;
+                	subtotal += reservation.getHolidaySurcharge() + dataManager.getNumberOfNights(reservation) * reservation.getNightlyRate();
+                	subtotal /= 100;
                 %>
                 <td id="money">$<%out.print(String.format("%.02f",subtotal)); %></td>
             </tr>

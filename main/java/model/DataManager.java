@@ -232,6 +232,7 @@ public class DataManager {
 		  if (res.getWifi()) {
 			  amount += 1299;
 		  }
+		  amount += res.getHolidaySurcharge();
 		  
 		  //Insert Payment
 		  stmt = this.conn.prepareStatement("INSERT INTO payments (name_on_card, expiration, card_number, transaction_time, amount) VALUES (?,?,?,CURRENT_DATE,?)");
