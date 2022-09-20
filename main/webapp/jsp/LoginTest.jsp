@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Proviso Login</title>
+<c:import url="header.jsp" />
 </head>
 <body>
 <body>
@@ -56,11 +57,9 @@
 		session.setAttribute("user",request.getParameter("EmailAddress"));%>
 	<jsp:forward page="/jsp/LandingPage.jsp"></jsp:forward>
 	<%}%>
-<c:import url="header.jsp" />
-<%@include file="Login_body.jsp"%>
-<jsp:include page="footer.jsp" />
 </body>
 <footer>
+<jsp:include page="footer.jsp" />
 </footer>
 </html>
 
