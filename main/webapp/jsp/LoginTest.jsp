@@ -6,6 +6,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+  <style><%@include file="../WEB-INF/css/password.css"%></style>
+  <style><%@include file="../WEB-INF/css/Main.css"%></style>
 <title>Proviso Login</title>
 <c:import url="header.jsp" />
 </head>
