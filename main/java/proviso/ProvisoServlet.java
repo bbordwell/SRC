@@ -78,7 +78,8 @@ public class ProvisoServlet extends HttpServlet {
     	        	else {url = base + "DateSelection.jsp";}
     	    		break;
     	        case "ReservationLookup":
-    	    		url = base + "ReservationLookup.jsp";
+    	        	if (request.getSession().getAttribute("user") == null) {url = base + "LoginTest.jsp";}
+    	        	else {url = base + "ReservationLookup.jsp";}
     	    		break;
     	        case "ReservationDisplay":
     	        	url = base + "ReservationDisplay.jsp";
