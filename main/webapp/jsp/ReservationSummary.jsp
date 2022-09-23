@@ -21,12 +21,6 @@
 	//Save data from confirmation
 	String nameOnCard = (String) request.getParameter("NameOnCard");
     reservation.setNameOnCard(nameOnCard);
-    String wifi = (String) request.getParameter("wifi");
-    reservation.setWifi(wifi);
-    String breakfast = (String) request.getParameter("breakfast");
-    reservation.setBreakfast(breakfast);
-    String parking = (String) request.getParameter("parking");
-    reservation.setParking(parking);
     String cardNumber = (String) request.getParameter("CardNumber");
     reservation.setCardNumber(cardNumber);
     String exp = (String) request.getParameter("exp");

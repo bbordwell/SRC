@@ -226,12 +226,13 @@ public class DataManager {
 			  nightlyRate += 899;
 		  }
 		  if (res.getParking()) {
-			  nightlyRate += 1299;
+			  nightlyRate += 1999;
 		  }
 		  int amount = nightlyRate * nights;
 		  if (res.getWifi()) {
 			  amount += 1299;
 		  }
+		  amount += res.getHolidaySurcharge();
 		  
 		  //Insert Payment
 		  stmt = this.conn.prepareStatement("INSERT INTO payments (name_on_card, expiration, card_number, transaction_time, amount) VALUES (?,?,?,CURRENT_DATE,?)");
@@ -264,6 +265,15 @@ public class DataManager {
 			  System.out.println(stmt);
 			  stmt.executeUpdate();
 		  }
+	  }
+	  
+	  public ResultSet getHotelResultSet(int hotelID) throws SQLException{
+		  PreparedStatement stmt;
+		  stmt = this.conn.prepareStatement("SELECT address, city, state, zip_code, phone_number FROM hotels WHERE hotel_id = ?");
+		  stmt.setInt(1, hotelID);
+		  System.out.println(stmt);
+		  ResultSet rs = stmt.executeQuery();
+		  return rs;
 	  }
 	  
 	  

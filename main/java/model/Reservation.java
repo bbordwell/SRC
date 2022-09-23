@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class Reservation {
 	private Date checkIn;
@@ -145,5 +146,49 @@ public class Reservation {
 		return this.customerId;
 	}
 	
+	public int getNightlyRate() {
+		int nightlyRate;
+		  switch (this.getRoomType()) {
+		  case "Double": nightlyRate = 11550; break;
+		  case "Queen":	nightlyRate = 13125; break;
+		  case "Double Queen": nightlyRate = 15750; break;
+		  case "King": nightlyRate = 17325; break;
+		  default: 
+			  System.out.println("Error getting room type nightly rate. Input was " + this.getRoomType());
+			  nightlyRate = 0;
+		  }
+		  if (this.getBreakfast()) {
+			  nightlyRate += 899;
+		  }
+		  if (this.getParking()) {
+			  nightlyRate += 1999;
+		  }
+		 return nightlyRate;
+	}
 	
+	public long getHolidaySurcharge() {
+		int holidays = 0;
+		LocalDate checkIn = this.checkIn.toLocalDate();
+		LocalDate checkOut = this.checkOut.toLocalDate();
+		while (checkIn.isBefore(checkOut)) {
+			if ((checkIn.getDayOfMonth() == 4) && (checkIn.getMonthValue() == 7)) { //Fourth of July
+				holidays += 1;
+			}
+			if ((checkIn.getDayOfMonth() == 24) && (checkIn.getMonthValue() == 12)) { //Christmas Eve
+				holidays += 1;
+			}
+			if ((checkIn.getDayOfMonth() == 31) && (checkIn.getMonthValue() == 12)) { //New Years Eve
+				holidays += 1;
+			}
+			checkIn = checkIn.plusDays(1);
+		}
+		int baseRate = 0;
+		switch (this.getRoomType()) {
+		  case "Double": baseRate = 11550; break;
+		  case "Queen":	baseRate = 13125; break;
+		  case "Double Queen": baseRate = 15750; break;
+		  case "King": baseRate = 17325; break;
+	}
+		return Math.round(holidays * baseRate * .05);
+	}
 }
