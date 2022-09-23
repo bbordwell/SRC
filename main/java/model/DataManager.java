@@ -267,6 +267,15 @@ public class DataManager {
 		  }
 	  }
 	  
+	  public ResultSet getHotelResultSet(int hotelID) throws SQLException{
+		  PreparedStatement stmt;
+		  stmt = this.conn.prepareStatement("SELECT address, city, state, zip_code, phone_number FROM hotels WHERE hotel_id = ?");
+		  stmt.setInt(1, hotelID);
+		  System.out.println(stmt);
+		  ResultSet rs = stmt.executeQuery();
+		  return rs;
+	  }
+	  
 	  
 	
 }
