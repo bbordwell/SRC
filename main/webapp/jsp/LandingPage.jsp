@@ -102,6 +102,7 @@
 			function setImg(){
 				document.getElementById('photo-background').style.backgroundImage = 'url("${pageContext.request.contextPath}/img/' + images[i] + '")'; 
 			}
+		</script>
 </body>
 <footer>
 <jsp:include page="footer.jsp" />
