@@ -40,6 +40,11 @@
 							<li><a href="/Proviso?action=Register" id="right">Register</a></li>
 						</c:when>
 						<c:otherwise>
+							<li id="li-left">
+								<a href="/Proviso?action=LoyaltyPoints" id="left">
+									Loyalty Points:&nbsp;<jsp:include page="TotalPoints.jsp" />
+								</a>
+							</li>
 							<li><a href="/Proviso?action=logout" id="right">Sign Out</a></li>
 						</c:otherwise>
 						</c:choose>
