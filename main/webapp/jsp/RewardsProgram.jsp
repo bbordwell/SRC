@@ -27,25 +27,21 @@
 				<col span="1" style="width: 14%;">
 			</colspan>
 			<tr>
-				<th>Benefit</th>
+				<th><h2>Benefit</h2></th>
 				<th>
-					<img class="badge" src='img/Member.png' alt='Tier: Member'>
-					<h3>Member</h3>
+					<img class="badge" src='img/Member.png' alt='Tier: Member'><br>
 					0-999 pts
 				</th>
 				<th>
-					<img class="badge" src='img/Silver.png' alt='Tier: Silver'>
-					<h3>Silver</h3>
+					<img class="badge" src='img/Silver.png' alt='Tier: Silver'><br>
 					1000-4999 pts
 				</th>
 				<th>
-					<img class="badge" src='img/Gold.png' alt='Tier: Gold'>
-					<h3>Gold</h3>
+					<img class="badge" src='img/Gold.png' alt='Tier: Gold'><br>
 					5000-9999 pts
 				</th>
 				<th>
-					<img class="badge" src='img/Diamond.png' alt='Tier: Diamond'>
-					<h3>Diamond</h3>
+					<img class="badge" src='img/Diamond.png' alt='Tier: Diamond'><br>
 					10000+ pts
 				</th>
 			</tr>
