@@ -45,7 +45,7 @@
 			<div class="main-bottom">
 			
 				<div class="boxes">
-					<div class="d-none" id="omaha">
+					<div class="box" id="omaha">
 					<%Location omaha = new Location(dataManager,6); %>
 						<h2>Omaha</h2>
 						<ul class="address">
@@ -55,7 +55,7 @@
 							<li><%out.print(omaha.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="lincoln">
+					<div class="box" id="lincoln">
 					<%Location lincoln = new Location(dataManager,3); %>
 						<h2>Lincoln</h2>
 						<ul class="address">
@@ -65,7 +65,7 @@
 							<li><%out.print(lincoln.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="scottsbluff">
+					<div class="box" id="scottsbluff">
 					<%Location scottsbluff = new Location(dataManager,7); %>
 						<h2>Scottsbluff</h2>
 						<ul class="address">
@@ -75,7 +75,7 @@
 							<li><%out.print(scottsbluff.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="oneill">
+					<div class="box" id="oneill">
 					<%Location oneill = new Location(dataManager,5); %>
 						<h2>O'Neill</h2>
 						<ul class="address">
@@ -85,7 +85,7 @@
 							<li><%out.print(oneill.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="kearney">
+					<div class="box" id="kearney">
 					<%Location kearney = new Location(dataManager,2); %>
 						<h2>Kearney</h2>
 						<ul class="address">
@@ -95,7 +95,7 @@
 							<li><%out.print(kearney.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="north-platte">
+					<div class="box" id="north-platte">
 					<%Location northPlatte = new Location(dataManager,4); %>
 						<h2>North Platte</h2>
 						<ul class="address">
@@ -105,7 +105,7 @@
 							<li><%out.print(northPlatte.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="south-sioux-city">
+					<div class="box" id="south-sioux-city">
 					<%Location ssc = new Location(dataManager,8); %>
 						<h2>South Sioux City</h2>
 						<ul class="address">
@@ -115,7 +115,7 @@
 							<li><%out.print(ssc.getPhone()); %></li>
 						</ul>
 					</div>
-					<div class="d-none" id="bellevue">
+					<div class="box" id="bellevue">
 					<%Location bellevue = new Location(dataManager,1); %>
 						<h2>Bellevue</h2>
 						<ul class="address">
@@ -135,48 +135,57 @@
 	</footer>
 	
 	<script type="text/javascript">
+	let box = document.getElementsByClassName("box");
+		
 		function enableLocation(answer) {
-			console.log(answer.value);
+		if(answer.value != 0) {
 			if(answer.value == 1) {
-				document.getElementById('omaha').classList.remove('d-none');
+				box[0].classList.remove('d-none');
 			} else {
-				document.getElementById('omaha').classList.add('d-none');
+				box[0].classList.add('d-none');
 			}
 			if(answer.value == 2) {
-				document.getElementById('lincoln').classList.remove('d-none');
+				box[1].classList.remove('d-none');
 			} else {
-				document.getElementById('lincoln').classList.add('d-none');
+				box[1].classList.add('d-none');
 			}
 			if(answer.value == 3) {
-				document.getElementById('scottsbluff').classList.remove('d-none');
+				box[2].classList.remove('d-none');
 			} else {
-				document.getElementById('scottsbluff').classList.add('d-none');
+				box[2].classList.add('d-none');
 			}
 			if(answer.value == 4) {
-				document.getElementById('oneill').classList.remove('d-none');
+				box[3].classList.remove('d-none');
 			} else {
-				document.getElementById('oneill').classList.add('d-none');
+				box[3].classList.add('d-none');
 			}
 			if(answer.value == 5) {
-				document.getElementById('kearney').classList.remove('d-none');
+				box[4].classList.remove('d-none');
 			} else {
-				document.getElementById('kearney').classList.add('d-none');
+				box[4].classList.add('d-none');
 			}
 			if(answer.value == 6) {
-				document.getElementById('north-platte').classList.remove('d-none');
+				box[5].classList.remove('d-none');
 			} else {
-				document.getElementById('north-platte').classList.add('d-none');
+				box[5].classList.add('d-none');
 			}
 			if(answer.value == 7) {
-				document.getElementById('south-sioux-city').classList.remove('d-none');
+				box[6].classList.remove('d-none');
 			} else {
-				document.getElementById('south-sioux-city').classList.add('d-none');
+				box[6].classList.add('d-none');
 			}
 			if(answer.value == 8) {
-				document.getElementById('bellevue').classList.remove('d-none');
+				box[7].classList.remove('d-none');
 			} else {
-				document.getElementById('bellevue').classList.add('d-none');
+				box[7].classList.add('d-none');
 			}
+		} else {
+			for (var x = 0; x < box.length; x++) {
+				console.log(x);
+				box[x].classList.remove('d-none');
+				}
+			}
+
 		};
 	</script>
 	
