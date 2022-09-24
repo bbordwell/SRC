@@ -2,8 +2,36 @@ html {
 	height: 100vh;
 }
 
-.container {
-	margin-top: 125px;
-	min-height: 70vh;
-	overflow-y: auto;
+h1 {
+	margin-top: 150px;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+table {
+	width: 90%;
+	margin: 0 auto 25px auto;
+	text-align: center;
+	border-collapse: collapse;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.badge {
+	height: 200px;
+	width: auto;
+}
+
+.check {
+	height: 20px;
+	width: auto;
+}
+
+th, td {
+	padding: 5px 0 5px 0;
+}
+
+.data:hover {
+	background-color: #33C8CC;
+	box-shadow: 0 4px 8px 0 #33C8CC;
 }

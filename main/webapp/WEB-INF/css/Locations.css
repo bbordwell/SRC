@@ -1,29 +1,93 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.main-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 3%;
+	
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+	select {
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    -ms-appearance: none;
+	    appearance: none;
+	    outline: 0;
+	    border: 1px solid black;
+		border-radius: 10px;
+	    padding-right: 45px;
+	    text-align: center;
+	}
+	     
+	.select {
+	    position: relative;
+	    display: block;
+	    width: 20em;
+	    height: 2em;
+	    overflow: hidden;
+	}
+	 
+	select {
+	    width: 100%;
+	    height: 100%;
+	    margin: 0;
+	    color: black;
+	    cursor: pointer;
+	}
+	 
+	select::-ms-expand {
+	    display: none;
+	}
+	 
+	.select::after {
+	    content: '\25BC';
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    padding: 0 1em;
+	    padding-top: 7px;
+	    background: #33C8CC;
+	    pointer-events: none;
+	    border-top-right-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	}
+	 
+	.select:hover::after {
+	    color: #CC3733;
+	    
+	}
+	 
+	.select::after {
+	    -webkit-transition: .25s all ease;
+	    -o-transition: .25s all ease;
+	    transition: .25s all ease;
+	}
+
+.d-none {
+	display: none;
 }
 
-
-main {
-    flex: auto;
-    margin-top: 125px;
-   
+.main-bottom {
+	width: 100%;
 }
 
-.main-container {
+.boxes {
 	display: flex;
 	flex-direction: column;
-	/*align-items: center; -- Uncomment for vertical alignment*/ 
-	/*justify-content: center; -- Uncomment for horizontal alignment*/
-	padding-bottom: 30px;
-	height: 100%;
-
+	width: 100%;
+	overflow-y: auto;
 }
 
+.boxes > div {
+	border: 1px solid;
+	border-radius: 12px;
+	margin-bottom: 15px;
+}
+
+.boxes > div > h2,p {
+	padding-left: 3%;
+}
+
+li {
+	list-style: none;
+}
