@@ -87,3 +87,7 @@
 .boxes > div > h2,p {
 	padding-left: 3%;
 }
+
+li {
+	list-style: none;
+}
