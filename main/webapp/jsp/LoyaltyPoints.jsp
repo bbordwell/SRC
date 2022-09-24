@@ -48,8 +48,8 @@
 	<sql:setDataSource
 		var="myDS"
 		driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/provisodb"
-		user="ProvisoUser" password="password"
+		url="${initParam['dbURL']}"
+		user="${initParam['dbUser']}" password="${initParam['dbPass']}"
 	/>
 	<sql:query var="rewardsSummary" dataSource="${myDS}">
 		SELECT reservations.reservation_id, reservations.check_in, reservations.check_out, hotels.name, reservations.earned_points
