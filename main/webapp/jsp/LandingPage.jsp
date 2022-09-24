@@ -4,12 +4,13 @@
 <!DOCTYPE html>
 <html>
  <style><%@include file="../WEB-INF/css/landing.css"%></style>
+ <style><%@include file="../WEB-INF/css/Main.css"%></style>
 <head>
 <meta charset="UTF-8">
 <title>Proviso Hotel and Suites</title>
-<c:import url="header.jsp" />
 </head>
 <body>
+<c:import url="header.jsp" />
 	<div class='container'>
 		<div class='top'>
 			<div class='overlay'>
@@ -69,44 +70,47 @@
 				<img class='event-picture' id='event-picture' alt='event picture' src="${pageContext.request.contextPath}/img/wedding.jpeg">
 			</div>
 		</div>
-		<script>
-			document.getElementById('weddingbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'For a price, you and your loved one can have a wedding at any one of our Hotel Proviso locations of your choice.';
-				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/wedding.jpeg";
-			}
-			document.getElementById('confbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'All of our Proviso Hotels offer an outstanding environment for your companies next conference. We have everything up to date along with an amazing staff to make sure everything goes as planned. Whether this is a time of celebration or all business, we have you covered.';
-				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/conference.jpeg";
-			}
-			document.getElementById('gatheringsbtn').onclick = function() {
-				document.getElementById('event-paragraph').innerHTML = 'We realize that not every event is going to be either a wedding or business related. If you have a group that is looking for a gathering space, whether that is family coming together from across the country or your small businesses next venue, we have multiple rooms among our hotel that can be set to meet your needs. Get in contact with your events cordinator and we can make sure everything is customized to your expecatations. ';
-				document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/special_gathering.jpeg";
-			}
-			
-			var slider_img = document.querySelector('.slider-img');
-			var images = ['a.jpeg', 'b.jpeg', 'c.jpeg', 'd.jpeg'];
-			var i = 0;
-			
-			function prev(){
-				if(i <= 0) i = images.length;
-				i--;
-				return setImg();
-			}
-			
-			function next() {
-				if(i >= images.length -1) i = -1;
-				i++;
-				return setImg();
-			}
-			
-			function setImg(){
-				document.getElementById('photo-background').style.backgroundImage = 'url("${pageContext.request.contextPath}/img/' + images[i] + '")'; 
-			}
-		</script>
+	</div>
+	
+	<footer>
+		<jsp:include page="footer.jsp" />
+	</footer>
+	
+	<script>
+		document.getElementById('weddingbtn').onclick = function() {
+			document.getElementById('event-paragraph').innerHTML = 'For a price, you and your loved one can have a wedding at any one of our Hotel Proviso locations of your choice.';
+			document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/wedding.jpeg";
+		}
+		document.getElementById('confbtn').onclick = function() {
+			document.getElementById('event-paragraph').innerHTML = 'All of our Proviso Hotels offer an outstanding environment for your companies next conference. We have everything up to date along with an amazing staff to make sure everything goes as planned. Whether this is a time of celebration or all business, we have you covered.';
+			document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/conference.jpeg";
+		}
+		document.getElementById('gatheringsbtn').onclick = function() {
+			document.getElementById('event-paragraph').innerHTML = 'We realize that not every event is going to be either a wedding or business related. If you have a group that is looking for a gathering space, whether that is family coming together from across the country or your small businesses next venue, we have multiple rooms among our hotel that can be set to meet your needs. Get in contact with your events cordinator and we can make sure everything is customized to your expecatations. ';
+			document.getElementById('event-picture').src = "${pageContext.request.contextPath}/img/special_gathering.jpeg";
+		}
+		
+		var slider_img = document.querySelector('.slider-img');
+		var images = ['a.jpeg', 'b.jpeg', 'c.jpeg', 'd.jpeg'];
+		var i = 0;
+		
+		function prev(){
+			if(i <= 0) i = images.length;
+			i--;
+			return setImg();
+		}
+		
+		function next() {
+			if(i >= images.length -1) i = -1;
+			i++;
+			return setImg();
+		}
+		
+		function setImg(){
+			document.getElementById('photo-background').style.backgroundImage = 'url("${pageContext.request.contextPath}/img/' + images[i] + '")'; 
+		}
+	</script>
 </body>
-<footer>
-<jsp:include page="footer.jsp" />
-</footer>
 </html>
 
 <!-- source for how to format header and footer: https://codebun.com/include-header-and-footer-in-jsp-using-jstl/ -->
