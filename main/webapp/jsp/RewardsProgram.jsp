@@ -16,8 +16,103 @@
 </head>
 <body>
 	<div class='container'>
-		<h1>Rewards Program</h1>
+		<h1>Proviso Rewards</h1>
 	</div>
+		<table border="1">
+			<colspan>
+				<col span="1" style="width: 44%;">
+				<col span="1" style="width: 14%;">
+				<col span="1" style="width: 14%;">
+				<col span="1" style="width: 14%;">
+				<col span="1" style="width: 14%;">
+			</colspan>
+			<tr>
+				<th>Benefit</th>
+				<th>
+					<img class="badge" src='img/Member.png' alt='Tier: Member'>
+					<h3>Member</h3>
+					0-999 pts
+				</th>
+				<th>
+					<img class="badge" src='img/Silver.png' alt='Tier: Silver'>
+					<h3>Silver</h3>
+					1000-4999 pts
+				</th>
+				<th>
+					<img class="badge" src='img/Gold.png' alt='Tier: Gold'>
+					<h3>Gold</h3>
+					5000-9999 pts
+				</th>
+				<th>
+					<img class="badge" src='img/Diamond.png' alt='Tier: Diamond'>
+					<h3>Diamond</h3>
+					10000+ pts
+				</th>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>		
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>		
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>
+			<tr class="data">
+				<td>Lorem ipsum dolor sit amet</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><img class="check" src="img/check-mark.png" alt="checkmark"></td>
+			</tr>		
+		</table>
 </body>
 <footer>
 <jsp:include page="footer.jsp" />

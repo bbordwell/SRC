@@ -35,7 +35,7 @@
 			
 		<tr>
 			<td></td>
-			<td id="badge"><jsp:include page="LoyaltyTier.jsp" /></td>
+			<td id="badge"><a href="/Proviso?action=RewardsProgram"><jsp:include page="LoyaltyTier.jsp" /></a></td>
 			<td><h2>CONGRATULATIONS!<br/>You've earned <jsp:include page="TotalPoints.jsp" /> points!</h2></td>
 			<td></td>
 		</tr>
