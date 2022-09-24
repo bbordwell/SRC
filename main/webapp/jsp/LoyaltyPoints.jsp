@@ -86,8 +86,8 @@
 			<td></td>
 			<td></td>
 			<td></td>
-			<td class="total">Total:&emsp;&emsp;</td>
-			<td><jsp:include page="TotalPoints.jsp" /></td>
+			<td class="bottom" id="total">Total:&emsp;&emsp;</td>
+			<td class="bottom" id="sum"><jsp:include page="TotalPoints.jsp" /></td>
 		</tr>	
 	</table>
 </main>
