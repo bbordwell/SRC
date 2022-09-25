@@ -21,6 +21,7 @@
 <body>
 <c:import url="header.jsp" />
 
+
 <main>
 	<table class="loyalty_top">
 		<caption>
@@ -54,7 +55,9 @@
 	<sql:query var="rewardsSummary" dataSource="${myDS}">
 		SELECT reservations.reservation_id, reservations.check_in, reservations.check_out, hotels.name, reservations.earned_points
 		FROM reservations
-		INNER JOIN hotels ON reservations.hotel_id = hotels.hotel_id;
+		INNER JOIN hotels ON reservations.hotel_id = hotels.hotel_id
+		inner join customers on reservations.customer_id = customers.customer_id
+		WHERE customers.email = '${sessionScope['user']}';
 	</sql:query>
 	
 	<table class="rewards">
