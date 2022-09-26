@@ -43,6 +43,10 @@ td {
 	border: 1px solid;
 }
 
+.calendar-date-disabled {
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .td-invisable {
 	border: 1px solid white;
 }
@@ -51,6 +55,6 @@ td {
 	background-color: #CC373380;
 }
 
-.passthrough {
+.between-enabled {
 	background-color: #33C8CC80
 }
