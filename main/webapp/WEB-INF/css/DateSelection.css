@@ -41,7 +41,7 @@ td {
 	vertical-align: middle;
 	display: inline-block;
 	border: 1px solid;
-}
+} 
 
 .calendar-date-disabled {
 	color: rgba(0, 0, 0, 0.5);
@@ -56,5 +56,33 @@ td {
 }
 
 .between-enabled {
-	background-color: #33C8CC80
+	background-color: #33C8CC80;
 }
+
+.basic-button {
+	border: 1px solid black;
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.basic-button {
+	border: 1px solid black;
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+.basic-button:hover {
+	background-color: #CC373380;
+}
+
+/*.calendar {
+	width: 500px;
+	height: 500px;
+}
+
+.calendar .dates {
+	width: auto;
+	height: auto;
+}*/
