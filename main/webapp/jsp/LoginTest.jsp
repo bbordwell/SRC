@@ -10,6 +10,16 @@
   <style><%@include file="../WEB-INF/css/Main.css"%></style>
 <title>Proviso Login</title>
 <c:import url="header.jsp" />
+<script type="text/javascript">
+function myFunction() {
+	  var x = document.getElementById("myInput");
+	  if (x.type === "password") {
+	    x.type = "text";
+	  } else {
+	    x.type = "password";
+	  }
+	}
+</script>
 </head>
 <body>
 <body>
@@ -27,7 +37,7 @@
 			    			
 							<div class="val">
 					    		<label for="psw"><b>Password</b></label>
-					    		<input type="password" placeholder="Enter Password" value="FakePSW" id="myInput" name="password" required>
+					    		<input type="password" placeholder="Enter Password" id="myInput" name="password" required>
 					    		<input type="checkbox" checked="checked" name="remember"> Remember me
 			    			</div>
 			    				

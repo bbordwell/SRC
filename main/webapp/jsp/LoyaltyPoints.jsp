@@ -21,6 +21,7 @@
 <body>
 <c:import url="header.jsp" />
 
+
 <main>
 	<table class="loyalty_top">
 		<caption>
@@ -48,13 +49,16 @@
 	<sql:setDataSource
 		var="myDS"
 		driver="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/provisodb"
-		user="ProvisoUser" password="password"
+		url="${initParam['dbURL']}"
+		user="${initParam['dbUser']}" password="${initParam['dbPass']}"
 	/>
 	<sql:query var="rewardsSummary" dataSource="${myDS}">
 		SELECT reservations.reservation_id, reservations.check_in, reservations.check_out, hotels.name, reservations.earned_points
 		FROM reservations
-		INNER JOIN hotels ON reservations.hotel_id = hotels.hotel_id;
+		INNER JOIN hotels ON reservations.hotel_id = hotels.hotel_id
+		inner join customers on reservations.customer_id = customers.customer_id
+		WHERE customers.email = '${sessionScope['user']}'
+		AND reservations.check_out > DATE_ADD(CURDATE(),INTERVAL- 1 YEAR) AND reservations.check_out < CURDATE();
 	</sql:query>
 	
 	<table class="rewards">

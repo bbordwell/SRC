@@ -35,9 +35,9 @@
 						   
 						    <div class="group"  >
 							    <label for="psw"><b>Password</b></label>
-							    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+							    <input type="password" placeholder="Enter Password" name="psw" id="psw" minlength='8' required>
 							    <label for="psw"><b>Confirm Password</b></label>
-							    <input type="password" placeholder="Reenter Password" name="pswre" id="repsw" required>
+							    <input type="password" placeholder="Reenter Password" name="pswre" id="repsw" minlength='8' required>
 						    </div>
 						    
 						    <div class="group" >

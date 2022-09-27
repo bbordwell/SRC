@@ -167,6 +167,7 @@
   display: inline-block;
   padding: 9px;
   background-color: #CC3733;
+  cursor: pointer;
 }
 
 .arrow:hover {
@@ -278,6 +279,7 @@
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 .events li #confbtn {
   display: block;
@@ -286,6 +288,7 @@
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 .events li #gatheringsbtn {
   border-top-right-radius: 12px;
@@ -297,6 +300,7 @@
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .events li #weddingbtn:hover {
