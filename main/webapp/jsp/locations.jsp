@@ -7,6 +7,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style><%@include file="../WEB-INF/css/Locations.css"%></style>
     <style><%@include file="../WEB-INF/css/Main.css"%></style>
     	<style>
@@ -15,7 +17,6 @@
        		}
     	</style>
 <title>Locations</title>
-<c:import url="header.jsp" />
 </head>
 <body>
 
@@ -47,83 +48,491 @@
 				<div class="boxes">
 					<div class="box" id="omaha">
 					<%Location omaha = new Location(dataManager,6); %>
-						<h2>Omaha</h2>
-						<ul class="address">
-							<li><%out.print(omaha.getAddress()); %></li>
-							<li><%out.print(omaha.getCityStateZip());%></li>
-							<li>USA</li>
-							<li><%out.print(omaha.getPhone()); %></li>
-						</ul>
+						<div class="box-left">
+							<h2>Omaha</h2>
+		
+							<ul class="address">
+								<li><%out.print(omaha.getAddress()); %></li>
+								<li><%out.print(omaha.getCityStateZip());%></li>
+								<li>USA</li>
+								<br>
+								<li class="phone"><%out.print(omaha.getPhone()); %></li>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="omahaCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Henry Doorly Zoo</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#omahaCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#omahaCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="lincoln">
 					<%Location lincoln = new Location(dataManager,3); %>
-						<h2>Lincoln</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>Lincoln</h2>
+		
+							<ul class="address">
 							<li><%out.print(lincoln.getAddress()); %></li>
 							<li><%out.print(lincoln.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(lincoln.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="lincolnCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#lincolnCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#lincolnCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="scottsbluff">
 					<%Location scottsbluff = new Location(dataManager,7); %>
-						<h2>Scottsbluff</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>Scottsbluff</h2>
+		
+							<ul class="address">
 							<li><%out.print(scottsbluff.getAddress()); %></li>
 							<li><%out.print(scottsbluff.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(scottsbluff.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="scottsbluffCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="oneill">
 					<%Location oneill = new Location(dataManager,5); %>
-						<h2>O'Neill</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>O'Neill</h2>
+		
+							<ul class="address">
 							<li><%out.print(oneill.getAddress()); %></li>
 							<li><%out.print(oneill.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(oneill.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="oneillCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#oneillCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#oneillCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="kearney">
 					<%Location kearney = new Location(dataManager,2); %>
-						<h2>Kearney</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>Kearney</h2>
+		
+							<ul class="address">
 							<li><%out.print(kearney.getAddress()); %></li>
 							<li><%out.print(kearney.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(kearney.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="kearneyCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#kearneyCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#kearneyCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="north-platte">
 					<%Location northPlatte = new Location(dataManager,4); %>
-						<h2>North Platte</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>North Platte</h2>
+		
+							<ul class="address">
 							<li><%out.print(northPlatte.getAddress()); %></li>
 							<li><%out.print(northPlatte.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(northPlatte.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="northPlatteCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#northPlatteCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#northPlatteCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="south-sioux-city">
 					<%Location ssc = new Location(dataManager,8); %>
-						<h2>South Sioux City</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>South Sioux City</h2>
+		
+							<ul class="address">
 							<li><%out.print(ssc.getAddress()); %></li>
 							<li><%out.print(ssc.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(ssc.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="sscCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#sscCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#sscCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 					<div class="box" id="bellevue">
 					<%Location bellevue = new Location(dataManager,1); %>
-						<h2>Bellevue</h2>
-						<ul class="address">
+						<div class="box-left">
+							<h2>Bellevue</h2>
+		
+							<ul class="address">
 							<li><%out.print(bellevue.getAddress()); %></li>
 							<li><%out.print(bellevue.getCityStateZip());%></li>
 							<li>USA</li>
+							<br>
 							<li><%out.print(bellevue.getPhone()); %></li>
-						</ul>
+							</ul>
+						</div>
+						
+						<div class="box-right">
+						
+							<div id="bellevueCarousel" class="carousel slide" data-bs-ride="carousel">
+							  <div class="carousel-indicators">
+							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							  </div>
+							  <div class="carousel-inner">
+							    <div class="carousel-item active">
+							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Proviso Omaha</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>Joslyn Art Museum</h5>
+							      </div>
+							    </div>
+							    <div class="carousel-item">
+							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
+							      <div class="carousel-caption d-none d-md-block">
+							        <h5>The Durham Museum</h5>
+							      </div>
+							    </div>
+							  </div>
+							  <button class="carousel-control-prev" type="button" data-bs-target="#bellevueCarousel" data-bs-slide="prev">
+							    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Previous</span>
+							  </button>
+							  <button class="carousel-control-next" type="button" data-bs-target="#bellevueCarousel" data-bs-slide="next">
+							    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							    <span class="visually-hidden">Next</span>
+							  </button>
+							</div>
+							
+						</div>
 					</div>
 				</div>
 			</div>
@@ -133,6 +542,8 @@
 	<footer>
 		<jsp:include page="footer.jsp" />
 	</footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>	
 	
 	<script type="text/javascript">
 	let box = document.getElementsByClassName("box");
