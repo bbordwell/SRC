@@ -76,7 +76,7 @@
   padding: 10px 25px 10px 25px;
   text-decoration: none;
   color: white;
-  background-color: #CC3733;
+  background-color: #6c0001;
 }
 
 .description #see-locations-button:hover {
@@ -87,7 +87,7 @@
 .red-box {
 	height: 10vh;
 	width: 30vw;
-	background-color: #CC3733;
+	background-color: #6c0001;
 	margin-left: 60%;
 	margin-top: -5%;
 }
@@ -109,7 +109,7 @@
 	width:30vw;
 	height: 30vh; 
 	margin-left: 60%;
-	background-color: #CC3733;
+	background-color: #6c0001;
 	color: white;
 	display: flex;
     align-items: center; 
@@ -166,7 +166,7 @@
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 9px;
-  background-color: #CC3733;
+  background-color: #6c0001;
   cursor: pointer;
 }
 
@@ -175,7 +175,7 @@
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 10px;
-  background-color: #CC3733;
+  background-color: #6c0001;
 }
 
 .right {
@@ -274,7 +274,7 @@
   border-bottom-left-radius: 12px;
   border-right: none;
   display: block;
-  background-color: #CC3733;
+  background-color: #6c0001;
   color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
@@ -283,7 +283,7 @@
 }
 .events li #confbtn {
   display: block;
-  background-color: #CC3733;
+  background-color: #6c0001;
   color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
@@ -295,7 +295,7 @@
   border-bottom-right-radius: 12px;
   border-left: none;
   display: block;
-  background-color: #CC3733;
+  background-color: #6c0001;
   color: #fbfbfb;
   text-align: center;
   padding: 10px 20px;
