@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.Calendar"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,37 +15,49 @@
 </style>
 </head>
 <body>
-	<div class="container">
-		<br/>
-		<div class="main center">
-			<div id="date-display" class="center-child">
-				<!-- Check in/out dates -->
-				<form action="/Proviso" id="dateSelect">
-					<% Calendar today = Calendar.getInstance(); %>
-					<input type="hidden" id="action" name="action" value="RoomChoice">
-					<label for="checkin">Check-In</label>
-					<input type="date" id="checkin" name="checkin" oninput="dateSelectManual('checkin')" required>
-					<label for="checkout">Check-Out</label>
-					<input type="date" id="checkout" name="checkout" oninput="dateSelectManual('checkout')" required>
-				</form>
-			</div>
+<c:import url="header.jsp" />
+
+	<main>
+		<div class="main-container">
+			<div class="container">
 			
-			<div id="button-previous-month" class="basic-button" onclick="changeMonth('previous')"></div>
-			<div id="button-next-month" class="basic-button"  onclick="changeMonth('next')"></div>
-			
-			<!-- This contains the displayed calendars -->
-			<div id="displayed-calendars" class="center">
-				
-				
-				
-				
-				
-				
+				<br/>
+				<div class="main center">
+					<div id="date-display" class="center-child">
+						<!-- Check in/out dates -->
+						<form action="/Proviso" id="dateSelect">
+							<% Calendar today = Calendar.getInstance(); %>
+							<input type="hidden" id="action" name="action" value="RoomChoice">
+							<label for="checkin">Check-In</label>
+							<input type="date" id="checkin" name="checkin" oninput="dateSelectManual('checkin')" required>
+							<label for="checkout">Check-Out</label>
+							<input type="date" id="checkout" name="checkout" oninput="dateSelectManual('checkout')" required>
+						</form>
+					</div>
+					
+					<div id="button-previous-month" class="basic-button" onclick="changeMonth('previous')"></div>
+					<div id="button-next-month" class="basic-button"  onclick="changeMonth('next')"></div>
+					
+					<!-- This contains the displayed calendars -->
+					<div id="displayed-calendars" class="center">
+						
+						
+						
+						
+						
+						
+					</div>
+					<input type="submit" id="submit" value="submit" form="dateSelect">
+				</div>
+				<br/>
 			</div>
-			<input type="submit" id="submit" value="submit" form="dateSelect">
 		</div>
-		<br/>
-	</div>
+	</main>
+	
+	<footer>
+		<jsp:include page="footer.jsp" />
+	</footer>
+	
 	
 	<script>
 		//Start up stuff

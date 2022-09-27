@@ -6,18 +6,17 @@
 <head>
 <meta charset="UTF-8">
     <style><%@include file="../WEB-INF/css/DateSelection.css"%></style>
+    <style><%@include file="../WEB-INF/css/Main.css"%></style>
     	<style>
         	* {
           	  font-family: Glacial;
        		}
     	</style>
 <title>Select Date</title>
-<c:import url="header.jsp" />
+
 </head>
 <body>
 	<%@include file="DateSelection_body.jsp"%>
 </body>
-<footer>
-	<jsp:include page="footer.jsp" />
-</footer>
+
 </html>
