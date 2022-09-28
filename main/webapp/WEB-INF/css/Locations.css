@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: content-box;
+}
+
 .main-top {
 	display: flex;
 	justify-content: center;
@@ -16,6 +20,7 @@
 		border-radius: 10px;
 	    padding-right: 45px;
 	    text-align: center;
+	    box-sizing: border-box;
 	}
 	     
 	.select {
@@ -106,6 +111,11 @@ li {
 	background: #777;
 	color: white;
 	position: relative;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.carousel-inner {
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
