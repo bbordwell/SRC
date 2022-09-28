@@ -46,3 +46,17 @@ td {
 .td-invisable {
 	border: 1px solid white;
 }
+
+#submit {
+	background: white;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 10px 15px;
+	color: black;
+	cursor: pointer;
+}
+
+#submit:hover {
+	background: #6c0001;
+	color: white;
+}
