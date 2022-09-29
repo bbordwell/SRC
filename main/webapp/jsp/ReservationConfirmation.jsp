@@ -10,6 +10,7 @@
 	<meta charset="UTF-8">
 	<title>reservation confirmation</title>
     <style><%@include file="../WEB-INF/css/ReservationConfirmation.css"%></style>
+    <style><%@include file="../WEB-INF/css/Main.css"%></style>
     <%
     	//get customer information
     	String user = (String)session.getAttribute("user");
@@ -35,17 +36,18 @@
 	<c:import url="header.jsp" />
 	
 	<div id="container">
-        <div id="hello"><h3>Hello, <%out.print(customer.getFirstName());%>  <%out.print(customer.getLastName());%>!</h3></div>
+        <div id="hello"><h1>Hello, <%out.print(customer.getFirstName());%>  <%out.print(customer.getLastName());%>!</h1></div>
         <form action="">
         <input type="hidden" name="action" value="ReservationSummary"/>
        <div id="reservationContainer">
          <table id="payment">
+         	<br>
             	<tr>
-            		<td>Your Reservation</td>
+            		<td><h2>Your Reservation</h2></td>
             	</tr>
             </table>
             <br/>
-        <table>
+        <table class="res-details">
         	<tr>
         		<td>Proviso <%out.print(reservation.getLocation());%></td>
         	</tr>
@@ -89,26 +91,33 @@
                 <td id="money">$<%out.print(String.format("%.02f",total)); %></td>
             </tr>
         </table>
+        <br>
        </div>
        <div id="guestInformationContainer">
-            <div id="guestInformation">Guest Information</div>
+       		<br>
+            <div id="guestInformation"><h2>Guest Information</h2></div>
+            <br>
             <table id="guestInformationTable">
                 <tr>
-                    <td><div id="firstName"><%out.print(customer.getFirstName());%></div></td>
+                    <td><div id="firstlastName"><%out.print(customer.getFirstName());%> <%out.print(customer.getLastName());%></div></td>
+                </tr>
+                <tr>
                     <td><div id="email"><%out.print(customer.getEmail());%></div></td>
                 </tr>
                 <tr>
-                    <td><div id="lastName"><%out.print(customer.getLastName());%></div></td>
                     <td><div id="phoneNumber"><%out.print(customer.getPhoneNumber());%></div></td>
                 </tr>
             </table>
+            <br>
        </div>
        <div id="PaymentContainer">
+       	<br>
             <table id="payment">
             	<tr>
-            		<td>Payment</td>
+            		<td><h2>Payment</h2></td>
             	</tr>
             </table>
+            <br>
             <table id="PaymentInformation">
             	<tr>
             		<td id="label">Name on Card: </td>
@@ -140,16 +149,19 @@
                 	<td>
                 </tr>
             </table>
+            <br>
             <table id="submit">
             	<tr>
             		<td><button type="submit" id="submit">Complete Reservation</button></td>
             	</tr>
             </table>
+            <br>
        </div>
         </form>
-        <p>Need to start over? <a href="">Click here to cancel</a></p>
+        <p class="restart">Need to start over? <a href="">Click here to cancel</a></p>
    </div> 
-   
+   <footer>
    <jsp:include page="footer.jsp" />
+   </footer>
 </body>
 </html>
