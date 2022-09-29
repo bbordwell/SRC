@@ -20,6 +20,7 @@ public class ReservationLookup {
 	int guests;
 	String room;
 	ArrayList<Integer> features = new ArrayList<Integer>();
+	String email;
 	
 		public ReservationLookup() {
 			this.validReservation = false;
@@ -39,10 +40,15 @@ public class ReservationLookup {
 			this.checkOut = data.getDate(10);
 			this.guests = data.getInt(11);
 			this.room = data.getString(12);
+			this.email = data.getString(13);
 			while (features.next()) {
 				this.features.add(features.getInt(1));
 			}
 			
+		}
+		
+		public String getEmail() {
+			return this.email;
 		}
 		
 		public String getHotel() {

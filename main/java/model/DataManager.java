@@ -131,7 +131,7 @@ public class DataManager {
 	  public ReservationLookup getReservationLookup(int reservationID) {
 		  try {
 			  PreparedStatement stmt;
-			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
+			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type, email from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
 			  stmt.setInt(1, reservationID);
 			  System.out.println(stmt);
 			  ResultSet data = stmt.executeQuery();
