@@ -13,7 +13,7 @@ CREATE TABLE customers (
     first_name varchar(255),
     last_name varchar(255),
     email varchar(255),
-    pword varchar(255),
+    pword varchar(64),
     phone_number varchar(15),
     PRIMARY KEY (customer_id)
 );
@@ -79,7 +79,7 @@ INSERT INTO features (feature_id, feature_name) VALUES ('3','parking');
 
 /*Insert test user*/
 INSERT INTO customers (first_name, last_name, email, pword, phone_number)
-VALUES ('John', 'Doe', 'example@my365.bellevue.edu', '12345', '4025555555');
+VALUES ('John', 'Doe', 'example@my365.bellevue.edu', '7D4E3EEC80026719639ED4DBA68916EB94C7A49A053E05C8F9578FE4E5A3D7EA', '4025555555');
 
 /*Insert Hotels*/
 INSERT INTO hotels (name, address, city, state, zip_code, phone_number, standard_kings, standard_queens, double_queens, double_fulls)
