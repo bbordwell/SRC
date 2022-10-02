@@ -215,7 +215,7 @@ public class DataManager {
 		  else if (res.getLocation().equals("Lincoln")) {hotelID = 3;}
 		  else if (res.getLocation().equals("Scottsbluff")) {hotelID = 7;}
 		  else if (res.getLocation().equals("O'Niell")) {hotelID = 5;}
-		  else if (res.getLocation().equals("Kearny")) {hotelID = 2;}
+		  else if (res.getLocation().equals("Kearney")) {hotelID = 2;}
 		  else if (res.getLocation().equals("North Platte")) {hotelID = 4;}
 		  else if (res.getLocation().equals("South Sioux City")) {hotelID = 8;}
 		  else if (res.getLocation().equals("Bellevue")) {hotelID = 1;}
