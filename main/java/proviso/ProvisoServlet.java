@@ -69,6 +69,7 @@ public class ProvisoServlet extends HttpServlet {
     	    		break;
     	        case "logout":
     	        	request.getSession().invalidate();
+    	        	url = base + "LandingPage.jsp";
     	        	break;
     	        case "LandingPage":
     	    		url = base + "LandingPage.jsp";
