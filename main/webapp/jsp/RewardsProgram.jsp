@@ -90,7 +90,8 @@
 				<td>
 					Daily Food and Beverage Credit&nbsp;&nbsp;<span style="color: #CC3733">*</span>
 					<div id="hidden3">
-						Discounts to vary.<br>
+						Gold Members = $10 per day, per room<br>
+						Diamond Members = $15 per day, per room<br>
 						Please speak to hotel front desk for additional information.
 					</div>
 				</td>
