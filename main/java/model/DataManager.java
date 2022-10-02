@@ -1,10 +1,13 @@
 package model;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
 import model.ReservationSummaryObject;
 import java.sql.PreparedStatement;
 import java.sql.Date;
@@ -75,12 +78,33 @@ public class DataManager {
 		  }
 	  }
 	  
+	  public byte[] hash(String string) {
+		  try {
+			  //The following was copied from: https://www.baeldung.com/sha-256-hashing-java
+			  MessageDigest digest = MessageDigest.getInstance("SHA3-256");
+			  byte[] hashbytes = digest.digest(string.getBytes(StandardCharsets.UTF_8));
+			  return hashbytes;
+		  } catch (Exception e) {
+			  //No exception should occur.
+			  return null;
+		  }
+	  }
+	  
+	  public String byteToHex(byte[] bytes) {
+		  //The following was copied from: https://stackoverflow.com/a/2817883
+		  StringBuilder sb = new StringBuilder();
+		  for (byte b : bytes) {
+			  sb.append(String.format("%02X", b));
+		  }
+		  return sb.toString();
+	  }
+	  
 	  public boolean isValidLogin(String username, String password) {
 		  try {
 			  PreparedStatement stmt;
 			  stmt = this.conn.prepareStatement("SELECT COUNT(*) FROM customers WHERE email = ? and pword = ?");
 			  stmt.setString(1, username);
-			  stmt.setString(2, password);
+			  stmt.setString(2, byteToHex(hash(password)));
 			  ResultSet result = stmt.executeQuery();
 			  result.next();
 			  if (result.getInt("count(*)") == 1) {
@@ -89,6 +113,9 @@ public class DataManager {
 		  }
 		  catch (SQLException e) {
 			  System.out.println("Query failed");
+		  }
+		  catch (NullPointerException e) {
+			  System.out.println("isValidLogin(): No password Provided");
 		  }
 		  return false;
 	  }
@@ -100,7 +127,7 @@ public class DataManager {
 			  stmt.setString(1, firstName);
 			  stmt.setString(2, lastName);
 			  stmt.setString(3, email);
-			  stmt.setString(4, pword);
+			  stmt.setString(4, byteToHex(hash(pword)));
 			  stmt.setString(5, phoneNumber);
 			  System.out.println(stmt);
 			  stmt.executeUpdate();
@@ -131,7 +158,7 @@ public class DataManager {
 	  public ReservationLookup getReservationLookup(int reservationID) {
 		  try {
 			  PreparedStatement stmt;
-			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
+			  stmt = this.conn.prepareStatement("select hotels.name, hotels.address, hotels.city, hotels.state, hotels.zip_code, hotels.phone_number, first_name, last_name, check_in, check_out, number_of_guests, room_type, email from reservations  inner join customers on reservations.customer_id=customers.customer_id inner join hotels on reservations.hotel_id=hotels.hotel_id where reservation_id=?");
 			  stmt.setInt(1, reservationID);
 			  System.out.println(stmt);
 			  ResultSet data = stmt.executeQuery();

@@ -120,20 +120,6 @@
 				</div>
 			</div>
 			
-			<div class="box-7">
-				<div class="inner-1">
-					<h3><a href="/Proviso?action=ReservationSummary">Parking</a></h3>
-				</div>
-				<div class="inner-2">
-					<h3><a href="/Proviso?action=ReservationSummary">Dining</a></h3>
-				</div>
-				<div class="inner-3">
-					<h3><a href="/Proviso?action=ReservationSummary">Hotel Policies</a></h3>
-				</div>
-				<div class="inner-4">
-					<h3><a href="/Proviso?action=ReservationSummary">Things to Do</a></h3>
-				</div>
-			</div>
 		</div>
 	</main>
 	<footer>

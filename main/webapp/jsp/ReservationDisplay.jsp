@@ -23,7 +23,10 @@
 	if (!reservation.isValid()) { %>
 	<jsp:forward page="ReservationLookup.jsp"/> <%
 	}
-%>
+	if (!reservation.getEmail().equals(session.getAttribute("user"))) { %>
+		<jsp:forward page="ReservationLookup.jsp"/> <%
+	}
+	%>
 
 <main>
 
