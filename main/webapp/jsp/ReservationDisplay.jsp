@@ -21,7 +21,7 @@
 <%
 	ReservationLookup reservation = dataManager.getReservationLookup(Integer.valueOf(request.getParameter("reservationID")));
 	if (!reservation.isValid()) { %>
-	<jsp:forward page="ReservationLookup.jsp"/> <%
+	<jsp:forward page="ReservationInvalid.jsp"/> <%
 	}
 	if (!reservation.getEmail().equals(session.getAttribute("user"))) { %>
 		<jsp:forward page="ReservationLookup.jsp"/> <%
