@@ -52,7 +52,7 @@
 							<option value="Lincoln">Lincoln</option>
 							<option value="Scottsbluff">Scottsbluff</option>
 							<option value="O'Niell">O'Niell</option>
-							<option value="Kearny">Kearney</option>
+							<option value="Kearney">Kearney</option>
 							<option value="North Platte">North Platte</option>
 							<option value="South Sioux City">South Sioux City</option>
 							<option value="Bellevue">Bellevue</option>
