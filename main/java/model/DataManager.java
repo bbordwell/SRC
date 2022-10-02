@@ -114,6 +114,9 @@ public class DataManager {
 		  catch (SQLException e) {
 			  System.out.println("Query failed");
 		  }
+		  catch (NullPointerException e) {
+			  System.out.println("isValidLogin(): No password Provided");
+		  }
 		  return false;
 	  }
 	  
