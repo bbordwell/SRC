@@ -100,6 +100,10 @@ public class DataManager {
 	  }
 	  
 	  public boolean isValidLogin(String username, String password) {
+		  if(password != null && password.length() == 0) {
+			  return false;
+		  }
+		  
 		  try {
 			  PreparedStatement stmt;
 			  stmt = this.conn.prepareStatement("SELECT COUNT(*) FROM customers WHERE email = ? and pword = ?");
