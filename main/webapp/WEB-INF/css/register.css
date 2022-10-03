@@ -115,3 +115,11 @@ hr{
             position: absolute;
             left:20%;
 }
+
+.error-text {
+	color: red;
+}
+
+.form-inline .error-border {
+	border-color: red;
+}
