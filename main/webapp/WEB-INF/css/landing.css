@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
-.container {
+.landing-container {
     min-width:500px;
     box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: content-box;
 }
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ first section (top) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
@@ -24,6 +28,7 @@
 
 #title {
 	padding-bottom: 150px;
+	padding-top: 100px;
 	color: white;
 	font-size: 100px;
 }
@@ -32,7 +37,7 @@
   padding-top: 125px;
   background: rgba(0,0,0,0.5);
   border: 2px solid #0000;
-  border-radius: 12px;
+  border-radius: 4px;
   border-color: white;
   color: white;
   padding: 15px 32px;
@@ -101,6 +106,20 @@
     background-image: url('${pageContext.request.contextPath}/img/a.jpeg');
     background-size: 100% 100%;
     text-align: center;
+}
+
+.carousel-item {
+	height: 85vh;
+	background: #777;
+	color: white;
+	position: relative;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.carousel-inner {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ photo box ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
