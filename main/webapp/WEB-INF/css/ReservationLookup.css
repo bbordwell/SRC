@@ -62,3 +62,8 @@ label {
 input {
 	padding: 7px;
 }
+
+#invalid {
+	color: red;
+	text-align: center;
+}

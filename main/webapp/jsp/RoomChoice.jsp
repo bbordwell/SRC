@@ -176,7 +176,7 @@
 					</div>
 				</div>
 				<div class='middle'>
-					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/king.jpg">
+					<img class='room-picture' alt='Hotel Room Picture' src="${pageContext.request.contextPath}/img/king_bed.jpg">
 				</div>
 				<div class='right'>
 					<div class='top-right'>
