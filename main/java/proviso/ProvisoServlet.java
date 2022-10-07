@@ -51,7 +51,7 @@ public class ProvisoServlet extends HttpServlet {
     	      HttpServletResponse response) throws ServletException, IOException {
     		//Build the correct url for the correct jsp and forward the response to that jsp
     	    String base = "/jsp/";
-    	    String url = base + "index.jsp"; //If no action go to home page.
+    	    String url = base + "LandingPage.jsp"; //If no action go to home page.
     	    String action = request.getParameter("action");
     	    if (action != null) {	//Otherwise go to the page specified by the action
     	        switch (action) {
