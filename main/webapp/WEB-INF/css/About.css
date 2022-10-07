@@ -66,12 +66,11 @@ input[type=text], input[type=email], input[type=tel], textarea {
 }
 
 input[type=submit] {
-  	width: 20%;
-  	float: right;
+  	width: 25%;
   	background-color: #CC3733;
   	color: white;
   	padding: 14px 20px;
-  	margin: 8px 0;
+  	margin: 4%;
   	border: none;
   	border-radius: 15px;
 	cursor: pointer;
@@ -99,6 +98,7 @@ fieldset {
 .button {
 	margin-right: 5%;
 	padding-bottom: 5px;
+	text-align: center;
 }
 
 .bottom-img {
