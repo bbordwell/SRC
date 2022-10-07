@@ -101,12 +101,6 @@
 
 /*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ third section (photos) ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
 
-.photos {
-    height: 85vh; 
-    background-image: url('${pageContext.request.contextPath}/img/a.jpeg');
-    background-size: 100% 100%;
-    text-align: center;
-}
 
 .carousel-item {
 	height: 85vh;
@@ -121,93 +115,6 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-
-/*⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁ photo box ⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁⋁*/
-
-.photos_box {
-	width:30vw;
-	height: 30vh; 
-	margin-left: 60%;
-	background-color: #6c0001;
-	color: white;
-	display: flex;
-    align-items: center; 
-    flex-direction: column;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-
-.photos-box-top {
-	display: flex;
-	height: 25%;
-	align-items: center;
-}
-
-.photos-box-bottom {
-	overflow-y: auto;
-}
-
-.photo-nav {
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: nowrap;              /* default value; can be omitted */
-  justify-content: space-between;
-  overflow-y: auto;
-  width: 100%;
-}
-
-.photo_left {
-	width: 5vw;
-	margin-left: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.photo_middle {
-	width: 20vw;
-	margin-top: 15px;
-}
-.photo_middle p{
-	margin: 0;
-}
-
-.photo_right {
-	margin-right: 10px;
-	width: 5vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 9px;
-  background-color: #6c0001;
-  cursor: pointer;
-}
-
-.arrow:hover {
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  display: inline-block;
-  padding: 10px;
-  background-color: #6c0001;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-/*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ photo box ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ third section (photos) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 
 
