@@ -63,7 +63,7 @@
 						
 						<div class="box-right">
 						
-							<div id="omahaCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="omahaCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,25 +71,25 @@
 							    <button type="button" data-bs-target="#omahaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso Omaha</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/HenryDoorlyZoo.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Henry Doorly Zoo</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/joslyn-art-museum.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Joslyn Art Museum</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Durham.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>The Durham Museum</h5>
@@ -124,7 +124,7 @@
 						
 						<div class="box-right">
 						
-							<div id="lincolnCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="lincolnCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -132,25 +132,25 @@
 							    <button type="button" data-bs-target="#lincolnCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Lincoln.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso Lincoln</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Capitol.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Capitol Building</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/IMG_7221.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Memorial Stadium</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/IMG_7220.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Sunken Gardens</h5>
@@ -185,7 +185,7 @@
 						
 						<div class="box-right">
 						
-							<div id="scottsbluffCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="scottsbluffCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -193,25 +193,25 @@
 							    <button type="button" data-bs-target="#scottsbluffCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Scottsbluff.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso Scottsbluff</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/bluffs_monument.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Bluffs Monument</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/lake_minitare.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Lake Minitare</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Legacy.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Legacy of the Plains</h5>
@@ -246,7 +246,7 @@
 						
 						<div class="box-right">
 						
-							<div id="oneillCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="oneillCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -254,25 +254,25 @@
 							    <button type="button" data-bs-target="#oneillCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Oneill.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso O'Neill</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/rowses.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Rowse’s 1+1 Ranch</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/ashfall.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Ashfall Fossil Beds State Historical Park</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000"v>
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/niobrara.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Niobrara State Park</h5>
@@ -307,7 +307,7 @@
 						
 						<div class="box-right">
 						
-							<div id="kearneyCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="kearneyCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -315,25 +315,25 @@
 							    <button type="button" data-bs-target="#kearneyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Kearney.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso Kearney</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/archway.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Great Platte River Road Archway Monument</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/car.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Classic Car Collection</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/art.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Museum of Nebraska Art</h5>
@@ -368,7 +368,7 @@
 						
 						<div class="box-right">
 						
-							<div id="northPlatteCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="northPlatteCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -376,25 +376,25 @@
 							    <button type="button" data-bs-target="#northPlatteCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/northplatte.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso North Platte</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/tower.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Golden Spike Tower and Visitor Center</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/fort.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Fort Cody Trading Post</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/up.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Union Pacific Railroad Bailey Yardv</h5>
@@ -429,7 +429,7 @@
 						
 						<div class="box-right">
 						
-							<div id="sscCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="sscCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -437,25 +437,25 @@
 							    <button type="button" data-bs-target="#sscCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/ssc.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso South Sioux City</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/museum.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Sioux City Public Museum</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/ssc-art.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Sioiux City Art Center</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/lc.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Lewis & Clark Interpretive Center</h5>
@@ -490,7 +490,7 @@
 						
 						<div class="box-right">
 						
-							<div id="bellevueCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div id="bellevueCarousel" class="carousel slide" data-interval="false">
 							  <div class="carousel-indicators">
 							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -498,25 +498,25 @@
 							    <button type="button" data-bs-target="#bellevueCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							  </div>
 							  <div class="carousel-inner">
-							    <div class="carousel-item active" data-bs-interval="20000">
+							    <div class="carousel-item active">
 							    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/bellevue.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Proviso Bellevue</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/ff.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Fontenelle Forest</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/sarpy-county-museum.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Sarpy County Museum</h5>
 							      </div>
 							    </div>
-							    <div class="carousel-item" data-bs-interval="20000">
+							    <div class="carousel-item">
 							      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/walnut.jpg">
 							      <div class="carousel-caption d-none d-md-block">
 							        <h5>Walnut Creek Recreation Area</h5>
