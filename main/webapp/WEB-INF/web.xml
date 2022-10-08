@@ -21,4 +21,7 @@
   	<param-name>dbURL</param-name>
   	<param-value>jdbc:mysql://localhost:3306/provisodb</param-value>
   </context-param>
+  <welcome-file-list>
+        <welcome-file>ProvisoServlet</welcome-file>
+    </welcome-file-list>
 </web-app>
