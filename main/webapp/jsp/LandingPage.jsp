@@ -77,7 +77,7 @@
 			    <div class="carousel-item" data-bs-interval="10000">
 			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/northplatte.jpg">
 			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Proviso Northe Platte</h5>
+			        <h5>Proviso North Platte</h5>
 			      </div>
 			    </div>
 			    <div class="carousel-item" data-bs-interval="10000">
@@ -89,7 +89,7 @@
 			    <div class="carousel-item" data-bs-interval="10000">
 			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/bellevue.jpg">
 			      <div class="carousel-caption d-none d-md-block">
-			        <h5>Proviso Bellevue</h5>
+			        <h5>Proviso South Sioux City</h5>
 			      </div>
 			    </div>
 			  </div>
