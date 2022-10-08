@@ -68,13 +68,17 @@
 							        <textarea id="message" name="message" rows="10"
 							        placeholder="Type message here"></textarea><br>
 							    </fieldset>
+							    <div class="thankyou_message" style="display:none;">
+									<table>
+										<tr>
+											<td>Thanks for contacting Proviso! We will get back to you soon!</td>
+										</tr>
+									</table>
+						    	</div>
 							    <div class=button>
 							    	<input type='submit' value='Submit'>
 							    </div>
 							</div>
-							<div class="thankyou_message" style="display:none;">
-						    	<h2>Thanks for contacting Proviso! We will get back to you soon!</h2>
-						    </div>
 						</form>
 					</div>
 				</div>
