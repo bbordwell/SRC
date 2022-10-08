@@ -53,7 +53,7 @@
 							    <label for="phone"><b>Confirm Phone</b></label>
 							    <input type="tel" placeholder="Confirm Phone" name="phone" id="rephone" oninput="update()" required>
 						    </div>
-				    	<p class="terms-of-service">By submitting the form you agree to our <a href="#">Terms Of Service</a>.</p>
+				    	<p class="terms-of-service">By submitting the form you agree to our <a href="#">Terms Of Service</a></p>
     					<button type="button" class="registerbtn" onclick="sendData()">Join</button>
    					</form>
 				</div>
