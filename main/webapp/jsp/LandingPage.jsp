@@ -3,6 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
  <style><%@include file="../WEB-INF/css/landing.css"%></style>
  <style><%@include file="../WEB-INF/css/Main.css"%></style>
 <head>
@@ -11,7 +13,7 @@
 </head>
 <body>
 <c:import url="header.jsp" />
-	<div class='container'>
+	<div class='landing-container'>
 		<div class='top'>
 			<div class='overlay'>
 				<h1 id='title'>PROVISO</h1>
@@ -27,27 +29,82 @@
 				part of Nebraska for amazing views of Chimney Rock in Bayard, sand dunes, or visiting Fort Robinson State Park and Toadstool Geologic Park.</p>
 				<a href="/Proviso?action=DateSelection" id="see-locations-button">Book Now</a>
 		</div>
-		<div class="red-box"></div>
-		<div class='photos' id='photo-background'>
-			<div class='photos_box'>
-				<div class='photos-box-top'>
-					<h1>Photos</h1>
-				</div>
-				<div class='photos-box-bottom'>
-					<div class='photo-nav'>
-						<div class='photo_left'>
-							<button class="arrow left" onclick="prev()"></button>
-						</div>
-						<div class='photo_middle'>
-							<p>Here are some photos showcasing the beauty that Proviso Hotel has to offer.  </p>
-						</div>
-						<div class='photo_right'>
-							<button class="arrow right" onclick="next()"></button>
-						</div>
-					</div>	
-				</div>
+		
+		
+		<div class="photoSlide" id="landing">			
+			<div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+			    <button type="button" data-bs-target="#landingCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active" data-bs-interval="10000">
+			    	<img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/b.jpeg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso Omaha</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Lincoln.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso Lincoln</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Scottsbluff.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso Scottsbluff</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Oneill.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso O'Neill</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/Kearney.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso Kearney</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/northplatte.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso North Platte</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/ssc.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso Bellevue</h5>
+			      </div>
+			    </div>
+			    <div class="carousel-item" data-bs-interval="10000">
+			      <img class="d-block w-100" alt='event picture' src="${pageContext.request.contextPath}/img/bellevue.jpg">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Proviso South Sioux City</h5>
+			      </div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
 			</div>
 		</div>
+		
+		
 		<div class='events'>
 			<div class='events-left'>
 				<div class='events-top'>
@@ -75,6 +132,10 @@
 	<footer>
 		<jsp:include page="footer.jsp" />
 	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>	
+	
 	
 	<script>
 		document.getElementById('weddingbtn').onclick = function() {
