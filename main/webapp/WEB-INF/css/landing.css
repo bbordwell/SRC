@@ -115,6 +115,15 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
+.carousel-control-next,.carousel-control-prev {
+	opacity: .8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 3rem !important;
+	height: 3rem !important;
+}
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ third section (photos) ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
 
 

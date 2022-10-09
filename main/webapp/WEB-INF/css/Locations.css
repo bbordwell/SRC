@@ -120,6 +120,15 @@ li {
 	border-bottom-right-radius: 10px;
 }
 
+.carousel-control-next,.carousel-control-prev {
+	opacity: .8;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+	width: 3rem !important;
+	height: 3rem !important;
+}
+
 .container {
 	position: absolute;
 	bottom: 0;
