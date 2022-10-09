@@ -79,7 +79,7 @@
 					<table>
 						<tr>
 							<td id="table-left"><label for="selectWifi">WiFi</label></td>
-			                <td id="table-center"><input type="checkbox" name="selectWifi" id="selectWifi"></td>
+			                <td id="table-center"><input type="checkbox" name="selectWifi" id="selectWifi" value="on"></td>
 			                <td id="table-right"><a>$12.99</a></td>
 			                <td>flat fee</td>
 						</tr>

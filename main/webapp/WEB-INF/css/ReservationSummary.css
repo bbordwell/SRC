@@ -42,7 +42,7 @@ main {
 	margin-bottom: 30px;
 }
 
-.box-3 {
+.box-3, .box-7 {
 	border: 1px solid black;
 	border-radius: 12px;
 	padding-left: 3%;
@@ -124,4 +124,16 @@ main {
 	padding-right: 3%;
 	width: 13vw;
 	margin-left: 3vw;
+}
+
+.amenities {
+	margin: 0 auto 3% auto;
+}
+
+.amenities th {
+	text-decoration: underline;
+}
+
+.amenities td {
+	padding: 0 20px 10px 20px;
 }

@@ -66,13 +66,55 @@
                 </td>
             </tr>
        </table>
+       <br>
+       <div class="res-details">
+       		<table>
+	       		<caption><b>Amenities</b></caption>
+	       		<tr>
+	       			<td>WiFi:</td>
+	       			<td>
+	       				<%
+	       					if (wifi.equals("on")) {
+	       						out.print("YES");
+	       					} else {
+	       						out.print("NO");
+	       					}
+	       				%>
+	       			</td>
+	       		</tr>
+	       		<tr>
+	       			<td>Breakfast:</td>
+	       			<td>
+	       				<%
+	       					if (breakfast.equals("on")) {
+	       						out.print("YES");
+	       					} else {
+	       						out.print("NO");
+	       					}
+	       				%>
+	       			</td>
+	       		</tr>
+	       		<tr>
+	       			<td>Parking:</td>
+	       			<td>
+	       				<%
+	       					if (parking.equals("on")) {
+	       						out.print("YES");
+	       					} else {
+	       						out.print("NO");
+	       					}
+	       				%>
+	       			</td>
+	       		</tr>
+	       </table>
+       </div>
        <br/>
        <table id="cost">
             <tr>
                 <td id="label">Subtotal</td>
                 <%
                 	double subtotal = 0.0;
-                	if (reservation.getWifi()) {subtotal = 12.99;}
+                	if (reservation.getWifi()) {subtotal += 1299;}
                 	subtotal += reservation.getHolidaySurcharge() + dataManager.getNumberOfNights(reservation) * reservation.getNightlyRate();
                 	subtotal /= 100;
                 %>
@@ -81,7 +123,7 @@
             <tr>
                 <td id="label">Tax</td>
                 <%
-                	double tax = 0 * subtotal;
+                	double tax = 0.07 * subtotal;
                 %>
                 <td id="money">$<%out.print(String.format("%.02f",tax)); %></td>
             </tr>
@@ -158,7 +200,7 @@
             <br>
        </div>
         </form>
-        <p class="restart">Need to start over? <a href="">Click here to cancel</a></p>
+        <p class="restart">Need to start over? <a href="/Proviso?action=LandingPage">Click here to cancel</a></p>
    </div> 
    <footer>
    <jsp:include page="footer.jsp" />
