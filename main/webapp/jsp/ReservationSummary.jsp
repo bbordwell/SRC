@@ -111,13 +111,52 @@
 					</p>
 				</div>
 				<div class="inner-right">
-					<h2>Estimated Total</h2>
+					<h2>Amenities</h2>
+					<table class="amenities">
+						<tr>
+							<th>WiFi</th>
+							<th>Breakfast</th>
+							<th>Parking</th>
+						</tr>
+			       		<tr>
+			       			<td>
+			       				<%
+			       					if (reservation.getWifi() == true) {
+			       						out.print("YES");
+			       					} else {
+			       						out.print("NO");
+			       					}
+			       				%>
+			       			</td>
+			       			<td>
+			       				<%
+			       					if (reservation.getBreakfast() == true) {
+			       						out.print("YES");
+			       					} else {
+			       						out.print("NO");
+			       					}
+			       				%>
+			       			</td>
+			       			<td>
+			       				<%
+			       					if (reservation.getParking() == true) {
+			       						out.print("YES");
+			       					} else {
+			       						out.print("NO");
+			       					}
+			       				%>
+			       			</td>
+			       		</tr>
+			       </table>
+				</div>
+			</div>
+			<div class="box-7">
+				<h2>Estimated Total</h2>
 					<p>
 					<%
 					out.println(myReservation.getAmountString());
 					%>
 					</p>
-				</div>
 			</div>
 			
 		</div>
