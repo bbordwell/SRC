@@ -30,7 +30,7 @@
 							<label for="checkout">Check-Out:</label>
 							<input type="date" id="checkout" name="checkout" oninput="dateSelectManual('checkout')" required>
 						</form>
-						<div id="checkout-error" class="error-text justify-left"></div>
+						<div id="checkout-error" class="error-text justify-left">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</div>
 					</div>
 					
 					<div id="calendar-gui">
@@ -464,7 +464,7 @@
 			
 			if(!document.getElementById("checkout").checkValidity()) {
 				validDates = false;
-				checkoutErrorSpace.textContent = "<- Please enter a valid date.";
+				checkoutErrorSpace.textContent += "<- Please enter a valid date.";
 			} else {
 				checkoutErrorSpace.textContent = "";
 			}

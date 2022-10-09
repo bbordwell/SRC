@@ -72,7 +72,7 @@
                 <td id="label">Subtotal</td>
                 <%
                 	double subtotal = 0.0;
-                	if (reservation.getWifi()) {subtotal = 12.99;}
+                	if (reservation.getWifi()) {subtotal += 1299;}
                 	subtotal += reservation.getHolidaySurcharge() + dataManager.getNumberOfNights(reservation) * reservation.getNightlyRate();
                 	subtotal /= 100;
                 %>
@@ -81,7 +81,7 @@
             <tr>
                 <td id="label">Tax</td>
                 <%
-                	double tax = 0 * subtotal;
+                	double tax = 0.07 * subtotal;
                 %>
                 <td id="money">$<%out.print(String.format("%.02f",tax)); %></td>
             </tr>
