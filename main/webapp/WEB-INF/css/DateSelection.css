@@ -87,6 +87,7 @@ color: var(--button-text-color);
 .basic-button:hover {
 	background-color: var(--button-color-hover);
 	color: var(--button-text-color-hover);
+	cursor: pointer;
 }
 
 .month-change-button {
@@ -162,6 +163,7 @@ color: var(--button-text-color);
 
 .calendar .dates .calendar-date-enabled:hover {
 	background-color: #CC373380;
+	cursor: pointer;
 }
 
 .calendar .dates .calendar-space-invisable {
