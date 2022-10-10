@@ -32,7 +32,7 @@
 			<form>
 			<input type="hidden" name="action" value="ReservationDisplay"/>
 				<label for="reservationID"><b>Reservation ID:</b></label>
-				<input type="text" placeholder="Enter ID" name="reservationID" id="reservationID" required>
+				<input type="number" placeholder="Enter ID" name="reservationID" id="reservationID" min="1" required>
 				<div class="button-container">
 					<button type="submit" class="registerbtn">Search</button>
 				</div>
