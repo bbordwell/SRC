@@ -89,7 +89,7 @@
 			<div class="box-5">
 				<div class="inner-left">
 					<h2># of Guests</h2>
-					<p>2</p>
+					<p><%out.print(reservation.getGuests()); %></p>
 				</div>
 				<div class="inner-right">
 					<h2>Room Type</h2>
