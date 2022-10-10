@@ -25,9 +25,9 @@
 			<div class="header-middle">
 				<div class=header-nav>
 					<ul>
-	  					<li id="left"><a href="/Proviso?action=DateSelection">Book Now</a></li>
-						<li id="middle"><a href="/Proviso?action=locations">Locations</a></li>
-						<li id="right"><a href="/Proviso?action=ReservationLookup">My Reservations</a></li>
+	  					<li id="left"><a href="/Proviso?action=DateSelection" style="color: black;">Book Now</a></li>
+						<li id="middle"><a href="/Proviso?action=locations" style="color: black;">Locations</a></li>
+						<li id="right"><a href="/Proviso?action=ReservationLookup" style="color: black;">My Reservations</a></li>
 					</ul>
 				</div>
 			</div>
