@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 #container {
     width: 80%;
     padding: 5px;
@@ -107,17 +115,17 @@ input:hover {
 }
 
 button {
-	background: white;
+	background-color: var(--button-color);
+	color: var(--button-text-color);
 	border: 1px solid;
 	border-radius: 5px;
 	padding: 10px 15px;
-	color: black;
 	cursor: pointer;
 }
 
 button:hover {
-	background-color: #6c0001;
-	color: white;
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
 }
 
 #money {

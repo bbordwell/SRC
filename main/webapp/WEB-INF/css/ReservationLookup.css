@@ -1,3 +1,10 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 .main-top {
 	height: 100%;
 	width: 100%;
@@ -32,9 +39,9 @@
 button {
 	margin-bottom: 25vh;
   	border: 1px solid black;
-  	background: #6c0001;
+  	background-color: var(--button-color);
+	color: var(--button-text-color);
   	border-radius: 12px;
-  	color: white;
   	padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
@@ -43,8 +50,8 @@ button {
 }
 
 button:hover {
-	background: white;
-	color: black;
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
 }
 
 .form {

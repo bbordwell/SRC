@@ -1,3 +1,10 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 .container {
 	min-height: 70vh;
 	overflow-y: auto;
@@ -67,18 +74,18 @@ input[type=text], input[type=email], input[type=tel], textarea {
 
 input[type=submit] {
   	width: 25%;
-  	background-color: #6c0001;
-  	color: white;
+  	background-color: var(--button-color);
+	color: var(--button-text-color);
   	padding: 14px 20px;
   	margin: 4%;
-  	border: none;
+	border: 1px solid black;
   	border-radius: 15px;
 	cursor: pointer;
 }
 
 input[type=submit]:hover {
-	background-color: #fbfbfb;
-	color: black;
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
 	border: 1px solid black;
 }
 

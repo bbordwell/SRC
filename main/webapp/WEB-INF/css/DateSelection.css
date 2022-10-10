@@ -1,3 +1,10 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 html {
 	height: 100vh;
 }
@@ -72,15 +79,14 @@ html {
 	width: 10vw;
 	height: 4vw;
 	
-	color: white;
-	background-color: rgba(204, 55, 51, 0.9);
+	background-color: var(--button-color);
+color: var(--button-text-color);
 	
 }
 
 .basic-button:hover {
-	/*background-color: #CC373380;*/
-	background-color: #CC3733;
-	color: white;
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
 }
 
 .month-change-button {

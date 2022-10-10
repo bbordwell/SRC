@@ -1,3 +1,10 @@
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 .top-options {
 	display: flex;
 	width: 100%;
@@ -241,8 +248,8 @@ table {
 
 .bottom-right a{
 	text-decoration: none;
-	color: white;
-	background: #6c0001;
+	background-color: var(--button-color);
+	color: var(--button-text-color);
 	border: 1px solid;
 	border-radius: 5px;
 	margin-left: 25%;
@@ -252,8 +259,8 @@ table {
 }
 
 .bottom-right a:hover{
-	background: white;
-	color: black;
+	background-color: var(--button-color-hover);
+	color: var(--button-text-color-hover);
 }
 
 .room-picture {
