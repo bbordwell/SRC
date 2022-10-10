@@ -119,7 +119,7 @@
 					<div class='bottom-right'>
 						<a id=bookDouble>Book Room</a>
 					</div>
-					<div id="hidden1">Please select a valid location</div>
+					<div id="hidden1" class="error-text">Please select a valid location.</div>
 				</div>
 			</div>
 			
@@ -141,7 +141,7 @@
 					<div class='bottom-right'>
 						<a id="bookQueen" >Book Room</a>
 					</div>
-					<div id="hidden2">Please select a valid location</div>
+					<div id="hidden2" class="error-text">Please select a valid location.</div>
 				</div>
 			</div>
 			
@@ -163,7 +163,7 @@
 					<div class='bottom-right'>
 						<a id="bookDoubleQueen" >Book Room</a>
 					</div>
-					<div id="hidden3">Please select a valid location</div>
+					<div id="hidden3" class="error-text">Please select a valid location.</div>
 				</div>
 			</div>
 			
@@ -185,7 +185,7 @@
 					<div class='bottom-right'>
 						<a id="bookKing" >Book Room</a>
 					</div>
-					<div id="hidden4">Please select a valid location</div>
+					<div id="hidden4" class="error-text">Please select a valid location.</div>
 				</div>
 			</div>
 		</div>
@@ -219,8 +219,12 @@
 	
 	document.getElementById('bookDouble').onclick = function() {
 		if (slctLocation.value == "#") {
-			 document.getElementById("hidden1").style.display = 'inline';
+			document.getElementById("hidden1").classList.add("error-text-on");
 		} else {
+			document.getElementById("hidden1").classList.remove("error-text-on");
+			document.getElementById("hidden2").classList.remove("error-text-on");
+			document.getElementById("hidden3").classList.remove("error-text-on");
+			document.getElementById("hidden4").classList.remove("error-text-on");
 			document.getElementById('roomType').value = "Double";
 			document.getElementById("bookNow").submit();
 		}
@@ -228,8 +232,12 @@
 	
 	document.getElementById('bookQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			document.getElementById("hidden2").style.display = 'inline';
+			document.getElementById("hidden2").classList.add("error-text-on");
 		} else {
+			document.getElementById("hidden1").classList.remove("error-text-on");
+			document.getElementById("hidden2").classList.remove("error-text-on");
+			document.getElementById("hidden3").classList.remove("error-text-on");
+			document.getElementById("hidden4").classList.remove("error-text-on");
 			document.getElementById('roomType').value = "Queen";
 			document.getElementById("bookNow").submit();
 		}
@@ -237,8 +245,12 @@
 	
 	document.getElementById('bookDoubleQueen').onclick = function() {
 		if (slctLocation.value == "#") {
-			document.getElementById("hidden3").style.display = 'inline';
+			document.getElementById("hidden3").classList.add("error-text-on");
 		} else {
+			document.getElementById("hidden1").classList.remove("error-text-on");
+			document.getElementById("hidden2").classList.remove("error-text-on");
+			document.getElementById("hidden3").classList.remove("error-text-on");
+			document.getElementById("hidden4").classList.remove("error-text-on");
 			document.getElementById('roomType').value = "Double Queen";
 			document.getElementById("bookNow").submit();
 		}
@@ -246,8 +258,12 @@
 	
 	document.getElementById('bookKing').onclick = function() {
 		if (slctLocation.value == "#") {
-			document.getElementById("hidden4").style.display = 'inline';
+			document.getElementById("hidden4").classList.add("error-text-on");
 		} else {
+			document.getElementById("hidden1").classList.remove("error-text-on");
+			document.getElementById("hidden2").classList.remove("error-text-on");
+			document.getElementById("hidden3").classList.remove("error-text-on");
+			document.getElementById("hidden4").classList.remove("error-text-on");
 			document.getElementById('roomType').value = "King";
 			document.getElementById("bookNow").submit();
 		}
