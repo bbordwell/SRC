@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+:root {
+	--button-color: #33C8CC;
+	--button-color-hover: #51B0B3;
+	--button-text-color: black;
+	--button-text-color-hover: black;
+}
+
 .landing-container {
     min-width:500px;
     box-sizing:border-box;
@@ -80,13 +87,13 @@
   border-radius: 4px;
   padding: 10px 25px 10px 25px;
   text-decoration: none;
-  color: white;
-  background-color: #6c0001;
+  color: var(--button-text-color);
+  background-color: var(--button-color);
 }
 
 .description #see-locations-button:hover {
-  background: #f6f6f6;
-  color: black;
+  background: var(--button-color-hover);
+  color: var(--button-text-color);
 }
 
 .red-box {
@@ -209,8 +216,8 @@
   border-bottom-left-radius: 12px;
   border-right: none;
   display: block;
-  background-color: #6c0001;
-  color: #fbfbfb;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
@@ -218,8 +225,8 @@
 }
 .events li #confbtn {
   display: block;
-  background-color: #6c0001;
-  color: #fbfbfb;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
@@ -230,8 +237,8 @@
   border-bottom-right-radius: 12px;
   border-left: none;
   display: block;
-  background-color: #6c0001;
-  color: #fbfbfb;
+  background-color: var(--button-color);
+  olor: var(--button-text-color);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
@@ -239,16 +246,16 @@
 }
 
 .events li #weddingbtn:hover {
-  background-color: #fbfbfb;
-  color: black;
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
 }
 .events li #confbtn:hover {
-  background-color: #fbfbfb;
-  color: black;
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
 }
 .events li #gatheringsbtn:hover {
-  background-color: #fbfbfb;
-  color: black;
+  background-color: var(--button-color-hover);
+  color: var(--button-text-color-hover);
 }
 
 /*⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀ events navbar ⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀⋀*/
