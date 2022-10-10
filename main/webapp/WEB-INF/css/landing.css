@@ -238,7 +238,7 @@
   border-left: none;
   display: block;
   background-color: var(--button-color);
-  olor: var(--button-text-color);
+  color: var(--button-text-color);
   text-align: center;
   padding: 10px 20px;
   text-decoration: none;
